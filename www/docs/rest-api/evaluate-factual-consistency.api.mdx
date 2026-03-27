@@ -1,0 +1,109 @@
+---
+id: evaluate-factual-consistency
+title: "Evaluate factual consistency"
+description: "Evaluate the factual consistency of a generated text (like a summary) against source documents. This determines how accurately the generated text reflects the information in the source documents, helping identify potential hallucinations or misrepresentations."
+sidebar_label: "Evaluate factual consistency"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/rest-api/vectara-rest-api-v-2
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Evaluate factual consistency"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v2/evaluate_factual_consistency"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Evaluate the factual consistency of a generated text (like a summary) against source documents. This determines how accurately the generated text reflects the information in the source documents, helping identify potential hallucinations or misrepresentations.
+
+Use this API to programmatically validate generated content against trusted source materials—an essential capability for applications in high-integrity environments such as legal, healthcare, scientific publishing, and enterprise knowledge systems.
+
+The request body must include the following parameters:
+* `model_parameters:` Optionally specifies the evaluation model to use. Default is `hhem_v2.2`.
+* `generated_text`: The output text you want to evaluate, such as a model-generated summary, answer, or response.
+* `source_texts`: An array of source documents or passages used to verify the accuracy of the generated text.
+* `language`: The ISO 639-3 code representing the language of the provided texts (`eng` for English, `fra` for French).
+
+### Example request
+
+This example evaluates whether a generated statement about the Eiffel Tower is factually accurate based on two reference documents.
+
+```json
+{
+  "generated_text": "The Eiffel Tower is located in Berlin.",
+  "source_texts": [
+    "The Eiffel Tower is a famous landmark located in Paris, France.",
+    "It was built in 1889 and remains one of the most visited monuments in the world."
+  ],
+  "language": "eng"
+}
+```
+### Example response
+
+The response includes a factual consistency score and probability estimates.
+
+```json
+{
+  "score": 0.23,
+  "p_consistent": 0.12,
+  "p_inconsistent": 0.88
+}
+```
+* `score`: A normalized value between `0.0` and `1.0` that reflects the overall factual alignment between the generated text and the source texts. Higher scores indicate stronger consistency.
+* `p_consistent`: The estimated probability that the generated text is factually consistent with the sources.
+* `p_inconsistent`: The estimated probability that the generated text contains factual inaccuracies relative to the source documents.
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"header","name":"Request-Timeout","description":"The API will make a best effort to complete the request in the specified seconds or time out.","schema":{"type":"integer","minimum":1},"required":false},{"in":"header","name":"Request-Timeout-Millis","description":"The API will make a best effort to complete the request in the specified milliseconds or time out.","schema":{"type":"integer","minimum":1}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"description":"Request to evaluate the factual consistency of a generated text against source documents.","type":"object","required":["generated_text","source_texts"],"properties":{"model_parameters":{"description":"The model parameters for the evaluation.","type":"object","properties":{"model_name":{"description":"The name of the model to use for evaluation. Only hhem_v2.3 is supported.","type":"string","example":"hhem_v2.3","default":"hhem_v2.3"}}},"generated_text":{"type":"string","description":"The generated text (e.g., summary or answer) to evaluate for factual consistency."},"source_texts":{"type":"array","description":"The source documents or text snippets against which to evaluate factual consistency.","items":{"type":"string"}}},"title":"EvaluateFactualConsistencyRequest"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"The factual consistency evaluation results.","content":{"application/json":{"schema":{"description":"Results of the factual consistency evaluation.","type":"object","required":["score"],"properties":{"score":{"type":"number","format":"double","description":"A prediction score that must be greater than 0 but less than 1 from HHEM, monotonically indicates the likelihood of hallucinations.","minimum":0,"maximum":1}},"title":"EvaluateFactualConsistencyResponse"}}}},"400":{"description":"Invalid request body.","content":{"application/json":{"schema":{"description":"Error returned when a request contains invalid parameters or violates schema validation.","type":"object","properties":{"field_errors":{"description":"The errors that relate to specific fields in the request.","type":"object","additionalProperties":{"type":"string"}},"messages":{"type":"array","items":{"title":"message","type":"string"}},"request_id":{"description":"The ID of the request that can be used to help Vectara support debug what went wrong.","type":"string"}},"title":"BadRequestError"}}}},"403":{"description":"Permissions do not allow factual consistency evaluation.","content":{"application/json":{"schema":{"description":"A general error response with an error code and message.","type":"object","properties":{"messages":{"description":"The messages describing why the error occurred.","type":"array","items":{"title":"message","type":"string","example":"Internal server error."}},"request_id":{"description":"The ID of the request that can be used to help Vectara support debug what went wrong.","type":"string"}},"title":"Error"}}}},"422":{"description":"Language not supported by the factual consistency service.","content":{"application/json":{"schema":{"description":"A general error response with an error code and message.","type":"object","properties":{"messages":{"description":"The messages describing why the error occurred.","type":"array","items":{"title":"message","type":"string","example":"Internal server error."}},"request_id":{"description":"The ID of the request that can be used to help Vectara support debug what went wrong.","type":"string"}},"title":"Error"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

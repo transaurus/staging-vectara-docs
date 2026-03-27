@@ -1,0 +1,71 @@
+---
+id: get-o-auth-token
+title: "Request an access token"
+description: "Obtain an OAuth2 access token using client credentials"
+sidebar_label: "Request an access token"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVttuGzcQ/RViHo2V1vDjIgjqJmlh9MGB7RQobEMecUe7jChyw4suEPTvxZC70cpKDKTViyRyeDi3c4Z78CSjU2EH1eNzATV56VQXlDVQwe08oDICjbi9jqG9EigleS+CXZIR0SvTCKkVmSCko5pMUKg9FLCdLMiZia+Xk8bZ2E0MrgiqR8AYWng+MVhRaG3dW0BD4YHRRyDk1uSGffYDCnD0LZIPv9t6B9U+/VWOaqiCi1SAtCaQCbyFXaeVRI6o/Oo5rD142dIK+VfYdYxq519JBiigc7YjFxR53s2xzVQ9MvXBKdPA61Q9tDSk4uajsAsRWhKju+FQDHCepKPwS5D5yE9gG4cmzDLWfshaD61VIIf63dNw+ahOT/AeDodilLzHUcSv3T255/lwyCd9Z43Pybq6vOSv0xjuY+qYRdRiMIZfKM8omKEB/uwb5O4I93YRc8/OUs+eJ/1QQNr5nr+zbdp2ypGfqfFpZQI15M7yd3LZCfQJUMrfoQD2M8V+U+feTzwbCBCw8QzKa1yzvuTPDBXIeGUN7+9hSTuofkK6Atao44h8h+IHB8Yk/H7iSMbzMyNSHu0TOQ/PBWQ4qKCzPlUEQwsVlJZdKIfsZJAcQnQaKmhD6HxVltip6ZpkQIdTZRPkoFP33By5slmUxjTGtHAmY6/ES/ydoaGAhbabEdU/jFSMYdnRL6eexdCOXMsRXR1DkrZLzuX6XnfqL9qltBy9xLQIBXBHQUtYk4MC+v7eTrBTE042AzAl7o5a92mLq07TK206CsgrhRl1sTILm3xQgc9DnwJx9+n+QVx/vhHr87wNe150zq5VTQJFcFgr3kctEgly/wqusFhYJzY0n8zRUz2WKT99Mv/YKCQasVCmFqg1q5mNLl+AQbz8uPjl+qp8xykhU3dWmfD+RbAyss/DkhfoSNgYtDJUC2WSTK7RKRu98HHuSSY3soIqn07f0YIcGUmi3xbInjkSNXnVMFKwYk4cZ1RBrSkZLKzWdiNQ+ICmRlenHLLC+eCiDNHR9Mk8mUlyU0bnWMG50fkK5cXFxfrq4mLKFi/jwF56aC9QtIocOtkqiSPcop+52m7ISfTZoXbXtZRSLMQf1gnKTVKIl1Ja11mHZcU/op8taVfWVsYVmeBfpk/csr1nUMHV9HJ6ybpDbuVvF/fk1krSqPmHqki7KjU1qMtkOrGLJAhKUpnmtrZNarZTUtdW+ukYQq2aAXK2sa5eoVtOu9TIqMMDbcOxUbmHt5Ma3fL/oM+0atrw1h08mlCm0UQrVHzDgqieo1z+NkJP5GRxW2EaCz15e6ryi2n8VHrNrP1xAv73N1avJoG2oew0qvQWSDnZ93r7mAVxmEM8OFrW4+oR9nvm6BenDwde/hbJ9S9AZg3OWSMenw/FIE/HKfMhez55yENtkP6zOX4cGddSUhfetB2PjM+39w9QwLx/2q1szWccbvjZhxuoAHhwhjz99nltDxpNE7Fh24zJn38BMCrP7g==
+sidebar_class_name: "post api-method"
+info_path: docs/rest-api/vectara-rest-api-v-2
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Request an access token"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/oauth/token"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Obtain an OAuth2 access token using client credentials
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"client_id":{"type":"string","description":"The client ID of the application"},"client_secret":{"type":"string","description":"The client secret of the application"},"grant_type":{"x-fern-type":"literal<\"client_credentials\">"}},"required":["client_id","client_secret","grant_type"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful response","content":{"application/json":{"schema":{"x-fern-type-name":"GetTokenResponse","type":"object","properties":{"access_token":{"type":"string"},"token_type":{"type":"string"},"expires_in":{"type":"integer"}},"required":["access_token","token_type","expires_in"]}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

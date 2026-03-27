@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-release-notes" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Vectara Release Notes | Vectara Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.vectara.com/docs/release-notes"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Vectara Release Notes | Vectara Docs"><meta data-rh="true" name="description" content="Here’s where we keep you up to date with all the latest features and product"><meta data-rh="true" property="og:description" content="Here’s where we keep you up to date with all the latest features and product"><link data-rh="true" rel="icon" href="/img/vectara_logo.svg"><link data-rh="true" rel="canonical" href="https://docs.vectara.com/docs/release-notes"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/release-notes" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/release-notes" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Vectara Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Vectara Docs Atom Feed">
+
+
+
+
+
+
+
+
+
+<script src="/analytics.js" async></script>
+<script src="/scripts/reodev.js" async></script><link rel="stylesheet" href="/assets/css/styles.50104ce9.css">
+<script src="/assets/js/runtime~main.5e1f3244.js" defer="defer"></script>
+<script src="/assets/js/main.09506697.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/vectara_wordmark.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/vectara_wordmark_light.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/">Docs</a><a class="navbar__item navbar__link" href="/docs/rest-api">API Reference</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">SDKs</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/sdk/vectara-python-sdk">Python</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Release Information</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/docs/release-notes">Release Notes</a></li><li><a class="dropdown__link" href="/docs/changelog">Changelog</a></li></ul></div></div><div class="navbar__items navbar__items--right"><div class="searchBar navbarSearchContainer_Bca1"></div><a href="https://console.vectara.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Console</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/docs/release-notes">Release Notes</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_xLCN"><div class="docItemContainer_jfFK"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Release Notes</span><meta itemprop="position" content="1"></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: 2.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Vectara Release Notes</h1></header><div class="row"><div class="col col--12 markdown"><p>Here’s where we keep you up to date with all the latest features and product
+documentation updates to help you get even more out of the Vectara platform.
+Whether you&#x27;re building sophisticated AI agents,
+experimenting with Retrieval Augmented Generation (RAG), or exploring our
+newest API endpoints, this page is your go-to place to see how we’re evolving
+and how these product and documentation changes can benefit your enterprise.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="voice-ai-with-speechmatics-integration">Voice AI with Speechmatics Integration<a href="#voice-ai-with-speechmatics-integration" class="hash-link" aria-label="Direct link to Voice AI with Speechmatics Integration" title="Direct link to Voice AI with Speechmatics Integration">​</a></h2>
+<p><em>December 4, 2025</em></p>
+<p>Vectara now integrates with Speechmatics for building real-time voice agents.
+Combine Speechmatics&#x27; real-time speech-to-text (less than 1 second latency,
+and 55+ languages) and text-to-speech (TTS) with Vectara&#x27;s RAG capabilities
+to create AI assistants that see, hear, and speak.</p>
+<p><strong>Why it matters:</strong> Voice interfaces are becoming essential for accessible
+AI experiences. This integration delivers accuracy with
+ultra-low latency, making it practical to build production voice agents
+that can answer questions from your knowledge base in real-time.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/integrations/vectara-and-speechmatics">Vectara and Speechmatics integration</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="sub-agents-autonomous-specialized-agents-inside-your-agents">Sub-agents: Autonomous, Specialized Agents Inside Your Agents<a href="#sub-agents-autonomous-specialized-agents-inside-your-agents" class="hash-link" aria-label="Direct link to Sub-agents: Autonomous, Specialized Agents Inside Your Agents" title="Direct link to Sub-agents: Autonomous, Specialized Agents Inside Your Agents">​</a></h2>
+<p><em>November 18, 2025</em></p>
+<p>Vectara introduces sub-agents, a powerful new capability that lets your agents
+initialize dedicated, autonomous agent instances to handle additional, multi-step
+tasks. They accomplish all of this while keeping their context isolated from the
+parent agent conversation. Invoke autonomous agents for focused tasks such as
+code review, research, or content transformation.</p>
+<p><strong>Why it matters:</strong> Advanced sessions often overwhelm an agent and cause context
+bloat. Sub-agents solve this issue by providing a separation from the primary agent.
+Your parent agent stays focused while delegating work to highly specialized
+sub-agents that maintain an independent state, reasoning, and workflow.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://www.vectara.com/blog/introducing-sub-agents" target="_blank" rel="noopener noreferrer">Introducing Sub-agents</a></li>
+<li><a href="/docs/agent-os/agent-tools-overview">Agent tools overview</a></li>
+<li><a href="/docs/agent-os/subagents">Sub-agents</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="document-conversion-tool-for-agents">Document Conversion Tool for Agents<a href="#document-conversion-tool-for-agents" class="hash-link" aria-label="Direct link to Document Conversion Tool for Agents" title="Direct link to Document Conversion Tool for Agents">​</a></h2>
+<p><em>November 16, 2025</em></p>
+<p>Vectara introduces the Document Conversion Tool, a new standalone agent tool
+that extracts content from uploaded files and converts them into clean,
+structured Markdown format. These files include PDFs, Word documents,
+PowerPoint presentations, and images. The tool includes OCR capabilities for
+extracting text from images. Converted outputs persist across a session.</p>
+<p><strong>Why it matters:</strong> Previously, converting uploaded files into readable text
+required external preprocessing. This tool brings document parsing and OCR
+directly into agent sessions, enabling agents to interpret file types and
+transform them into context-ready text for reasoning, summarization, or indexing.</p>
+<p><strong>More information:</strong>
+<a href="/docs/agent/agent-tools">Agent tools overview</a>
+<a href="/docs/docs/agent/sessions#document-upload-and-conversion">Document upload and conversion</a></p>
+<hr>
+<p><em>November 15, 2025</em></p>
+<p>The Agents API now supports artifact storage, a persistent, session-scoped
+workspace for files that enables efficient multi-step document processing
+workflows. Artifacts provide a persistent workspace where agents and users
+can share files throughout a conversation without bloating the agent&#x27;s context.
+Agents support multi-modal analysis through image artifacts (PNG, JPEG, GIF,
+WebP) alongside document formats. When the session expires, the artifacts are
+cleaned up.</p>
+<p><strong>Why it matters:</strong> Before artifact storage, file uploads caused context window
+bloat and inefficient multi-step workflows. Artifacts solve these problems by
+separating file storage from file references. Upload a PDF or image once, and
+reference it across multiple operations like conversion, visual analysis, and
+indexing.</p>
+<p><strong>What&#x27;s new:</strong></p>
+<ul>
+<li>Session-scoped storage: Files uploaded to agent sessions are stored as artifacts
+with unique identifiers, remaining available throughout the conversation lifecycle.</li>
+<li>Multi-modal support: Upload and analyze both documents and images in the same
+session workspace.</li>
+<li>Lightweight references: <code>ArtifactReference</code> objects contain only metadata (artifact_id,
+filename, mime_type, size_bytes) instead of full file contents, reducing payload sizes
+from potentially megabytes to ~100 bytes.</li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://www.vectara.com/blog/beyond-text-introducing-artifacts-for-vectara-agents" target="_blank" rel="noopener noreferrer">Beyond Text: Introducing Artifacts for Vectara Agents</a></li>
+<li><a href="/docs/agents/agent-tools">Agent tools overview</a></li>
+<li><a href="/docs/agents/artifacts">Working with artifacts</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="web-search-tool-enhanced-with-domain-filtering">Web Search Tool Enhanced with Domain filtering<a href="#web-search-tool-enhanced-with-domain-filtering" class="hash-link" aria-label="Direct link to Web Search Tool Enhanced with Domain filtering" title="Direct link to Web Search Tool Enhanced with Domain filtering">​</a></h2>
+<p><em>November 14, 2025</em></p>
+<p>The Web Search tool now supports domain-level filtering, enabling more precise and
+configurable search behavior. You can restrict results to specific domains or exclude
+domains entirely, including support for subdomains and wildcard patterns.</p>
+<p><strong>Why it matters:</strong> This enhancement gives agents more control over source quality
+and relevance. You can now constrain web search behavior to trusted domains or remove
+undesirable, or low-value sources.</p>
+<p><strong>More information:</strong>
+<a href="/docs/agents/agent-tools-overview">Agent tools overview</a></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="lambda-tools-customize-python-functions-in-agents">Lambda Tools: Customize Python Functions in Agents<a href="#lambda-tools-customize-python-functions-in-agents" class="hash-link" aria-label="Direct link to Lambda Tools: Customize Python Functions in Agents" title="Direct link to Lambda Tools: Customize Python Functions in Agents">​</a></h2>
+<p><em>October 14, 2025</em></p>
+<p>Vectara introduces the tech preview of Lambda Tools, extending agent
+capabilities with your own Python functions. Lambda Tools let agents execute
+custom business logic, calculations, or data transformations in secure,
+sandboxed environments.</p>
+<p>Why it matters: Lambda Tools let you safely plug in your own logic so
+agents can perform domain-specific actions like scoring leads, analyzing data,
+or applying compliance checks, all without leaving the Vectara environment.
+Each function runs in an isolated Python sandbox with automatic schema
+discovery, resource limits, and full audit logging for transparency and
+governance.</p>
+<p><strong>New API endpoints</strong>:</p>
+<ul>
+<li><a href="/docs/rest-api/create-tool">Create a Lambda Tool</a></li>
+<li><a href="/docs/rest-api/tools/test">Test a Lambda Tool</a> - This lets you test the tools you already created.</li>
+<li><a href="/docs/rest-api/test-tool">Test Lambda Tool</a> - This lets you test functions before creating and using them with agents.</li>
+<li><a href="/docs/rest-api/update-tool">Update a Tool</a></li>
+<li><a href="/docs/rest-api/get-tool">List Tools</a></li>
+</ul>
+<p>More information:</p>
+<ul>
+<li><a href="/docs/agents/lambda-tools">Lambda Tools</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vectara-agents-framework">Vectara Agents Framework<a href="#vectara-agents-framework" class="hash-link" aria-label="Direct link to Vectara Agents Framework" title="Direct link to Vectara Agents Framework">​</a></h2>
+<p><em>September 3, 2025</em></p>
+<p>We&#x27;re excited to introduce the tech preview of the Vectara Agents APIs.
+This comprehensive framework enables building intelligent, autonomous AI
+agents that go beyond simple question-answering, to become configurable
+digital workers capable of complex reasoning, multi-step workflows, and
+enterprise system integration.</p>
+<p><strong>Why it matters:</strong> Traditional RAG applications are limited to reactive Q&amp;A
+interactions. The Agents APIs enable AI agents that can autonomously reason
+through problems, orchestrate multiple tools, maintain conversation context,
+and integrate with enterprise systems through standardized protocols. This
+opens entirely new use cases for AI automation, from intelligent customer
+support to complex business process orchestration.</p>
+<p><strong>What&#x27;s new:</strong></p>
+<ul>
+<li><strong>Agents APIs</strong>: Create and configure intelligent agents with customizable reasoning models,
+behavioral instructions, and tool access controls</li>
+<li><strong>Stateful Conversations</strong>: Maintain context across multi-turn interactions with session management,
+enabling complex dialogues and workflow continuity</li>
+<li><strong>Tool Orchestration</strong>: Agents can dynamically invoke multiple tools including:<!-- -->
+<ul>
+<li>Corpora search for RAG capabilities</li>
+<li>Web search for real-time information</li>
+<li>Custom MCP tools for enterprise integrations</li>
+</ul>
+</li>
+<li><strong>Streaming Response Support</strong>: Real-time conversational experiences with Server-Sent Events for progressive response building</li>
+<li><strong>Flexible Instructions</strong>: Combine reusable instruction templates with inline configurations using Velocity templating for dynamic agent behavior</li>
+<li><strong>Chain-of-Thought Reasoning</strong>: Transparent agent thinking process with dedicated event types for reasoning visibility</li>
+<li><strong>Version Management</strong>: Instructions and tool configurations support versioning for controlled rollouts and governance</li>
+</ul>
+<p><strong>New API Endpoints:</strong></p>
+<p>The Vectara Agent APIs introduce several new endpoints:</p>
+<ul>
+<li><a href="/docs/rest-api/agents">Agent Management</a></li>
+<li><a href="/docs/rest-api/agent-sessions">Session Management</a></li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/agents/agent-concepts">Agents</a></li>
+</ul>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><ul>
+<li>This is a tech preview release. APIs and features may evolve based on customer feedback.</li>
+<li>All agent and session identifiers follow the pattern <code>[0-9a-zA-Z_-]+</code> without prefixes.</li>
+<li>MCP is the only supported tool server protocol in this release.</li>
+</ul></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fuzzy-metadata-search">Fuzzy Metadata Search<a href="#fuzzy-metadata-search" class="hash-link" aria-label="Direct link to Fuzzy Metadata Search" title="Direct link to Fuzzy Metadata Search">​</a></h2>
+<p><em>August 22, 2025</em></p>
+<p>Vectara introduces the tech preview of Fuzzy Metadata Search across document metadata fields. This
+capability automatically handles spelling errors and variations when searching
+metadata like titles, authors, categories, or custom attributes—dramatically
+improving document discovery rates in large repositories.</p>
+<p><strong>Why it matters:</strong> Traditional exact-match filtering misses relevant documents
+due to data entry inconsistencies or user typos. Fuzzy Metadata Search solves
+this by applying intelligent matching algorithms that find &quot;Employment Agreement&quot;
+even when users search for &quot;Employement Agrrement&quot;, making document discovery
+more forgiving and effective.</p>
+<p><strong>Key capabilities:</strong></p>
+<ul>
+<li>Multi-field weighted search with customizable importance scores</li>
+<li>Two-stage processing: exact pre-filtering followed by fuzzy matching</li>
+<li>Automatic handling of typos, transpositions, and spelling variations</li>
+<li>Support for both document-level and part-level metadata</li>
+</ul>
+<p><strong>New API endpoint:</strong></p>
+<ul>
+<li><a href="/docs/rest-api/queries">Metadata Query API</a></li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/search-and-retrieval/fuzzy-metadata-search">Fuzzy Metadata Search</a></li>
+<li><a href="/docs/rest-api/metadata-query">Metadata Query API Documentation</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vectara-postman-collection-faster-api-exploration-and-testing">Vectara Postman Collection: Faster API Exploration and Testing<a href="#vectara-postman-collection-faster-api-exploration-and-testing" class="hash-link" aria-label="Direct link to Vectara Postman Collection: Faster API Exploration and Testing" title="Direct link to Vectara Postman Collection: Faster API Exploration and Testing">​</a></h2>
+<p><em>August 8, 2025</em></p>
+<p>Vectara published the <a href="https://www.postman.com/vectara" target="_blank" rel="noopener noreferrer">official Postman Collection</a>,
+giving developers an easy, code-free way to explore and test the Vectara REST APIs.
+The collection includes pre-configured requests for common operations, such as
+creating corpora, indexing documents, and running semantic searches—organized
+into folders for quick navigation. It supports both API key and OAuth 2.0
+authentication, making it flexible for rapid prototyping or secure production
+workflows.</p>
+<p><strong>Why it matters:</strong> Getting started with a new API can involve a lot of trial and
+error. The Vectara Postman Collection provides ready-to-use requests and example
+payloads, so you can focus on experimenting with Retrieval-Augmented
+Generation (RAG) workflows and integrating them into your applications faster.
+Whether you’re building a proof-of-concept or refining a production
+integration, Postman makes it easy to interact with Vectara’s endpoints,
+inspect responses, and iterate on your requests in real time.</p>
+<p><strong>What’s new:</strong></p>
+<ul>
+<li><strong>Official Vectara Postman Collection</strong> published on the Postman API Network.</li>
+<li><strong>Pre-configured requests</strong> for creating corpora, indexing documents, querying<br>
+<!-- -->data, and managing resources.</li>
+<li><strong>Authentication support</strong> for API key and OAuth 2.0 (Client Credentials)<br>
+<!-- -->flows.</li>
+<li><strong>Organized folders</strong> for Corpora Management, Indexing, Querying, and<br>
+<!-- -->Administration.</li>
+<li><strong>Sample payloads and parameters</strong> included for faster learning and testing.</li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://www.postman.com/vectara" target="_blank" rel="noopener noreferrer">Vectara Postman Collection</a></li>
+<li><a href="/docs/vectara-postman-collection">Using the Vectara Postman Collection</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vectara-admin-center-centralized-control-for-on-premise-and-vpc-deployments">Vectara Admin Center: Centralized Control for On-Premise and VPC Deployments<a href="#vectara-admin-center-centralized-control-for-on-premise-and-vpc-deployments" class="hash-link" aria-label="Direct link to Vectara Admin Center: Centralized Control for On-Premise and VPC Deployments" title="Direct link to Vectara Admin Center: Centralized Control for On-Premise and VPC Deployments">​</a></h2>
+<p><em>July 31, 2025</em></p>
+<p>Vectara introduces the Admin Center, a unified interface designed to streamline
+the management of on-premise and VPC deployments. The Admin Center empowers
+DevOps and IT Admin teams with comprehensive visibility and control, helping
+prevent RAG sprawl and reducing operational overhead.</p>
+<p><strong>Why it matters:</strong> Managing AI infrastructure on your own servers demands
+clarity, efficiency, and tight access control. The Vectara Admin Center
+centralizes administrative operations, enabling teams to monitor system health,
+manage tenants and users, register LLMs, and track resource usage from a
+single dashboard. This reduces manual effort, improves security, and gives
+organizations the flexibility to scale and optimize their Vectara environment
+with confidence.</p>
+<p><strong>What’s new:</strong></p>
+<ul>
+<li><strong>System Health Monitoring:</strong> Instantly view the overall status of your Vectara
+deployment, including tenants, queries, and indexing activity.</li>
+<li><strong>Tenant &amp; User Management:</strong> Easily manage tenant accounts, user permissions,
+and quotas through a streamlined interface.</li>
+<li><strong>Model Registration:</strong> Centrally register and manage custom Large
+Language Models (LLMs) for consistent usage across all teams.</li>
+<li><strong>Corpus Oversight:</strong> Quickly audit corpora within any tenant, with options
+to rebuild or resolve issues for optimal performance.</li>
+<li><strong>Bug Reporting:</strong> Collect relevant logs and generate detailed bug reports to
+accelerate troubleshooting and support.</li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/console-ui/admin-center">Vectara Admin Center</a></li>
+<li><a href="https://www.vectara.com/blog/visibility-and-control-vectaras-admin-center" target="_blank" rel="noopener noreferrer">Visibility and Control: Vectara’s Admin Center</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vectara-python-sdk-documentation">Vectara Python SDK Documentation<a href="#vectara-python-sdk-documentation" class="hash-link" aria-label="Direct link to Vectara Python SDK Documentation" title="Direct link to Vectara Python SDK Documentation">​</a></h2>
+<p><em>July 11, 2025</em></p>
+<p>Vectara now offers comprehensive documentation for the new Vectara Python SDK,
+making it easier than ever to integrate Vectara’s platform with Python-based
+applications. The SDK streamlines common tasks such as authentication, query
+management, and response handling, all while using familiar Python patterns.</p>
+<p><strong>Why it matters:</strong> Python is the go-to language for many AI and data
+engineering teams. With this SDK and the new documentation, developers can
+get started faster, implement best practices with less effort, and focus on
+building solutions instead of boilerplate code.</p>
+<p><strong>What you’ll learn:</strong></p>
+<ul>
+<li>How to install and configure the Vectara Python SDK</li>
+<li>Key methods for querying, indexing, and retrieving data</li>
+<li>Authentication and security best practices</li>
+<li>Tips for handling responses, errors, and pagination</li>
+<li>Example workflows for RAG and generative AI applications</li>
+</ul>
+<p><strong>More information:</strong></p>
+<p><a href="/docs/sdk/vectara-python-sdk">Vectara Python SDK Documentation</a>
+<a href="https://github.com/vectara/python-sdk" target="_blank" rel="noopener noreferrer">Vectara Python SDK on GitHub</a></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="open-rag-eval-consistency-adjusted-index-for-rag-system-evaluation">Open RAG Eval: Consistency-Adjusted Index for RAG System Evaluation<a href="#open-rag-eval-consistency-adjusted-index-for-rag-system-evaluation" class="hash-link" aria-label="Direct link to Open RAG Eval: Consistency-Adjusted Index for RAG System Evaluation" title="Direct link to Open RAG Eval: Consistency-Adjusted Index for RAG System Evaluation">​</a></h2>
+<p><em>July 8, 2025</em></p>
+<p>The Open RAG Evaluation tool now offers the consistency-adjusted index to evaluate
+both the quality and consistency of responses generated by RAG systems. This
+metric assesses the strength of the answers, and also how reliably the
+system produces those high-quality results when faced with repeated queries.</p>
+<p><strong>Why it matters:</strong> In production and enterprise scenarios, consistency is as
+important as accuracy. The consistency-adjusted index combines both quality
+and stability into a single, actionable score. This metric enables you to
+quickly identify when your RAG system is delivering trustworthy results, and
+when variability or lower quality requires further attention. A higher index
+means your system reliably produces high-quality responses, while a lower index
+indicates the need for deeper investigation and improvement.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://openevaluation.ai/" target="_blank" rel="noopener noreferrer">Open Evaluation</a></li>
+<li><a href="https://github.com/vectara/open-rag-eval" target="_blank" rel="noopener noreferrer">Open RAG Eval</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vhc-enhanced-for-query-aware-hallucination-detection-and-correction">VHC Enhanced for Query-Aware Hallucination Detection and Correction<a href="#vhc-enhanced-for-query-aware-hallucination-detection-and-correction" class="hash-link" aria-label="Direct link to VHC Enhanced for Query-Aware Hallucination Detection and Correction" title="Direct link to VHC Enhanced for Query-Aware Hallucination Detection and Correction">​</a></h2>
+<p><em>June 12, 2025</em></p>
+<p>Vectara has enhanced the Hallucination Corrector (VHC) API with support for
+query-aware hallucination detection and correction. This upgrade introduces
+the ability to include the original user query in VHC requests, enabling more
+accurate analysis of model-generated text.</p>
+<p><strong>Why it matters:</strong> In RAG workflows, generated responses often reflect both
+the retrieved context and the phrasing or intent of the user query. Adding
+the optional query field to VHC requests enables the model to interpret
+response formatting better. This helps resolve ambiguities, and attribute
+facts that are inferred from the query rather than only the source. This
+results in improved correction accuracy, particularly for instructions like
+<em>“Answer True or False,”</em> <em>“List the top 3,”</em> or <em>“Summarize concisely.”</em></p>
+<p><strong>What’s new:</strong></p>
+<ul>
+<li>The <code>model</code> parameter has been renamed to <code>model_name</code>,</li>
+<li>Added an optional <code>query</code> field for VHC requests to activate a query-aware prompt.</li>
+<li>Improved correction precision in prompt-sensitive use cases</li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/hallucination-and-evaluation/vectara-hallucination-corrector">Hallucination Corrector</a></li>
+<li><a href="/docs/rest-api/correct-hallucinations">Correct hallucinations in generated text based on source documents</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hhem-23---additional-language-support-and-enhanced-architecture">HHEM 2.3 - Additional Language Support and Enhanced Architecture<a href="#hhem-23---additional-language-support-and-enhanced-architecture" class="hash-link" aria-label="Direct link to HHEM 2.3 - Additional Language Support and Enhanced Architecture" title="Direct link to HHEM 2.3 - Additional Language Support and Enhanced Architecture">​</a></h2>
+<p><em>June 12, 2025</em></p>
+<p>Vectara’s Hughes Hallucination Evaluation Model (HHEM) now supports three
+additional languages: Russian, Japanese, and Hindi. This update increases
+the total supported languages from 8 to 11, further enhancing accessibility
+and global usability.</p>
+<p>Languages now supported: English, German, French, Spanish, Portuguese, Arabic,
+Chinese (Simplified), Korean, Japanese, Hindi, and Russian.</p>
+<p>This release also introduces a significant update to HHEM’s architecture,
+resulting in reduced operational costs and improved performance and accuracy.</p>
+<p><strong>Why it matters:</strong> By expanding multilingual support, Vectara further reduces
+reliance on manual translations, enabling global teams to directly evaluate AI
+accuracy in their native languages. The enhanced architecture delivers
+cost-effective performance improvements, promoting broader, confident
+adoption of trustworthy AI solutions.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/hallucination-and-evaluation/hallucination-evaluation">Hallucination Evaluation</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vectara-hallucination-corrector-vhc-api">Vectara Hallucination Corrector (VHC) API<a href="#vectara-hallucination-corrector-vhc-api" class="hash-link" aria-label="Direct link to Vectara Hallucination Corrector (VHC) API" title="Direct link to Vectara Hallucination Corrector (VHC) API">​</a></h2>
+<p><em>May 8, 2025</em></p>
+<p>Vectara introduces the tech preview release of the Vectara Hallucination Corrector<br>
+<!-- -->(VHC) API, a new capability designed to evaluate and revise AI-generated
+summaries for factual accuracy. The VHC endpoint compares a generated summary
+to one or more source documents and returns a corrected version, applying only
+the minimal changes needed to align the summary with the source material.</p>
+<p><strong>Why it matters:</strong> In Retrieval Augmented Generation (RAG) workflows, LLMs
+commonly introduce inaccuracies or hallucinations. The Vectara Hallucination
+Corrector offers a targeted solution by enabling automatic, explainable corrections
+to text based on reliable context—preserving the original phrasing wherever possible.
+This improves trust, precision, and usability of AI-generated outputs across
+enterprise applications.</p>
+<p><strong>New API endpoints:</strong></p>
+<ul>
+<li><a href="/docs/rest-api/correct-hallucinations">List Hallucination Correctors</a></li>
+<li><a href="/docs/rest-api/correct-hallucinations">Correct hallucinations in generated text based on source documents</a></li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/hallucination-and-evaluation/vectara-hallucination-corrector">Hallucination Correction Model</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="chat-completions-api">Chat Completions API<a href="#chat-completions-api" class="hash-link" aria-label="Direct link to Chat Completions API" title="Direct link to Chat Completions API">​</a></h2>
+<p><em>April 24, 2025</em></p>
+<p>Vectara now offers an OpenAI-compatible Chat Completions API, enabling
+seamless integration of Vectara’s language models into applications already
+built for OpenAI’s chat endpoint. This API supports both synchronous and
+streaming response formats and adheres to the familiar message-based interface
+used for conversational AI.</p>
+<p><strong>Why it matters:</strong> Developers can now integrate Vectara’s models into chat
+interfaces, agents, and customer-facing applications without needing to
+rearchitect prompt flows or backend systems. The compatibility layer makes it
+easy to switch between providers or test performance across models, all while
+tracking usage and applying fine-grained generation controls.</p>
+<p><strong>New API endpoint:</strong></p>
+<ul>
+<li><a href="/docs/rest-api/create-chat-completion">Chat Completions</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="evaluate-factual-consistency-api">Evaluate Factual Consistency API<a href="#evaluate-factual-consistency-api" class="hash-link" aria-label="Direct link to Evaluate Factual Consistency API" title="Direct link to Evaluate Factual Consistency API">​</a></h2>
+<p><em>April 24, 2025</em></p>
+<p>Vectara introduces the tech preview of the Evaluate Factual Consistency API, a
+new endpoint that assesses how well a generated summary or response aligns
+with its supporting source documents. This API provides a confidence score
+indicating whether a given text is grounded in the referenced material—helping
+developers detect and respond to hallucinated content in LLM outputs.</p>
+<p><strong>Why it matters:</strong> As enterprises rely more heavily on generative AI for
+summarization, Q&amp;A, and knowledge tasks, the ability to detect factual
+inconsistencies becomes critical. This API enables automated quality control
+by scoring alignment between generated text and source documents, improving
+the reliability and auditability of AI-generated content.</p>
+<p><strong>New API endpoint:</strong></p>
+<ul>
+<li><a href="/docs/rest-api/evaluate-factual-consistency">Evaluate Factual Consistency</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mockingbird-2-vectaras-advanced-llm-for-rag">Mockingbird 2: Vectara&#x27;s Advanced LLM for RAG<a href="#mockingbird-2-vectaras-advanced-llm-for-rag" class="hash-link" aria-label="Direct link to Mockingbird 2: Vectara&#x27;s Advanced LLM for RAG" title="Direct link to Mockingbird 2: Vectara&#x27;s Advanced LLM for RAG">​</a></h2>
+<p><em>April 17, 2025</em></p>
+<p>Vectara releases Mockingbird v2, an advanced Large Language Model (LLM)
+optimized for Retrieval Augmented Generation (RAG) with cross-lingual
+capabilities. Mockingbird v2 introduces support for queries, documents, and
+summaries in different languages, enhanced generation quality, and robust
+hallucination mitigation, making it ideal for global enterprise applications.</p>
+<p><strong>Why it matters:</strong> Mockingbird v2 enables organizations to process multilingual
+datasets seamlessly, delivering precise summaries across English, Spanish,
+French, Arabic, Chinese, Japanese, and Korean. With a 0.9% hallucination rate
+in its Mockingbird-2-Echo configuration, it ensures trustworthy outputs for
+research, knowledge bases, and question-answering systems.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://docs.vectara.com/docs/learn/mockingbird-llm" target="_blank" rel="noopener noreferrer">Mockingbird: Vectara&#x27;s LLM</a></li>
+<li><a href="https://www.vectara.com/blog/introducing-mockingbird-2-vectaras-crosslingual-grounded-generation-model" target="_blank" rel="noopener noreferrer">Introducing Mockingbird 2 - Vectara’s crosslingual grounded generation model</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="custom-table-summarization-with-prompt-templates">Custom Table Summarization with Prompt Templates<a href="#custom-table-summarization-with-prompt-templates" class="hash-link" aria-label="Direct link to Custom Table Summarization with Prompt Templates" title="Direct link to Custom Table Summarization with Prompt Templates">​</a></h2>
+<p><em>April 15, 2025</em></p>
+<p>Vectara now supports custom prompt templates for table summarization during
+document upload. This enhancement enables users to define exactly how extracted
+table data should be summarized using an OpenAI-compatible LLM. The
+<code>prompt_template</code> is configured with the <code>table_extraction_config</code> parameter
+in the File Upload API and supports Apache Velocity syntax for referencing
+table structure and content.</p>
+<p><strong>Why it matters:</strong> If you work in a domain with structured tabular data,
+summarizing tables with LLMs can surface key insights automatically. This
+capability allows you to tailor how summaries are generated by injecting
+domain-specific language, tone, and formatting preferences—resulting in more
+relevant, actionable outputs.</p>
+<p><strong>Updated API Endpoint:</strong></p>
+<ul>
+<li><a href="/docs/rest-api/upload-file">Upload a file to the corpus</a></li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/generation/custom-prompt-templates-customizations">File Upload API</a></li>
+<li><a href="/docs/learn/querying-table-data">Querying Table Data</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="expanded-encoder-management">Expanded Encoder Management<a href="#expanded-encoder-management" class="hash-link" aria-label="Direct link to Expanded Encoder Management" title="Direct link to Expanded Encoder Management">​</a></h2>
+<p><em>March 20, 2025</em></p>
+<p>Vectara introduces the Create Encoder API, allowing users to register and
+configure custom text embedding encoders for seamless integration within the
+Vectara platform. This API supports OpenAI-compatible encoders, enabling users
+to define authentication details, model parameters, and API endpoints for
+enhanced embedding workflows.</p>
+<p><strong>Why it matters:</strong> Organizations using AI-powered search and retrieval
+applications can now manage multiple encoder configurations tailored to their
+specific needs. This capability provides greater flexibility in defining
+custom embedding models, optimizing similarity search, document retrieval,
+and other AI-driven use cases.</p>
+<p><strong>New API Endpoint:</strong></p>
+<ul>
+<li><a href="/docs/rest-api/create-encoder">Create an Encoder</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vectara-kafka-connect-plugin-integration">Vectara Kafka Connect Plugin Integration<a href="#vectara-kafka-connect-plugin-integration" class="hash-link" aria-label="Direct link to Vectara Kafka Connect Plugin Integration" title="Direct link to Vectara Kafka Connect Plugin Integration">​</a></h2>
+<p><em>March 4, 2025</em></p>
+<p>Vectara introduces the Vectara Kafka Connect Plugin, enabling seamless
+real-time integration between Confluent Cloud and Vectara. This plugin
+enhances data streaming capabilities by providing scalable, schema-aware
+processing for efficient vector search workflows.</p>
+<p><strong>Why it matters:</strong> This integration allows organizations to leverage real-time
+data ingestion for AI-powered search, recommendation engines, and advanced
+analytics, optimizing knowledge retrieval from streaming data.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/integrations/vectara-and-confluent">Vectara and Confluent</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="integrate-external-large-language-models-llms">Integrate External Large Language Models (LLMs)<a href="#integrate-external-large-language-models-llms" class="hash-link" aria-label="Direct link to Integrate External Large Language Models (LLMs)" title="Direct link to Integrate External Large Language Models (LLMs)">​</a></h2>
+<p><em>February 24, 2025</em></p>
+<p>Vectara introduces the tech preview of the Create LLM API, enabling users to
+integrate and configure external Large Language Models (LLMs) for use with
+query and chat endpoints. This API enables connectivity with models compatible
+with OpenAI API specification, including Anthropic Claude, Azure OpenAI, and
+custom-hosted LLMs.</p>
+<p>compatible with OpenAI API specification</p>
+<p><strong>Why it matters:</strong> &quot;Organizations need control over the LLMs they use in AI
+application development, including configuration, authentication, and
+deployment. This capability provides that flexibility by allowing users to
+connect external LLM providers, define authentication methods, and specify
+model parameters and API endpoints—all within a single API.</p>
+<p><strong>New API endpoint:</strong></p>
+<ul>
+<li><a href="/docs/rest-api/create-llm">Create LLM</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="document-summarization-api">Document Summarization API<a href="#document-summarization-api" class="hash-link" aria-label="Direct link to Document Summarization API" title="Direct link to Document Summarization API">​</a></h2>
+<p><em>February 24, 2025</em></p>
+<p>Vectara introduces the tech preview release of the Document Summarization,
+enabling users to generate concise summaries from lengthy documents such as
+technical reports, vendor quotes, and financial statements. This API helps
+streamline information retrieval by allowing users to extract key insights
+without manually reviewing entire documents.</p>
+<p><strong>Why it matters:</strong> The Document Summarization API addresses a critical need
+for organizations dealing with large volumes of unstructured content. By
+leveraging Retrieval Augmented Generation (RAG), users can generate summaries
+that capture the most relevant information, significantly reducing time spent
+on document analysis.</p>
+<p><strong>New API endpoint</strong></p>
+<ul>
+<li><a href="/docs/rest-api/summarize-corpus-document">Document Summarization</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="intelligent-query-rewriting">Intelligent Query Rewriting<a href="#intelligent-query-rewriting" class="hash-link" aria-label="Direct link to Intelligent Query Rewriting" title="Direct link to Intelligent Query Rewriting">​</a></h2>
+<p><em>February 11, 2025</em></p>
+<p>Vectara introduces the tech preview release of Intelligent Query Rewriting, a
+capability that enhances search accuracy by automatically generating metadata
+filter expressions from natural language queries. This innovation enables
+users to search naturally while ensuring more precise results by applying
+context-aware filters in the background.</p>
+<p><strong>Why it matters:</strong> Intelligent Query Rewriting bridges the gap between
+natural language queries and structured data, improving search precision
+without requiring user intervention. It reduces query refinement time,
+streamlines workflows, and provides full transparency by including generated
+filters and rephrased queries in the API response and query history.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/search-and-retrieval/intelligent-query-rewriting">Intelligent Query Rewriting</a></li>
+<li><a href="/docs/rest-api/queries">Query API Definition</a></li>
+<li><a href="/docs/rest-api/query-corpus">Advanced Single Corpus Query</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="knee-reranking">Knee Reranking<a href="#knee-reranking" class="hash-link" aria-label="Direct link to Knee Reranking" title="Direct link to Knee Reranking">​</a></h2>
+<p><em>January 8, 2025</em></p>
+<p>Vectara now offers Knee Reranking, an advanced dynamic filtering tool designed
+to improve the precision of query results by automatically identifying natural
+cutoff points between relevant and irrelevant results. This feature integrates
+seamlessly into Vectara&#x27;s reranking chain, following the Slingshot reranker
+<a href="/docs/search-and-retrieval/rerankers/vectara-multi-lingual-reranker">(Vectara Multilingual Reranker V1)</a>, to refine search outputs with advanced
+score pattern analysis.</p>
+<p><strong>Why it matters:</strong> Knee Reranking elevates the quality of retrieval in Retrieval
+Augmented Generation (RAG) systems by adapting to the unique score
+distribution of each query dynamically. By automatically filtering out less
+relevant results, users receive more focused and actionable results, and
+experience reduced latency and improved accuracy from limiting irrelevant data
+sent to downstream systems.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://www.vectara.com/blog/introducing-the-knee-reranking-smart-result-filtering-for-better-results" target="_blank" rel="noopener noreferrer">Introducing Knee Reranking: smart result filtering for better results</a></li>
+<li><a href="/docs/search-and-retrieval/rerankers/knee-reranking">Knee Reranking</a></li>
+<li><a href="/docs/search-and-retrieval/reranking">Reranking</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hhem-22---expanded-language-support">HHEM 2.2 - Expanded Language Support<a href="#hhem-22---expanded-language-support" class="hash-link" aria-label="Direct link to HHEM 2.2 - Expanded Language Support" title="Direct link to HHEM 2.2 - Expanded Language Support">​</a></h2>
+<p><em>January 7, 2025</em></p>
+<p>Vectara’s <a href="https://www.vectara.com/business/platform/models#hughes-hallucination-evaluation-model-hhem" target="_blank" rel="noopener noreferrer">Hughes Hallucination Evaluation Model (HHEM)</a> now supports five
+additional languages: Portuguese, Spanish, Arabic, Chinese, and Korean. This
+update increases the total supported languages from 3 to 8, expanding
+accessibility and usability for global teams. Additionally, the context window
+has been expanded from 8k to 16k tokens and latency has been reduced.</p>
+<p><strong>Why it matters:</strong> This enhancement reduces the need for manual translations,
+enabling customers to evaluate AI accuracy directly in their preferred
+languages. By simplifying workflows and enhancing multilingual support, it
+builds trust in AI systems and Vectara’s platform while empowering teams to
+address diverse linguistic challenges more effectively.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/hallucination-and-evaluation/hallucination-evaluation">Hallucination Evaluation</a></li>
+<li><a href="https://www.vectara.com/blog/hhem-expanded-language-support" target="_blank" rel="noopener noreferrer">HHEM: Expanded Language Support</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="update-or-replace-document-metadata">Update or Replace Document Metadata<a href="#update-or-replace-document-metadata" class="hash-link" aria-label="Direct link to Update or Replace Document Metadata" title="Direct link to Update or Replace Document Metadata">​</a></h2>
+<p><em>December 17, 2024</em></p>
+<p>Vectara now enables users to update document metadata without reindexing. This
+capability supports two distinct operations: merging new metadata into
+existing metadata or replacing the metadata entirely. Both operations are
+now available through dedicated API endpoints.</p>
+<p><strong>Why it matters:</strong> Managing metadata is a critical part of ensuring that search
+and retrieval systems reflect the most up-to-date information. The ability to
+merge new metadata incrementally enables users to add or adjust specific
+fields without affecting existing data, while the full replacement operation
+is ideal for scenarios requiring a clean update. By streamlining metadata
+updates without reindexing document content, this feature enhances
+efficiency and ensures smooth document lifecycle management.</p>
+<p><strong>New endpoints:</strong></p>
+<ul>
+<li><a href="/docs/rest-api/update-corpus-document">Update Metadata</a></li>
+<li><a href="/docs/rest-api/replace-corpus-document-metadata">Replace Metadata</a></li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/build/prepare-data/metadata-filters">Metadata Filters</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="api-v1-deprecated">API v1 deprecated<a href="#api-v1-deprecated" class="hash-link" aria-label="Direct link to API v1 deprecated" title="Direct link to API v1 deprecated">​</a></h2>
+<p><em>December 19, 2024</em></p>
+<p>Vectara announces the official deprecation of API v1, which will be retired on
+August 16, 2025. This milestone marks a shift towards leveraging the full
+capabilities of API v2, offering enhanced functionality, improved developer
+experience, and streamlined authentication mechanisms. Users are encouraged to
+migrate their applications to API v2 as soon as possible to ensure
+uninterrupted service.</p>
+<p><strong>Why it matters:</strong> REST API v2 improves upon the previous release with
+standard HTTP response codes, a more intuitive REST URL structure, and new
+functionality, such as client-side timeouts. Migrating to API v2 allows users
+to benefit from these improvements while ensuring long-term platform
+compatibility.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/migration-guide-api-v2">Migration Guide from REST API 1.0 to 2.0</a></li>
+<li><a href="/docs/rest-api">API v2 Reference</a></li>
+<li><a href="/docs/rest-api/vectara-rest-api-v-2">Vectara APIs Overview</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="querying-table-data">Querying table data<a href="#querying-table-data" class="hash-link" aria-label="Direct link to Querying table data" title="Direct link to Querying table data">​</a></h2>
+<p><em>December 10, 2024</em></p>
+<p>Vectara introduces table querying, a powerful feature designed to help users
+extract and interact with structured tabular data embedded within documents.
+By enabling table data extraction during document ingestion, users can
+leverage Vectara’s advanced APIs to retrieve specific cells, compare semantic
+values, and gain actionable insights from tables in reports, filings, and
+other structured documents.</p>
+<p><strong>Why it matters:</strong> This powerful capability addresses the challenge of
+retrieving precise information from tables that are often large and complex.
+With table querying, analysts, researchers, and business users can focus on
+meaningful insights, reducing the time spent parsing tables manually. Key
+benefits include quick access to specific data points and streamlined analysis
+of financial, market, and operational data.</p>
+<p><strong>Updated API endpoints:</strong></p>
+<ul>
+<li><a href="/docs/rest-api/upload-file">File Upload API Definition</a></li>
+<li><a href="/docs/rest-api/index">Indexing API Definition</a></li>
+<li><a href="/docs/rest-api/queries">Query APIs</a></li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://www.vectara.com/blog/table-data-understanding" target="_blank" rel="noopener noreferrer">Table Data Understanding</a></li>
+<li><a href="/docs/learn/querying-table-data">Querying table data</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="query-observability">Query Observability<a href="#query-observability" class="hash-link" aria-label="Direct link to Query Observability" title="Direct link to Query Observability">​</a></h2>
+<p><em>December 2, 2024</em></p>
+<p>Vectara introduces query observability, which enables users to gain deeper
+insights into query performance and outcomes. Our query observability tool
+allows developers, business users, and machine learning teams to analyze
+individual queries by tracking key metrics, inspecting query configurations,
+and reviewing the execution process. With a detailed breakdown of each query&#x27;s
+call stack, users can debug, optimize, and fine-tune their queries for
+improved relevance and performance.</p>
+<p><strong>Why it matters:</strong> This feature solves the problem of limited observability into
+query execution. By surfacing data like query latency, search results,
+reranking, and generative response times, users can better understand how
+Vectara’s system performs relative to their business goals.</p>
+<p><strong>Updated API endpoints:</strong></p>
+<ul>
+<li><a href="/docs/rest-api/get-query-history">Get a Query History</a></li>
+<li><a href="/docs/rest-api/get-query-histories">List Query Histories</a></li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://www.vectara.com/blog/enhanced-query-observability-for-greater-insight-and-control" target="_blank" rel="noopener noreferrer">Enhanced query observability for greater insight and control</a></li>
+<li><a href="/docs/hallucination-and-evaluation/query-observability">Query observability</a></li>
+<li><a href="/docs/console-ui/configure-queries">Configure queries</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-integrations-section">New Integrations Section<a href="#new-integrations-section" class="hash-link" aria-label="Direct link to New Integrations Section" title="Direct link to New Integrations Section">​</a></h2>
+<p><em>October 17, 2024</em></p>
+<p>Vectara introduces a new documentation section highlighting our integrations
+with various systems in the larger generative AI community, including Airbyte,
+DataVolo, Flowise, LangChain, LangFlow, LlamaIndex, and Unstructured.io. This
+section showcases how Vectara&#x27;s advanced capabilities in document indexing and
+neural retrieval can enhance AI applications through strategic partnerships.</p>
+<p><strong>Why it matters:</strong> This update provides developers with an overview of
+Vectara&#x27;s community and partner integrations, enabling them to leverage
+powerful tools and frameworks in conjunction with Vectara&#x27;s capabilities.
+These integrations can enable developers to more easily enhance their AI
+applications, improve search accuracy, and streamline their development
+process.</p>
+<p><strong>More information</strong>:</p>
+<p><a href="/docs/integrations/community-collaborations-and-partnerships">Community Collaborations and Partnerships</a></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="search-cutoffs-and-limits">Search Cutoffs and Limits<a href="#search-cutoffs-and-limits" class="hash-link" aria-label="Direct link to Search Cutoffs and Limits" title="Direct link to Search Cutoffs and Limits">​</a></h2>
+<p><em>October 9, 2024</em></p>
+<p>This feature introduces cutoffs and limits for search results. Cutoffs set a
+minimum relevance threshold, while limits control the maximum number of
+returned results after reranking. These can be applied individually or
+combined across various reranker types.</p>
+<p><strong>Why it matters:</strong> These controls allow developers to customize reranker inputs,
+ensuring highly relevant results and optimizing resource usage. By enabling
+more precise result filtering, application builders have more flexibility for
+specific use cases, from content categorization to focused data retrieval.</p>
+<p><strong>Updated API endpoints:</strong></p>
+<ul>
+<li><a href="https://docs.vectara.com/docs/rest-api/query-corpus" target="_blank" rel="noopener noreferrer">Advanced Single Corpus Query</a></li>
+<li><a href="https://docs.vectara.com/docs/rest-api/query" target="_blank" rel="noopener noreferrer">Multiple Corpora Query</a></li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://docs.vectara.com/docs/search-and-retrieval/reranking#search-cutoffs" target="_blank" rel="noopener noreferrer">Search cutoffs</a></li>
+<li><a href="https://docs.vectara.com/docs/search-and-retrieval/reranking#search-limits" target="_blank" rel="noopener noreferrer">Search limits</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="chain-reranker">Chain Reranker<a href="#chain-reranker" class="hash-link" aria-label="Direct link to Chain Reranker" title="Direct link to Chain Reranker">​</a></h2>
+<p><em>October 8, 2024</em></p>
+<p>The Vectara chain reranker lets you apply multiple reranking strategies
+sequentially, allowing users to combine different reranking strategies and
+giving you absolute control. This feature enables the application of diverse
+ranking criteria at each stage of the ranking process, from neural reranking
+and maximal marginal relevance to custom business logic, all in a customizable
+sequence.</p>
+<p><strong>Why it matters</strong>: This unique innovation addresses complex search scenarios that
+require complex relevance and business rules and enables enterprises to fully customize
+Vectara&#x27;s behavior. By allowing the combination of various reranking
+strategies, it significantly enhances the quality of Retrieval Augmented
+Generation (RAG) outcomes.</p>
+<p><strong>Updated API endpoints:</strong></p>
+<ul>
+<li><a href="https://docs.vectara.com/docs/rest-api/query-corpus" target="_blank" rel="noopener noreferrer">Advanced Single Corpus Query</a></li>
+<li><a href="https://docs.vectara.com/docs/rest-api/query" target="_blank" rel="noopener noreferrer">Multiple Corpora Query</a></li>
+</ul>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://vectara.com/blog/introducing-vectaras-chain-rerankers/" target="_blank" rel="noopener noreferrer">Introducing Vectara&#x27;s Chain Rerankers</a></li>
+<li><a href="https://docs.vectara.com/docs/search-and-retrieval/rerankers/chain-reranker" target="_blank" rel="noopener noreferrer">Chain Reranker</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="document-and-document-partvector-count-api">Document and Document Part/Vector Count API<a href="#document-and-document-partvector-count-api" class="hash-link" aria-label="Direct link to Document and Document Part/Vector Count API" title="Direct link to Document and Document Part/Vector Count API">​</a></h2>
+<p><em>October 1, 2024</em></p>
+<p>You can now retrieve more comprehensive metrics about a corpus, including the
+number of documents or document parts.</p>
+<p><strong>Why it matters:</strong> Administrators can now efficiently manage resource allocation
+and monitor data usage trends. This feature helps ensure that corpus growth
+stays within allocated quotas and provides insights into document segmentation
+patterns.</p>
+<p><strong>Updated API endpoint:</strong></p>
+<p><a href="https://docs.vectara.com/docs/rest-api/get-corpus" target="_blank" rel="noopener noreferrer">Retrieve metadata about a corpus</a></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ui-enhancement-custom-prompts-in-console">UI Enhancement: Custom Prompts in Console<a href="#ui-enhancement-custom-prompts-in-console" class="hash-link" aria-label="Direct link to UI Enhancement: Custom Prompts in Console" title="Direct link to UI Enhancement: Custom Prompts in Console">​</a></h2>
+<p><em>August 20, 2024</em></p>
+<p>The Vectara Prompt Engine allows users to create customized prompt templates
+that can reference relevant text and metadata for Retrieval Augmented
+Generation (RAG) applications.</p>
+<p>Why it matters: This feature enables more advanced workflows and
+customizations for creating context-aware responses, such as answering
+questions based on previous answers in RFIs or RFPs, drafting support tickets
+from user feedback, and customizing result formatting. The ability to define
+roles and provide detailed context in prompts helps guide LLMs to generate
+more accurate and relevant responses.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://vectara.com/blog/introducing-vectaras-custom-prompt-engine/" target="_blank" rel="noopener noreferrer">Introducing Vectara&#x27;s Custom Prompt Engine</a></li>
+<li><a href="https://docs.vectara.com/docs/prompts/vectara-prompt-engine" target="_blank" rel="noopener noreferrer">Vectara Prompt Engine</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="user-defined-function-reranking">User Defined Function Reranking<a href="#user-defined-function-reranking" class="hash-link" aria-label="Direct link to User Defined Function Reranking" title="Direct link to User Defined Function Reranking">​</a></h2>
+<p><em>August 15, 2024</em></p>
+<p>Vectara introduces the User Defined Function Reranker, giving enterprises more
+granular control over search result ordering by defining custom reranking
+functions using document-level metadata, part-level metadata, or scores
+generated from the request-level metadata. This flexibility is particularly
+useful for a wide range of use cases.</p>
+<p><strong>Why it matters:</strong> This feature allows enterprises to modify scores based on
+metadata, conditions, and custom logic, in order to craft highly tailored
+search experiences. This advanced functionality can guide LLMs to prioritize
+certain information, especially when used with the chain reranker. Use cases
+can include recency bias for news searches, location bias for local business
+queries, and e-commerce bias for promotional content.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="/docs/search-and-retrieval/reranking">Rerank Search Results</a></li>
+<li><a href="https://docs.vectara.com/docs/search-and-retrieval/rerankers/user-defined-function-reranker" target="_blank" rel="noopener noreferrer">User Defined Function Reranker</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mockingbird-llm">Mockingbird LLM<a href="#mockingbird-llm" class="hash-link" aria-label="Direct link to Mockingbird LLM" title="Direct link to Mockingbird LLM">​</a></h2>
+<p><em>July 16, 2024</em></p>
+<p>Vectara releases Mockingbird, our Large Language Model optimized (LLM)
+designed for Retrieval Augmented Generation (RAG) scenarios. It offers
+enhanced accuracy and improved performance in summarizing large datasets,
+generating structured data, and providing multilingual support.</p>
+<p><strong>Why it matters:</strong> Mockingbird outperforms leading models in RAG quality,
+citation accuracy, and structured output precision. It&#x27;s particularly valuable
+for enterprises requiring accurate summaries of large data volumes, structured
+data extraction, and multilingual capabilities. Mockingbird supports critical
+languages including Arabic, French, Spanish, Portuguese, Italian, German,
+Chinese, Dutch, Korean, Japanese, and Russian, making it ideal for global
+applications.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://vectara.com/blog/mockingbird-a-rag-and-structured-output-focused-llm/" target="_blank" rel="noopener noreferrer">Mockingbird: A RAG and Structured Output Focused LLM</a></li>
+<li><a href="https://docs.vectara.com/docs/learn/mockingbird-llm" target="_blank" rel="noopener noreferrer">Mockingbird: Vectara&#x27;s LLM</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vectara-rest-api-v2">Vectara REST API v2<a href="#vectara-rest-api-v2" class="hash-link" aria-label="Direct link to Vectara REST API v2" title="Direct link to Vectara REST API v2">​</a></h2>
+<p><em>June 6, 2024</em></p>
+<p>The Vectara API v2 provides a more RESTful, intuitive structure with simpler
+authentication, new top-level objects, and better defaults for hybrid search
+and reranking, making it easier to develop applications with Vectara’s GenAI
+platform.</p>
+<p><strong>Why it matters:</strong> This update significantly improves the developer
+experience, making it easier to integrate Vectara into applications. The
+standardized error codes and improved defaults reduce development overhead
+and potential silent errors.</p>
+<p><strong>New API endpoint(s):</strong></p>
+<ul>
+<li><a href="https://docs.vectara.com/docs/rest-api" target="_blank" rel="noopener noreferrer">Vectara v2 REST APIs</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vectara-multilingual-reranker-v1-slingshot">Vectara Multilingual Reranker v1 (Slingshot)<a href="#vectara-multilingual-reranker-v1-slingshot" class="hash-link" aria-label="Direct link to Vectara Multilingual Reranker v1 (Slingshot)" title="Direct link to Vectara Multilingual Reranker v1 (Slingshot)">​</a></h2>
+<p><em>May 28, 2024</em></p>
+<p>The state-of-the-art Vectara Multilingual Reranker, also known as Slingshot,
+provides more accurate neural ranking than the initial Boomerang retrieval.
+By significantly improving the precision of retrieved search results,
+Slingshot enhances the performance of Retrieval Augmented Generation (RAG)
+pipelines. It excels in globally distributed, multilingual environments,
+reducing irrelevant responses and minimizing hallucinations in generative
+AI applications.</p>
+<p><strong>Why it matters:</strong> Slingshot significantly enhances the precision of retrieved
+results, crucial for reducing hallucinations and irrelevant responses in
+generative AI applications. While computationally more expensive, it offers
+improved text scoring across a wide range of languages (100+), making it
+suitable for diverse content as a powerful tool for enterprises.</p>
+<p><strong>Deprecated:</strong> The <code>reranker_id</code> and <code>rnk_272725719</code> have been deprecated.
+Use <code>reranker_name</code> and <code>Rerank_Multilingual_v1</code> instead.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://docs.vectara.com/docs/search-and-retrieval/rerankers/vectara-multi-lingual-reranker" target="_blank" rel="noopener noreferrer">Vectara Multilingual Reranker</a></li>
+<li><a href="https://vectara.com/blog/unlocking-the-state-of-the-art-reranker-introducing-the-vectara-multilingual-reranker_v1/" target="_blank" rel="noopener noreferrer">Unlocking the State-of-the-Art Reranker: Introducing the Vectara Multilingual Reranker_v1</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="semantic-conversation-history-search">Semantic Conversation History Search​<a href="#semantic-conversation-history-search" class="hash-link" aria-label="Direct link to Semantic Conversation History Search​" title="Direct link to Semantic Conversation History Search​">​</a></h2>
+<p><em>May 15, 2024</em></p>
+<p>Vectara now allows administrators to search across conversation logs for
+specific patterns or unresolved queries. This leverages semantic search
+capabilities to identify gaps in knowledge bases and pinpoint &quot;unknown
+unknowns&quot; in conversations where users may have asked unexpected or
+unresolved questions.</p>
+<p><strong>Why it matters:</strong> With this capability, enterprises can enhance their customer
+support by analyzing user interactions and improving response accuracy. They
+can identify unresolved or ambiguous user questions, even if the language is
+informal or the question does not fit specific patterns.</p>
+<p><strong>More information:</strong></p>
+<p><a href="https://vectara.com/blog/vectara-launches-2-powerful-new-generative-capabilities/" target="_blank" rel="noopener noreferrer">Semantic Conversation History Search</a></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generative-response-styling">Generative Response Styling<a href="#generative-response-styling" class="hash-link" aria-label="Direct link to Generative Response Styling" title="Direct link to Generative Response Styling">​</a></h2>
+<p><em>May 15, 2024</em></p>
+<p>Vectara now allows users to format citations in summaries using Markdown or
+HTML and including document and part level metadata directly in citation
+links. This feature is useful for enterprises that require formatted,
+context-rich summaries for integrating generative responses into web-based
+applications and ensuring citations are clear and appropriately formatted.</p>
+<p><strong>Why it matters:</strong> By allowing structured citations, Vectara simplifies the
+integration process for developers who need to embed references directly into
+user-facing applications without additional parsing logic. This improvement
+enhances usability for various platforms, including web-based content and
+internal systems that support HTML or Markdown.</p>
+<p><strong>More information:</strong></p>
+<ul>
+<li><a href="https://vectara.com/blog/vectara-launches-2-powerful-new-generative-capabilities/" target="_blank" rel="noopener noreferrer">Vectara Launches 2 Powerful New Generative Capabilities</a></li>
+<li><a href="/docs/search-and-retrieval/citations">Citation Format in Summary</a></li>
+</ul></div></div></div><div class="row"><div class="col col--12"><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vectara/vectara-docs/tree/master/www/docs/release-notes.mdx" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2026-03-18T20:50:33.000Z" itemprop="dateModified">Mar 18, 2026</time></b> by <b>Aamir</b></span></div></div></footer></div></div></article><div class="row"><div class="col col--12"><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#voice-ai-with-speechmatics-integration" class="table-of-contents__link toc-highlight">Voice AI with Speechmatics Integration</a></li><li><a href="#sub-agents-autonomous-specialized-agents-inside-your-agents" class="table-of-contents__link toc-highlight">Sub-agents: Autonomous, Specialized Agents Inside Your Agents</a></li><li><a href="#document-conversion-tool-for-agents" class="table-of-contents__link toc-highlight">Document Conversion Tool for Agents</a></li><li><a href="#web-search-tool-enhanced-with-domain-filtering" class="table-of-contents__link toc-highlight">Web Search Tool Enhanced with Domain filtering</a></li><li><a href="#lambda-tools-customize-python-functions-in-agents" class="table-of-contents__link toc-highlight">Lambda Tools: Customize Python Functions in Agents</a></li><li><a href="#vectara-agents-framework" class="table-of-contents__link toc-highlight">Vectara Agents Framework</a></li><li><a href="#fuzzy-metadata-search" class="table-of-contents__link toc-highlight">Fuzzy Metadata Search</a></li><li><a href="#vectara-postman-collection-faster-api-exploration-and-testing" class="table-of-contents__link toc-highlight">Vectara Postman Collection: Faster API Exploration and Testing</a></li><li><a href="#vectara-admin-center-centralized-control-for-on-premise-and-vpc-deployments" class="table-of-contents__link toc-highlight">Vectara Admin Center: Centralized Control for On-Premise and VPC Deployments</a></li><li><a href="#vectara-python-sdk-documentation" class="table-of-contents__link toc-highlight">Vectara Python SDK Documentation</a></li><li><a href="#open-rag-eval-consistency-adjusted-index-for-rag-system-evaluation" class="table-of-contents__link toc-highlight">Open RAG Eval: Consistency-Adjusted Index for RAG System Evaluation</a></li><li><a href="#vhc-enhanced-for-query-aware-hallucination-detection-and-correction" class="table-of-contents__link toc-highlight">VHC Enhanced for Query-Aware Hallucination Detection and Correction</a></li><li><a href="#hhem-23---additional-language-support-and-enhanced-architecture" class="table-of-contents__link toc-highlight">HHEM 2.3 - Additional Language Support and Enhanced Architecture</a></li><li><a href="#vectara-hallucination-corrector-vhc-api" class="table-of-contents__link toc-highlight">Vectara Hallucination Corrector (VHC) API</a></li><li><a href="#chat-completions-api" class="table-of-contents__link toc-highlight">Chat Completions API</a></li><li><a href="#evaluate-factual-consistency-api" class="table-of-contents__link toc-highlight">Evaluate Factual Consistency API</a></li><li><a href="#mockingbird-2-vectaras-advanced-llm-for-rag" class="table-of-contents__link toc-highlight">Mockingbird 2: Vectara&#39;s Advanced LLM for RAG</a></li><li><a href="#custom-table-summarization-with-prompt-templates" class="table-of-contents__link toc-highlight">Custom Table Summarization with Prompt Templates</a></li><li><a href="#expanded-encoder-management" class="table-of-contents__link toc-highlight">Expanded Encoder Management</a></li><li><a href="#vectara-kafka-connect-plugin-integration" class="table-of-contents__link toc-highlight">Vectara Kafka Connect Plugin Integration</a></li><li><a href="#integrate-external-large-language-models-llms" class="table-of-contents__link toc-highlight">Integrate External Large Language Models (LLMs)</a></li><li><a href="#document-summarization-api" class="table-of-contents__link toc-highlight">Document Summarization API</a></li><li><a href="#intelligent-query-rewriting" class="table-of-contents__link toc-highlight">Intelligent Query Rewriting</a></li><li><a href="#knee-reranking" class="table-of-contents__link toc-highlight">Knee Reranking</a></li><li><a href="#hhem-22---expanded-language-support" class="table-of-contents__link toc-highlight">HHEM 2.2 - Expanded Language Support</a></li><li><a href="#update-or-replace-document-metadata" class="table-of-contents__link toc-highlight">Update or Replace Document Metadata</a></li><li><a href="#api-v1-deprecated" class="table-of-contents__link toc-highlight">API v1 deprecated</a></li><li><a href="#querying-table-data" class="table-of-contents__link toc-highlight">Querying table data</a></li><li><a href="#query-observability" class="table-of-contents__link toc-highlight">Query Observability</a></li><li><a href="#new-integrations-section" class="table-of-contents__link toc-highlight">New Integrations Section</a></li><li><a href="#search-cutoffs-and-limits" class="table-of-contents__link toc-highlight">Search Cutoffs and Limits</a></li><li><a href="#chain-reranker" class="table-of-contents__link toc-highlight">Chain Reranker</a></li><li><a href="#document-and-document-partvector-count-api" class="table-of-contents__link toc-highlight">Document and Document Part/Vector Count API</a></li><li><a href="#ui-enhancement-custom-prompts-in-console" class="table-of-contents__link toc-highlight">UI Enhancement: Custom Prompts in Console</a></li><li><a href="#user-defined-function-reranking" class="table-of-contents__link toc-highlight">User Defined Function Reranking</a></li><li><a href="#mockingbird-llm" class="table-of-contents__link toc-highlight">Mockingbird LLM</a></li><li><a href="#vectara-rest-api-v2" class="table-of-contents__link toc-highlight">Vectara REST API v2</a></li><li><a href="#vectara-multilingual-reranker-v1-slingshot" class="table-of-contents__link toc-highlight">Vectara Multilingual Reranker v1 (Slingshot)</a></li><li><a href="#semantic-conversation-history-search" class="table-of-contents__link toc-highlight">Semantic Conversation History Search​</a></li><li><a href="#generative-response-styling" class="table-of-contents__link toc-highlight">Generative Response Styling</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">APIs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/indexing-apis/indexing">Indexing</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/search-apis/search">Search</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/admin-apis/admin">Admin</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Vectara, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

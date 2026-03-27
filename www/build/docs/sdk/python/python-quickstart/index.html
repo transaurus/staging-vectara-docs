@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-sdk/python/python-quickstart" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Vectara Python SDK Quick Start | Vectara Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.vectara.com/docs/sdk/python/python-quickstart"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Vectara Python SDK Quick Start | Vectara Docs"><meta data-rh="true" name="description" content="Get up and running with the Vectara Python SDK in minutes. This quick start"><meta data-rh="true" property="og:description" content="Get up and running with the Vectara Python SDK in minutes. This quick start"><link data-rh="true" rel="icon" href="/img/vectara_logo.svg"><link data-rh="true" rel="canonical" href="https://docs.vectara.com/docs/sdk/python/python-quickstart"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/sdk/python/python-quickstart" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/sdk/python/python-quickstart" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Vectara Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Vectara Docs Atom Feed">
+
+
+
+
+
+
+
+
+
+<script src="/analytics.js" async></script>
+<script src="/scripts/reodev.js" async></script><link rel="stylesheet" href="/assets/css/styles.50104ce9.css">
+<script src="/assets/js/runtime~main.5e1f3244.js" defer="defer"></script>
+<script src="/assets/js/main.09506697.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/vectara_wordmark.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/vectara_wordmark_light.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/">Docs</a><a class="navbar__item navbar__link" href="/docs/rest-api">API Reference</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">SDKs</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/sdk/vectara-python-sdk">Python</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Release Information</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/release-notes">Release Notes</a></li><li><a class="dropdown__link" href="/docs/changelog">Changelog</a></li></ul></div></div><div class="navbar__items navbar__items--right"><div class="searchBar navbarSearchContainer_Bca1"></div><a href="https://console.vectara.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Console</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/sdk/vectara-python-sdk">Python SDK</a><button aria-label="Collapse sidebar category &#x27;Python SDK&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/sdk/python/python-quickstart">Quick Start</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/python/corpus">Corpora</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/python/upload">Upload Files</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/python/documents">Indexing Documents</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/python/query">Queries</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/python/metadata">Metadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/python/chats">Chats</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/python/generation_presets">Generation Presets</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/python/rerankers">Rerankers</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/python/users">Users</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/python/api_keys">API Keys</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/python/python-error-handling">Error Handling</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col"><div class="docItemContainer_jfFK"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/sdk/vectara-python-sdk"><span itemprop="name">Python SDK</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Quick Start</span><meta itemprop="position" content="2"></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: 2.0</span><div class="theme-doc-markdown markdown"><header><h1>Vectara Python SDK Quick Start</h1></header><div class="row"><div class="col col--12 markdown"><p>Get up and running with the Vectara Python SDK in minutes. This quick start
+guides you through installing the SDK, authenticating with an API key, creating
+a corpus, uploading a document, and running a semantic query.</p>
+<p>Each step builds toward a functional setup for indexing and querying content,
+enabling you to leverage Vectara&#x27;s Retrieval Augmented Generation (RAG)
+capabilities for applications like enterprise search, chatbots, or knowledge
+bases.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
+<ol>
+<li>Install Python 3.7 or later.</li>
+<li>Get an API key from the <a href="https://console.vectara.com" target="_blank" rel="noopener noreferrer">Vectara Console</a>.</li>
+</ol>
+<p>API keys can have multiple types and roles from Personal (most
+administrative functions) to QueryService (read-only) to read and write
+(IndexService). For more information, see
+<a href="https://docs.vectara.com/docs/security/authentication/overview" target="_blank" rel="noopener noreferrer">Authentication Methods and Authorization Levels</a>.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-install-the-sdk">1. Install the SDK<a href="#1-install-the-sdk" class="hash-link" aria-label="Direct link to 1. Install the SDK" title="Direct link to 1. Install the SDK">​</a></h2>
+<div class="codePanel_roBT floatingLayout_JQFU" style="width:50%;max-width:50%" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">INSTALL THE SDK</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->bash syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="bash" selected="">bash</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy bash code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="bash code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>Install the Vectara Python SDK using pip to access its core functionality for
+interacting with Vectara&#x27;s API.</p>
+<p>This step prepares your Python environment
+(version 3.7 or higher recommended) for corpus management, document indexing,
+and querying.</p>
+<ul>
+<li><strong>Command</strong>: <code>pip install vectara</code></li>
+<li><strong>Purpose</strong>: Downloads and installs the SDK and its dependencies from PyPI.</li>
+<li>Run in a virtual environment to avoid dependency conflicts.</li>
+</ul>
+<p>Ensure pip is up-to-date (<code>pip install --upgrade pip</code>). After installation, import the <code>vectara</code> module to begin using the SDK.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-authenticate">2. Authenticate<a href="#2-authenticate" class="hash-link" aria-label="Direct link to 2. Authenticate" title="Direct link to 2. Authenticate">​</a></h2>
+<div class="codePanel_roBT floatingLayout_JQFU" style="width:50%;max-width:50%" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">AUTHENTICATE WITH API KEY</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->python syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="python" selected="">python</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy python code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="python code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>Authenticate with the Vectara API using an API key to securely access your
+account&#x27;s resources.</p>
+<p>The <code>Vectara</code> client initializes a connection to
+Vectara&#x27;s services, enabling subsequent operations like corpus creation and
+querying.</p>
+<ul>
+<li><code>api_key</code> (string, required): A unique API key from the Vectara Console, used
+for authentication.<br>
+<!-- -->Example: <code>zwt_abc123...</code>.<br>
+<!-- -->Keep this secret to prevent unauthorized access.</li>
+<li><strong>Purpose</strong>: Establishes a secure session with Vectara&#x27;s API, required for all SDK
+operations.</li>
+<li><strong>Constraints</strong>: Obtain the API key from the Vectara Console under your
+account settings.<br>
+<!-- -->Ensure the key has appropriate roles (<code>serving</code> for querying, <code>admin</code> for corpus creation).</li>
+</ul>
+<p>Store API keys in environment variables or secure vaults (<code>.env</code>
+files) to avoid hardcoding in production code.</p>
+<div class="codePanel_roBT floatingLayout_JQFU" style="width:50%;max-width:50%" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">AUTHENTICATE WITH OAUTH</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->python syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="python" selected="">python</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy python code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="python code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>Alternatively, authenticate using OAuth2:</p>
+<p>Obtain your OAuth credentials from the Vectara Console. This method is
+suitable for applications requiring token-based authentication.</p>
+<div class="spacer spacer--l"></div>
+<div class="spacer spacer--l"></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-create-a-corpus">3. Create a Corpus<a href="#3-create-a-corpus" class="hash-link" aria-label="Direct link to 3. Create a Corpus" title="Direct link to 3. Create a Corpus">​</a></h2>
+<div class="codePanel_roBT floatingLayout_JQFU" style="width:50%;max-width:50%" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">CREATE CORPUS</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->python syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="python" selected="">python</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy python code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="python code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>A corpus is a collection of documents that you can search and query. Think of
+it as a database for your text content. Each corpus can have its own
+configuration, metadata schema, and access controls.</p>
+<p>Creating a corpus requires a unique key and descriptive name. The corpus key
+acts as an identifier for all future operations, so choose something memorable
+and descriptive.</p>
+<p>The <code>corpora.create</code> endpoint (HTTP POST <code>/corpora</code>) sets up a new corpus with a
+unique identifier, forming the foundation for storing and querying content.
+For more details on request and response parameters, see the
+<a href="https://docs.vectara.com/docs/rest-api/create-corpus" target="_blank" rel="noopener noreferrer">Create Corpus REST API</a>.</p>
+<ul>
+<li><code>key</code> (string, required): A unique identifier for the corpus
+(<code>my-docs</code>).<br>
+<!-- -->Must be alphanumeric, underscores, or hyphens, with a maximum length of 100 characters.</li>
+<li><code>name</code> (string, required): A human-readable name (<code>My Documentation</code>).<br>
+<!-- -->Maximum length: 255 characters.<br>
+<!-- -->Helps identify the corpus in the Vectara Console.</li>
+<li><code>description</code> (string, optional): A brief description of the corpus&#x27;s
+purpose (<code>Demo corpus for quickstart</code>).<br>
+<!-- -->Maximum length: 1000 characters.</li>
+<li><code>request_timeout</code> (integer, optional): Timeout in seconds for the
+API request (10).</li>
+<li><code>request_timeout_millis</code> (integer, optional): Timeout in milliseconds,
+overriding <code>request_timeout</code> if set (10000).</li>
+<li><strong>Purpose</strong>: Initializes a corpus for storing documents, enabling search,
+chat, or RAG workflows.</li>
+<li><strong>Returns</strong>: A corpus object with <code>key</code>, <code>name</code>, and other metadata, confirming
+creation.</li>
+<li><strong>Constraints</strong>: The <code>key</code> must be unique within your account.<br>
+<!-- -->Invalid characters or duplicates result in an API error (HTTP 400).</li>
+</ul>
+<p>Use descriptive names for team collaboration. After creation, assign user or
+API key permissions to control access.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-upload-a-document">4. Upload a Document<a href="#4-upload-a-document" class="hash-link" aria-label="Direct link to 4. Upload a Document" title="Direct link to 4. Upload a Document">​</a></h2>
+<div class="codePanel_roBT floatingLayout_JQFU" style="width:50%;max-width:50%" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">UPLOAD DOCUMENT</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->python syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="python" selected="">python</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy python code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="python code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>Vectara supports two types of documents: <code>structured</code> and <code>core</code>. Upload a
+document to your corpus to make its content searchable. The <code>documents.create</code>
+endpoint (HTTP POST <code>/documents</code>) indexes a structured
+document, consisting of sections with titles and text, into the specified
+corpus.</p>
+<p>This step populates your corpus with content for querying. For more details on
+request and response parameters, see the <a href="https://docs.vectara.com/docs/rest-api/index" target="_blank" rel="noopener noreferrer">Index APIs</a>.</p>
+<div class="codePanel_roBT floatingLayout_JQFU" style="width:50%;max-width:50%" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">UPLOAD CORE DOCUMENT</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->python syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="python" selected="">python</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy python code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="python code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>To upload a core document:</p>
+<ul>
+<li><code>corpus_key</code> (string, required): The target corpus identifier (<code>my-docs</code>), matching the key from step 3.</li>
+<li><code>request</code> (StructuredDocument or CoreDocument, required): Defines the document structure.<!-- -->
+<ul>
+<li><code>id</code> (string, required): A unique document ID within the corpus (<code>welcome-doc</code>).
+Alphanumeric, underscores, or hyphens, maximum 100 characters.</li>
+<li><code>type</code> (string, required): Set to <code>&quot;structured&quot;</code> for section-based documents or <code>&quot;core&quot;</code> for part-based documents.</li>
+<li>For structured: <code>sections</code> (list[StructuredDocumentSection], required): List of document sections.<!-- -->
+<ul>
+<li><code>title</code> (string, optional): Section title (<code>Welcome</code>).<br>
+<!-- -->Maximum length: 255 characters.</li>
+<li><code>text</code> (string, required): Section content (<code>Welcome to Vectara! This is your first document.</code>).<br>
+<!-- -->Maximum length: varies by account limits.</li>
+<li><code>metadata</code> (dict, optional): Key-value pairs for filtering (<code>{&quot;category&quot;: &quot;intro&quot;}</code>).</li>
+</ul>
+</li>
+<li>For core: <code>document_parts</code> (list[CoreDocumentPart], required): List of document parts.<!-- -->
+<ul>
+<li><code>text</code> (string, required): Part content.</li>
+<li><code>metadata</code> (dict, optional): Key-value pairs.</li>
+</ul>
+</li>
+<li><code>metadata</code> (dict, optional): Document-level metadata (<code>{&quot;source&quot;: &quot;quickstart&quot;}</code>).</li>
+</ul>
+</li>
+<li><strong>Purpose</strong>: Indexes a document for semantic search, enabling queries to retrieve relevant
+content.</li>
+<li><strong>Returns</strong>: A response confirming the document was indexed, including its <code>id</code>.</li>
+<li><strong>Constraints</strong>: The <code>id</code> must be unique within the corpus. Exceeding size limits or
+invalid characters results in an API error (HTTP 400).</li>
+</ul>
+<p>Structured documents support section-based organization, ideal for manuals or
+reports. Core documents are simpler, with sequential parts. Use metadata to
+enable filtering in queries (by category). For larger datasets, consider
+uploading files (PDFs).</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-run-a-query">5. Run a Query<a href="#5-run-a-query" class="hash-link" aria-label="Direct link to 5. Run a Query" title="Direct link to 5. Run a Query">​</a></h2>
+<div class="codePanel_roBT floatingLayout_JQFU" style="width:50%;max-width:50%" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">QUERY</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->python syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="python" selected="">python</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy python code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="python code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>Run a semantic query against your corpus to retrieve relevant content using
+natural language.</p>
+<p>The <code>client.query</code> endpoint (HTTP POST <code>/query</code>) searches the corpus and
+returns results ordered by relevance. For more details on request and response
+parameters, see the <a href="https://docs.vectara.com/docs/rest-api/query-corpus" target="_blank" rel="noopener noreferrer">Query REST API</a>.</p>
+<ul>
+<li><code>query</code> (string, required): The natural language query (<code>&quot;What is Vectara?&quot;</code>).<br>
+<!-- -->Maximum length: 1000 characters.</li>
+<li><code>search</code> (SearchCorporaParameters, required): Configures the search parameters.<!-- -->
+<ul>
+<li><code>corpora</code> (list[dict], required): List of corpora to query.<!-- -->
+<ul>
+<li><code>corpus_key</code> (string, required): The corpus to search (<code>my-docs</code>).</li>
+<li><code>metadata_filter</code> (string, optional): Filters results by metadata (<code>doc.category = &#x27;intro&#x27;</code>).<br>
+<!-- -->Default: empty string.</li>
+<li><code>lexical_interpolation</code> (float, optional): Balances lexical and semantic search
+(0.0 to 1.0, default 0.005).</li>
+</ul>
+</li>
+<li><code>context_configuration</code> (ContextConfiguration, optional): Configures result context
+(<code>sentences_before=2</code>, <code>sentences_after=2</code>).</li>
+<li><code>reranker</code> (dict, optional): Applies a reranker for refined ordering<br>
+<!-- -->(<code>{&quot;type&quot;: &quot;customer_reranker&quot;, &quot;reranker_name&quot;: &quot;Rerank_Multilingual_v1&quot;}</code>).</li>
+</ul>
+</li>
+<li><code>generation</code> (GenerationParameters, optional): Configures response generation
+(<code>response_language=&quot;eng&quot;</code>).</li>
+<li><strong>Purpose</strong>: Retrieves relevant documents or generates answers based on the corpus content, using semantic understanding.</li>
+<li><strong>Returns</strong>: A response object with:<!-- -->
+<ul>
+<li><code>results</code> (list): Search results, each with <code>text</code>, <code>score</code> (float, 0.0 to 1.0), and metadata.</li>
+<li><code>answer</code> (string, optional): Generated answer if <code>generation</code> is configured.</li>
+</ul>
+</li>
+<li><strong>Constraints</strong>: The <code>corpus_key</code> must exist and contain indexed documents. Queries exceeding length limits result in an API error (HTTP 400).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="quick-start-validation-script">Quick start validation script<a href="#quick-start-validation-script" class="hash-link" aria-label="Direct link to Quick start validation script" title="Direct link to Quick start validation script">​</a></h2>
+<div class="codePanel_roBT stackedLayout_Jnlf" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">COMPLETE VALIDATION SCRIPT</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->python syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="python" selected="">python</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy python code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="python code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div><div class="collapseContainer_CnwV"><button type="button" class="collapseButton_J8a4" aria-expanded="true" aria-controls="code-content" aria-label="Collapse code to show fewer lines">Collapse ↑</button></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>This full validation script demonstrates all the quickstart concepts working
+together in a single, executable file. The script handles common edge cases
+and provides clear feedback at each step.</p>
+<ul>
+<li><strong>Environment Variables:</strong> The script securely retrieves the API key from
+environment variables (<code>VECTARA_API_KEY</code>) rather than hardcoding sensitive
+credentials.</li>
+<li><strong>Error handling:</strong> Uses <code>ApiError</code> for proper exception handling, catching
+specific error conditions like &quot;already exists&quot; scenarios that commonly
+occur during testing.</li>
+<li><strong>Corpus Propagation:</strong> Includes a small delay (<code>time.sleep(2)</code>) after corpus
+creation to ensure the corpus is fully available before attempting document
+upload.</li>
+<li><strong>Consistent Corpus Keys:</strong> Uses the standardized <code>my-docs</code> naming convention
+that is used throughout all documentation examples.</li>
+<li><strong>Single-Corpus Search:</strong> Demonstrates the simplified <code>client.corpora.search()</code>
+method for querying a specific corpus directly.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="run-the-validation-script">Run the validation script<a href="#run-the-validation-script" class="hash-link" aria-label="Direct link to Run the validation script" title="Direct link to Run the validation script">​</a></h3>
+<ol>
+<li>Set your API key: <code>export VECTARA_API_KEY=your_key_here</code>.</li>
+<li>Save the script as <code>validate_quickstart.py</code>.</li>
+<li>Run python3 <code>validate_quickstart.py</code>.</li>
+</ol>
+<p>The script outputs step-by-step progress and handles cases where resources
+already exist from previous runs.</p>
+<p>Expected Output</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#000000;--prism-background-color:#ffffff"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#000000;background-color:#ffffff"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#000000"><span class="token plain">1. Authenticating...</span><br></span><span class="token-line" style="color:#000000"><span class="token plain">2. Uploading document...</span><br></span><span class="token-line" style="color:#000000"><span class="token plain">✅ Uploaded: welcome-doc</span><br></span><span class="token-line" style="color:#000000"><span class="token plain">3. Running query...</span><br></span><span class="token-line" style="color:#000000"><span class="token plain">✅ Found 1 results</span><br></span><span class="token-line" style="color:#000000"><span class="token plain">Top result: Welcome to Vectara! This is your first document...</span><br></span><span class="token-line" style="color:#000000"><span class="token plain">🎉 Quickstart validation complete!</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>This quickstart uses a simple query for demonstration. Enhance queries with
+rerankers or metadata filters for precision (see Types of Rerankers). For
+real-time applications, consider streaming queries (<code>query_stream</code>).</p>
+<p>Your SDK and corpus are live, with a document indexed and a query executed.
+Next, explore advanced features like rerankers, chat sessions, or generation
+presets.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cleanup-delete-the-corpus">Cleanup: Delete the Corpus<a href="#cleanup-delete-the-corpus" class="hash-link" aria-label="Direct link to Cleanup: Delete the Corpus" title="Direct link to Cleanup: Delete the Corpus">​</a></h2>
+<div class="codePanel_roBT floatingLayout_JQFU" style="width:50%;max-width:50%" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">DELETE CORPUS</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->python syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="python" selected="">python</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy python code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="python code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>If you want to delete the corpus to clean up or retry the quickstart:</p>
+<p>This calls the delete corpus API to remove the corpus and all its documents. Note that this operation is irreversible.</p></div></div></div><div class="row"><div class="col col--12"><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vectara/vectara-docs/tree/master/www/docs/sdk/python/python-quickstart.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2026-03-18T20:50:33.000Z" itemprop="dateModified">Mar 18, 2026</time></b> by <b>Aamir</b></span></div></div></footer></div></div></article><div class="row"><div class="col col--12"><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/sdk/vectara-python-sdk"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Python SDK</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/sdk/python/corpus"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Corpora</div></a></nav></div></div></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">APIs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/indexing-apis/indexing">Indexing</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/search-apis/search">Search</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/admin-apis/admin">Admin</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Vectara, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

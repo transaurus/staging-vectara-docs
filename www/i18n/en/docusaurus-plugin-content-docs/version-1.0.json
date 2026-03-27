@@ -1,0 +1,374 @@
+{
+  "version.label": {
+    "message": "1.0",
+    "description": "The label for version 1.0"
+  },
+  "sidebar.someSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Learn": {
+    "message": "Learn",
+    "description": "The label for category Learn in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Data Privacy": {
+    "message": "Data Privacy",
+    "description": "The label for category Data Privacy in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Authentication and Authorization": {
+    "message": "Authentication and Authorization",
+    "description": "The label for category Authentication and Authorization in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Semantic Search": {
+    "message": "Semantic Search",
+    "description": "The label for category Semantic Search in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Retrieval Augmented Generation (RAG)": {
+    "message": "Retrieval Augmented Generation (RAG)",
+    "description": "The label for category Retrieval Augmented Generation (RAG) in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Metadata Search Filtering": {
+    "message": "Metadata Search Filtering",
+    "description": "The label for category Metadata Search Filtering in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Generative Prompts": {
+    "message": "Generative Prompts",
+    "description": "The label for category Generative Prompts in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Build Applications": {
+    "message": "Build Applications",
+    "description": "The label for category Build Applications in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Vectara Console": {
+    "message": "Vectara Console",
+    "description": "The label for category Vectara Console in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Manage Corpora": {
+    "message": "Manage Corpora",
+    "description": "The label for category Manage Corpora in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Manage Conversations": {
+    "message": "Manage Conversations",
+    "description": "The label for category Manage Conversations in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Manage API Authorization": {
+    "message": "Manage API Authorization",
+    "description": "The label for category Manage API Authorization in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.API Reference": {
+    "message": "API Reference",
+    "description": "The label for category API Reference in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Account Admin APIs": {
+    "message": "Account Admin APIs",
+    "description": "The label for category Account Admin APIs in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Access Admin APIs": {
+    "message": "Access Admin APIs",
+    "description": "The label for category Access Admin APIs in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.User Admin APIs": {
+    "message": "User Admin APIs",
+    "description": "The label for category User Admin APIs in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.API Key Admin APIs": {
+    "message": "API Key Admin APIs",
+    "description": "The label for category API Key Admin APIs in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Corpus Admin APIs": {
+    "message": "Corpus Admin APIs",
+    "description": "The label for category Corpus Admin APIs in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Create Corpus": {
+    "message": "Create Corpus",
+    "description": "The label for category Create Corpus in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Create Corpus REST Examples": {
+    "message": "Create Corpus REST Examples",
+    "description": "The label for category Create Corpus REST Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Delete Corpus": {
+    "message": "Delete Corpus",
+    "description": "The label for category Delete Corpus in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Delete Corpus REST Examples": {
+    "message": "Delete Corpus REST Examples",
+    "description": "The label for category Delete Corpus REST Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Reset Corpus": {
+    "message": "Reset Corpus",
+    "description": "The label for category Reset Corpus in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Reset Corpus REST Examples": {
+    "message": "Reset Corpus REST Examples",
+    "description": "The label for category Reset Corpus REST Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Document Admin APIs": {
+    "message": "Document Admin APIs",
+    "description": "The label for category Document Admin APIs in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Delete Document REST Examples": {
+    "message": "Delete Document REST Examples",
+    "description": "The label for category Delete Document REST Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Indexing APIs": {
+    "message": "Indexing APIs",
+    "description": "The label for category Indexing APIs in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Standard Indexing API": {
+    "message": "Standard Indexing API",
+    "description": "The label for category Standard Indexing API in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Standard Indexing REST Examples": {
+    "message": "Standard Indexing REST Examples",
+    "description": "The label for category Standard Indexing REST Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Low-level API": {
+    "message": "Low-level API",
+    "description": "The label for category Low-level API in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.File Upload API": {
+    "message": "File Upload API",
+    "description": "The label for category File Upload API in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.File Upload REST Examples": {
+    "message": "File Upload REST Examples",
+    "description": "The label for category File Upload REST Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Query APIs": {
+    "message": "Query APIs",
+    "description": "The label for category Query APIs in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Standard Query API": {
+    "message": "Standard Query API",
+    "description": "The label for category Standard Query API in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Standard Query REST Examples": {
+    "message": "Standard Query REST Examples",
+    "description": "The label for category Standard Query REST Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Interpreting Responses": {
+    "message": "Interpreting Responses",
+    "description": "The label for category Interpreting Responses in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Chat APIs": {
+    "message": "Chat APIs",
+    "description": "The label for category Chat APIs in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.API Authentication Examples": {
+    "message": "API Authentication Examples",
+    "description": "The label for category API Authentication Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.OAuth 2.0 Client Credentials Grant Examples": {
+    "message": "OAuth 2.0 Client Credentials Grant Examples",
+    "description": "The label for category OAuth 2.0 Client Credentials Grant Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.API Key REST Examples": {
+    "message": "API Key REST Examples",
+    "description": "The label for category API Key REST Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.doc.The Vectara Platform": {
+    "message": "The Vectara Platform",
+    "description": "The label for the doc item The Vectara Platform in sidebar someSidebar, linking to the doc introduction"
+  },
+  "sidebar.someSidebar.doc.Use Case Exploration": {
+    "message": "Use Case Exploration",
+    "description": "The label for the doc item Use Case Exploration in sidebar someSidebar, linking to the doc use-case-exploration"
+  },
+  "sidebar.someSidebar.doc.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for the doc item Quick Start in sidebar someSidebar, linking to the doc quickstart"
+  },
+  "sidebar.someSidebar.doc.API Recipes": {
+    "message": "API Recipes",
+    "description": "The label for the doc item API Recipes in sidebar someSidebar, linking to the doc api-recipes"
+  },
+  "sidebar.someSidebar.doc.Sample Demos and Applications": {
+    "message": "Sample Demos and Applications",
+    "description": "The label for the doc item Sample Demos and Applications in sidebar someSidebar, linking to the doc sample-vectara-apps"
+  },
+  "sidebar.someSidebar.doc.Select the Ideal Indexing API": {
+    "message": "Select the Ideal Indexing API",
+    "description": "The label for the doc item Select the Ideal Indexing API in sidebar someSidebar, linking to the doc learn/select-ideal-indexing-api"
+  },
+  "sidebar.someSidebar.doc.Enable Exact Keyword Text Matching": {
+    "message": "Enable Exact Keyword Text Matching",
+    "description": "The label for the doc item Enable Exact Keyword Text Matching in sidebar someSidebar, linking to the doc learn/enable-keyword-text-matching"
+  },
+  "sidebar.someSidebar.doc.Blend Neural Search and Keyword Search": {
+    "message": "Blend Neural Search and Keyword Search",
+    "description": "The label for the doc item Blend Neural Search and Keyword Search in sidebar someSidebar, linking to the doc learn/hybrid-search"
+  },
+  "sidebar.someSidebar.doc.Data Ingestion": {
+    "message": "Data Ingestion",
+    "description": "The label for the doc item Data Ingestion in sidebar someSidebar, linking to the doc learn/data-ingestion"
+  },
+  "sidebar.someSidebar.doc.Document Data Structuring": {
+    "message": "Document Data Structuring",
+    "description": "The label for the doc item Document Data Structuring in sidebar someSidebar, linking to the doc learn/document-data-structuring"
+  },
+  "sidebar.someSidebar.doc.Vectara Console Overview": {
+    "message": "Vectara Console Overview",
+    "description": "The label for the doc item Vectara Console Overview in sidebar someSidebar, linking to the doc console-ui/vectara-console-overview"
+  },
+  "sidebar.someSidebar.doc.Manage Documents": {
+    "message": "Manage Documents",
+    "description": "The label for the doc item Manage Documents in sidebar someSidebar, linking to the doc console-ui/manage-documents"
+  },
+  "sidebar.someSidebar.doc.Manage Users": {
+    "message": "Manage Users",
+    "description": "The label for the doc item Manage Users in sidebar someSidebar, linking to the doc console-ui/manage-user"
+  },
+  "sidebar.someSidebar.doc.Manage Payments": {
+    "message": "Manage Payments",
+    "description": "The label for the doc item Manage Payments in sidebar someSidebar, linking to the doc console-ui/update-credit-card"
+  },
+  "sidebar.restOAS.category.API Playground": {
+    "message": "API Playground",
+    "description": "The label for category API Playground in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.API Playground.link.generated-index.title": {
+    "message": "Vectara API",
+    "description": "The generated-index page title for category API Playground in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.API Playground.link.generated-index.description": {
+    "message": "Play around with Vectara's REST APIs",
+    "description": "The generated-index page description for category API Playground in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.AdminService": {
+    "message": "AdminService",
+    "description": "The label for category AdminService in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.IndexService": {
+    "message": "IndexService",
+    "description": "The label for category IndexService in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.QueryService": {
+    "message": "QueryService",
+    "description": "The label for category QueryService in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.DocumentService": {
+    "message": "DocumentService",
+    "description": "The label for category DocumentService in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.ChatService": {
+    "message": "ChatService",
+    "description": "The label for category ChatService in sidebar restOAS"
+  },
+  "sidebar.restOAS.doc.ComputeAccountSize": {
+    "message": "ComputeAccountSize",
+    "description": "The label for the doc item ComputeAccountSize in sidebar restOAS, linking to the doc rest-api/compute-account-size"
+  },
+  "sidebar.restOAS.doc.ComputeCorpusSize": {
+    "message": "ComputeCorpusSize",
+    "description": "The label for the doc item ComputeCorpusSize in sidebar restOAS, linking to the doc rest-api/compute-corpus-size"
+  },
+  "sidebar.restOAS.doc.CreateApiKey": {
+    "message": "CreateApiKey",
+    "description": "The label for the doc item CreateApiKey in sidebar restOAS, linking to the doc rest-api/create-api-key"
+  },
+  "sidebar.restOAS.doc.CreateCorpus": {
+    "message": "CreateCorpus",
+    "description": "The label for the doc item CreateCorpus in sidebar restOAS, linking to the doc rest-api/create-corpus"
+  },
+  "sidebar.restOAS.doc.DeleteApiKey": {
+    "message": "DeleteApiKey",
+    "description": "The label for the doc item DeleteApiKey in sidebar restOAS, linking to the doc rest-api/delete-api-key"
+  },
+  "sidebar.restOAS.doc.DeleteCorpus": {
+    "message": "DeleteCorpus",
+    "description": "The label for the doc item DeleteCorpus in sidebar restOAS, linking to the doc rest-api/delete-corpus"
+  },
+  "sidebar.restOAS.doc.EnableApiKey": {
+    "message": "EnableApiKey",
+    "description": "The label for the doc item EnableApiKey in sidebar restOAS, linking to the doc rest-api/enable-api-key"
+  },
+  "sidebar.restOAS.doc.GetUsageMetrics": {
+    "message": "GetUsageMetrics",
+    "description": "The label for the doc item GetUsageMetrics in sidebar restOAS, linking to the doc rest-api/get-usage-metrics"
+  },
+  "sidebar.restOAS.doc.ListApiKeys": {
+    "message": "ListApiKeys",
+    "description": "The label for the doc item ListApiKeys in sidebar restOAS, linking to the doc rest-api/list-api-keys"
+  },
+  "sidebar.restOAS.doc.ListCorpora": {
+    "message": "ListCorpora",
+    "description": "The label for the doc item ListCorpora in sidebar restOAS, linking to the doc rest-api/list-corpora"
+  },
+  "sidebar.restOAS.doc.ListJobs": {
+    "message": "ListJobs",
+    "description": "The label for the doc item ListJobs in sidebar restOAS, linking to the doc rest-api/list-jobs"
+  },
+  "sidebar.restOAS.doc.ListUsers": {
+    "message": "ListUsers",
+    "description": "The label for the doc item ListUsers in sidebar restOAS, linking to the doc rest-api/list-users"
+  },
+  "sidebar.restOAS.doc.ManageUser": {
+    "message": "ManageUser",
+    "description": "The label for the doc item ManageUser in sidebar restOAS, linking to the doc rest-api/manage-user"
+  },
+  "sidebar.restOAS.doc.ReadCorpus": {
+    "message": "ReadCorpus",
+    "description": "The label for the doc item ReadCorpus in sidebar restOAS, linking to the doc rest-api/read-corpus"
+  },
+  "sidebar.restOAS.doc.ReplaceCorpusFilterAttrs": {
+    "message": "ReplaceCorpusFilterAttrs",
+    "description": "The label for the doc item ReplaceCorpusFilterAttrs in sidebar restOAS, linking to the doc rest-api/replace-corpus-filter-attrs"
+  },
+  "sidebar.restOAS.doc.ResetCorpus": {
+    "message": "ResetCorpus",
+    "description": "The label for the doc item ResetCorpus in sidebar restOAS, linking to the doc rest-api/reset-corpus"
+  },
+  "sidebar.restOAS.doc.UpdateCorpusEnablement": {
+    "message": "UpdateCorpusEnablement",
+    "description": "The label for the doc item UpdateCorpusEnablement in sidebar restOAS, linking to the doc rest-api/update-corpus-enablement"
+  },
+  "sidebar.restOAS.doc.Delete": {
+    "message": "Delete",
+    "description": "The label for the doc item Delete in sidebar restOAS, linking to the doc rest-api/delete"
+  },
+  "sidebar.restOAS.doc.Index": {
+    "message": "Index",
+    "description": "The label for the doc item Index in sidebar restOAS, linking to the doc rest-api/index"
+  },
+  "sidebar.restOAS.doc.CoreIndex": {
+    "message": "CoreIndex",
+    "description": "The label for the doc item CoreIndex in sidebar restOAS, linking to the doc rest-api/core-index"
+  },
+  "sidebar.restOAS.doc.FileUpload": {
+    "message": "FileUpload",
+    "description": "The label for the doc item FileUpload in sidebar restOAS, linking to the doc rest-api/file-upload"
+  },
+  "sidebar.restOAS.doc.Query": {
+    "message": "Query",
+    "description": "The label for the doc item Query in sidebar restOAS, linking to the doc rest-api/query"
+  },
+  "sidebar.restOAS.doc.StreamQuery": {
+    "message": "StreamQuery",
+    "description": "The label for the doc item StreamQuery in sidebar restOAS, linking to the doc rest-api/stream-query"
+  },
+  "sidebar.restOAS.doc.ListDocuments": {
+    "message": "ListDocuments",
+    "description": "The label for the doc item ListDocuments in sidebar restOAS, linking to the doc rest-api/list-documents"
+  },
+  "sidebar.restOAS.doc.DeleteConversations": {
+    "message": "DeleteConversations",
+    "description": "The label for the doc item DeleteConversations in sidebar restOAS, linking to the doc rest-api/delete-conversations"
+  },
+  "sidebar.restOAS.doc.DeleteTurns": {
+    "message": "DeleteTurns",
+    "description": "The label for the doc item DeleteTurns in sidebar restOAS, linking to the doc rest-api/delete-turns"
+  },
+  "sidebar.restOAS.doc.DisableTurns": {
+    "message": "DisableTurns",
+    "description": "The label for the doc item DisableTurns in sidebar restOAS, linking to the doc rest-api/disable-turns"
+  },
+  "sidebar.restOAS.doc.ListConversations": {
+    "message": "ListConversations",
+    "description": "The label for the doc item ListConversations in sidebar restOAS, linking to the doc rest-api/list-conversations"
+  },
+  "sidebar.restOAS.doc.ReadConversations": {
+    "message": "ReadConversations",
+    "description": "The label for the doc item ReadConversations in sidebar restOAS, linking to the doc rest-api/read-conversations"
+  }
+}

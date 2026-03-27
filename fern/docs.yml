@@ -1,0 +1,15 @@
+instances:
+  - url: https://vectara.docs.buildwithfern.com
+title: Vectara | Documentation
+default-language: python
+navigation:
+  - page: Introduction
+    path: ./pages/introduction.mdx
+  - api: API Reference
+    snippets: 
+      python: vectara
+      typescript: vectara
+logo: 
+  light: ./assets/logo-light.svg 
+  dark: ./assets/logo-dark.svg
+favicon: ./assets/favicon.jpeg

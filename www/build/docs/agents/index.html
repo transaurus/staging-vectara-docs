@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-agents/agents" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Agent | Vectara Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.vectara.com/docs/agents/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Agent | Vectara Docs"><meta data-rh="true" name="description" content="Agents are autonomous systems that understand natural language and use tools"><meta data-rh="true" property="og:description" content="Agents are autonomous systems that understand natural language and use tools"><link data-rh="true" rel="icon" href="/img/vectara_logo.svg"><link data-rh="true" rel="canonical" href="https://docs.vectara.com/docs/agents/"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/agents/" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/agents/" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Vectara Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Vectara Docs Atom Feed">
+
+
+
+
+
+
+
+
+
+<script src="/analytics.js" async></script>
+<script src="/scripts/reodev.js" async></script><link rel="stylesheet" href="/assets/css/styles.50104ce9.css">
+<script src="/assets/js/runtime~main.5e1f3244.js" defer="defer"></script>
+<script src="/assets/js/main.09506697.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/vectara_wordmark.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/vectara_wordmark_light.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/">Docs</a><a class="navbar__item navbar__link" href="/docs/rest-api">API Reference</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">SDKs</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/sdk/vectara-python-sdk">Python</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Release Information</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/release-notes">Release Notes</a></li><li><a class="dropdown__link" href="/docs/changelog">Changelog</a></li></ul></div></div><div class="navbar__items navbar__items--right"><div class="searchBar navbarSearchContainer_Bca1"></div><a href="https://console.vectara.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Console</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_xLCN"><div class="docItemContainer_jfFK"><article><span class="theme-doc-version-badge badge badge--secondary">Version: 2.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Agent</h1></header><div class="row"><div class="col col--12 markdown"><p>Agents are autonomous systems that understand natural language and use tools
+and reasoning to accomplish tasks. To do this, they must make decisions:</p>
+<ul>
+<li>Interpreting user input</li>
+<li>Calling tools, and with what arguments</li>
+<li>Managing conversation state</li>
+</ul>
+<p>Internally, they use an LLM-driven orchestration pipeline to make these
+decisions.</p>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="llm-configuration">LLM configuration<a href="#llm-configuration" class="hash-link" aria-label="Direct link to LLM configuration" title="Direct link to LLM configuration">​</a></h2>
+<p>Agents use LLMs for reasoning and response generation. You can configure the
+following:</p>
+<ul>
+<li><strong>Model</strong>: Choose from available models like GPT-4o.</li>
+<li><strong>Parameters</strong>: Adjust temperature, max tokens, and other model-specific settings.</li>
+<li><strong>Cost optimization</strong>: Balance performance with token usage.</li>
+<li><strong>Retry configuration</strong>: Configure automatic retry behavior for transient failures.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="using-retries-to-improve-user-experience">Using retries to improve user experience<a href="#using-retries-to-improve-user-experience" class="hash-link" aria-label="Direct link to Using retries to improve user experience" title="Direct link to Using retries to improve user experience">​</a></h2>
+<p>When agents interact with LLMs, transient failures like network interruptions
+can disrupt communication between the agent and the LLM. You can configure
+your agent to resume disrupted communication to ensure a smooth user
+experience.</p>
+<ul>
+<li><strong>max_retries:</strong> After an error, the agent will retry its request to the LLM this many
+times.</li>
+<li><strong>initial_backoff_ms:</strong> This is how many milliseconds the agent will wait before
+retrying, to give the cause of the error time to resolve.</li>
+<li><strong>backoff_factor:</strong> Every time the agent retries, it can multiply the last retry
+delay by this number, increasing the wait between retries. This is like giving a
+toddler a longer and longer timeout if it continues to misbehave.</li>
+<li><strong>max_backoff_ms:</strong> The maximum time you want the agent to wait between retries,
+so the backoff_factor doesn&#x27;t create an unreasonably long delay for your users.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="example-research-assistant-with-web-search">Example: Research assistant with web search<a href="#example-research-assistant-with-web-search" class="hash-link" aria-label="Direct link to Example: Research assistant with web search" title="Direct link to Example: Research assistant with web search">​</a></h3>
+<p>Here&#x27;s how to create a research assistant agent that can search the web for
+current information. This agent completes the following tasks:</p>
+<ul>
+<li>Search the web when users ask questions requiring current information</li>
+<li>Limit search results to 20 for comprehensive responses</li>
+<li>Use a lower temperature (0.3) for more consistent, factual responses</li>
+<li>Follow instructions to cite sources and admit uncertainty when appropriate</li>
+<li>Configure retry logic to handle transient API failures gracefully</li>
+</ul>
+<p>This example requires no corpus setup, making it perfect for immediate testing.</p>
+<div class="codePanel_roBT stackedLayout_Jnlf" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">CREATE A RESEARCH ASSISTANT AGENT</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->bash syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="bash" selected="">bash</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy bash code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="bash code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span><span class="marker_N4am" data-tooltip="POST request to create a new agent">?</span></div><div class="collapseContainer_CnwV"><button type="button" class="collapseButton_J8a4" aria-expanded="true" aria-controls="code-content" aria-label="Collapse code to show fewer lines">Collapse ↑</button></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>To chat with your agent, read on about <a href="/docs/agents/sessions">Sessions</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="artifacts">Artifacts<a href="#artifacts" class="hash-link" aria-label="Direct link to Artifacts" title="Direct link to Artifacts">​</a></h2>
+<p>Artifacts are files stored in an agent session&#x27;s workspace that provide a
+persistent, session-scoped storage mechanism. They enable agents and users to
+share files throughout a conversation without bloating the agent’s context
+with content from large files.</p>
+<p>Before artifacts, file uploads were handled inline within session events.
+Artifacts solve these problems by separating file storage from file
+references. When you upload a file, Vectara stores it in the session workspace
+and returns a lightweight ArtifactReference containing only metadata. Agents
+use these references to access files without including the full content in
+every request.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-artifacts-work">How artifacts work<a href="#how-artifacts-work" class="hash-link" aria-label="Direct link to How artifacts work" title="Direct link to How artifacts work">​</a></h2>
+<p>Artifacts are created either in user uploads or tool generation, where agent
+tools can create new artifacts as outputs. For example, converting a document
+to markdown.</p>
+<p>Each artifact receives a unique identifier following the pattern art_[a-z0-9_-]+.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-agents-use-artifacts">How agents use artifacts<a href="#how-agents-use-artifacts" class="hash-link" aria-label="Direct link to How agents use artifacts" title="Direct link to How agents use artifacts">​</a></h3>
+<p>After files are uploaded as artifacts, the agent can:</p>
+<ul>
+<li>Use document conversion tools to extract content from PDFs, Word documents,
+or PowerPoint files.</li>
+<li>Reference artifacts in analysis or question-answering workflows.</li>
+<li>Pass artifacts to indexing tools to add content to corpora.</li>
+<li>Create new artifacts as outputs of tool operations.</li>
+</ul>
+<p>Artifacts remain available throughout the session lifecycle, enabling multi-step
+workflows without re-uploading files.</p></div></div></div><div class="row"><div class="col col--12"><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vectara/vectara-docs/tree/master/www/docs/agents/agents.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2026-03-18T20:50:33.000Z" itemprop="dateModified">Mar 18, 2026</time></b> by <b>Aamir</b></span></div></div></footer></div></div></article><div class="row"><div class="col col--12"><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#llm-configuration" class="table-of-contents__link toc-highlight">LLM configuration</a></li><li><a href="#using-retries-to-improve-user-experience" class="table-of-contents__link toc-highlight">Using retries to improve user experience</a><ul><li><a href="#example-research-assistant-with-web-search" class="table-of-contents__link toc-highlight">Example: Research assistant with web search</a></li></ul></li><li><a href="#artifacts" class="table-of-contents__link toc-highlight">Artifacts</a></li><li><a href="#how-artifacts-work" class="table-of-contents__link toc-highlight">How artifacts work</a><ul><li><a href="#how-agents-use-artifacts" class="table-of-contents__link toc-highlight">How agents use artifacts</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">APIs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/indexing-apis/indexing">Indexing</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/search-apis/search">Search</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/admin-apis/admin">Admin</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Vectara, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

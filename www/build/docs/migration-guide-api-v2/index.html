@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-migration-guide-api-v2" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">REST API 1.0 to 2.0 Migration | Vectara Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.vectara.com/docs/migration-guide-api-v2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="REST API 1.0 to 2.0 Migration | Vectara Docs"><meta data-rh="true" name="description" content="Key Dates"><meta data-rh="true" property="og:description" content="Key Dates"><link data-rh="true" rel="icon" href="/img/vectara_logo.svg"><link data-rh="true" rel="canonical" href="https://docs.vectara.com/docs/migration-guide-api-v2"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/migration-guide-api-v2" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/migration-guide-api-v2" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Vectara Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Vectara Docs Atom Feed">
+
+
+
+
+
+
+
+
+
+<script src="/analytics.js" async></script>
+<script src="/scripts/reodev.js" async></script><link rel="stylesheet" href="/assets/css/styles.50104ce9.css">
+<script src="/assets/js/runtime~main.5e1f3244.js" defer="defer"></script>
+<script src="/assets/js/main.09506697.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/vectara_wordmark.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/vectara_wordmark_light.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/">Docs</a><a class="navbar__item navbar__link" href="/docs/rest-api">API Reference</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">SDKs</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/sdk/vectara-python-sdk">Python</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Release Information</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/release-notes">Release Notes</a></li><li><a class="dropdown__link" href="/docs/changelog">Changelog</a></li></ul></div></div><div class="navbar__items navbar__items--right"><div class="searchBar navbarSearchContainer_Bca1"></div><a href="https://console.vectara.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Console</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_xLCN"><div class="docItemContainer_jfFK"><article><span class="theme-doc-version-badge badge badge--secondary">Version: 2.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>REST API 1.0 to 2.0 Migration</h1></header><div class="row"><div class="col col--12 markdown"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-dates">Key Dates<a href="#key-dates" class="hash-link" aria-label="Direct link to Key Dates" title="Direct link to Key Dates">​</a></h2>
+<ul>
+<li><strong>December 16, 2024</strong>: API v1 deprecation announced.</li>
+<li><strong>August 16, 2025</strong>: API v1 will be fully retired.</li>
+</ul>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Deprecation Notice</div><div class="admonitionContent_BuS1"><p>API v1 has been deprecated and will be fully retired on <strong>August 16, 2025</strong>.
+Please migrate to API v2 as soon as possible.</p></div></div>
+<p>Migrating to a new API version can be challenging, especially when ensuring
+that your existing applications continue to function properly. This guide
+helps you migrate from the Vectara v1 REST API to v2, minimizing
+disruption and enabling you to take full advantage of API v2 capabilities.</p>
+<p>This new version of our REST APIs uses the standard HTTP verbs POST, GET,
+PATCH, and DELETE for CRUD operations. The URL structure is also much more
+object-oriented to the objects that exist in Vectara.</p>
+<p>To migrate from 1.0 to 2.0, you will need to consider several important
+changes, including updates to the base URL, authentication, specific
+endpoints, and requests.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>These changes do not affect gRPC and are specific to the REST 2.0 endpoints.</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="base-url-changes">Base URL changes<a href="#base-url-changes" class="hash-link" aria-label="Direct link to Base URL changes" title="Direct link to Base URL changes">​</a></h2>
+<ul>
+<li>REST API v1: <code>https://api.vectara.io/v1</code></li>
+<li>REST API v2: <code>https://api.vectara.io/v2</code></li>
+</ul>
+<p><strong>Action item:</strong> Update all API requests to use the new base URL for v2.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="authentication-changes">Authentication changes<a href="#authentication-changes" class="hash-link" aria-label="Direct link to Authentication changes" title="Direct link to Authentication changes">​</a></h2>
+<ul>
+<li>API v1 requires the Customer ID header <code>customer_id</code> for all endpoints</li>
+<li>API v2 <strong>only</strong> requires the Customer ID header for password authentication
+endpoints.</li>
+</ul>
+<p><strong>Action item:</strong> Remove the <code>customer_id</code> header from your API requests, unless
+using password authentication.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="percent-encoding-for-special-characters">Percent encoding for special characters<a href="#percent-encoding-for-special-characters" class="hash-link" aria-label="Direct link to Percent encoding for special characters" title="Direct link to Percent encoding for special characters">​</a></h2>
+<p>In v1, IDs for the customer account and corpus were in the body of the
+request. In Vectara API v2, IDs for resources such as documents are now
+included as part of the URL path, following RESTful design principles. This
+change affects how you need to handle IDs that contain special characters.</p>
+<p>If a username or document contains characters that are not valid in a URL,
+you must <strong>percent-encode</strong> those characters when making requests to the API.
+Percent encoding is a mechanism for encoding special characters in a URL. It
+replaces non-alphanumeric characters with a &quot;<code>%</code>&quot; followed by two hexadecimal
+digits representing the ASCII code of the character.</p>
+<p>For example, if a document ID contains a slash (&quot;/&quot;), you would replace it
+with &quot;<code>%2F</code>&quot; in the URL path:</p>
+<p><code>/v2/corpora/my-corpus/documents/doc%2F123</code></p>
+<p>To learn more about percent encoding and the characters that need to be
+encoded, refer to the following resources: <a href="https://developer.mozilla.org/en-US/docs/Glossary/Percent-encoding" target="_blank" rel="noopener noreferrer">Mozilla MDN Web Docs: Percent Encoding</a> and
+<a href="https://url.spec.whatwg.org/#syntax-url-path-segment" target="_blank" rel="noopener noreferrer">URL Standard: URL Path Segment Syntax</a>.</p>
+<p><strong>Action items:</strong></p>
+<p>Use percent-encoding for special characters in IDs when making requests. This
+ensures that your requests are properly formatted and handled by the REST 2.0
+API.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="corpus-key-replaces-corpus-id">Corpus Key replaces Corpus ID<a href="#corpus-key-replaces-corpus-id" class="hash-link" aria-label="Direct link to Corpus Key replaces Corpus ID" title="Direct link to Corpus Key replaces Corpus ID">​</a></h2>
+<p>In v1, each corpus had a unique <code>corpus_id</code> assigned at corpus creation. Vectara
+REST API 2.0 introduces the <code>corpus_key</code> which is a user-defined, unique
+identifier for each corpus. As part of the 1.0 to 2.0 migration, all existing
+corpus IDs have been converted with an appended ID to create the <code>corpus_key</code>.
+For example, you had a 1.0 corpus named &quot;employee handbook&quot; with an <code>corpus_id</code>
+of <code>10</code>. In 2.0, this <code>corpus_key</code> value is <code>employee_handbook_10</code>:</p>
+<p><code>/v2/corpora/Employee_Handbook_10</code> - API 2.0 endpoint with corpus_key</p>
+<p>Going forward, when you create a new corpus, you can specify a custom
+<code>corpus_key</code>. In v2, the new user-defined <code>corpus_key</code> is the main identifier
+for each corpus. The <code>corpus_id</code> still remains for all corpora and new corpora
+also get a unique <code>corpus_id</code>.</p>
+<p>The <code>corpus_id</code> from v1 is only retained for internal purposes
+for users migrating to v2. In v2, the new user-defined <code>corpus_key</code> is the
+main identifier for each corpus.</p>
+<p><strong>Action items:</strong></p>
+<ul>
+<li><a href="/docs/rest-api/list-corpora">Retrieve a list</a> of corpora in the account.</li>
+<li>Update any code that references the v1 <code>corpus_id</code> to use the v2 <code>corpus_key</code> format.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="corpus-object-changes">Corpus object changes<a href="#corpus-object-changes" class="hash-link" aria-label="Direct link to Corpus object changes" title="Direct link to Corpus object changes">​</a></h3>
+<p>In addition to the new Corpus Key:</p>
+<ul>
+<li>API v1 uses the Swap Query Encoder (<code>swapQenc</code>) and Swap Index Encoder
+(<code>swapIenc</code>) fields.</li>
+<li>API v2 replaces <code>swapQenc</code> with <code>queries_are_answers</code> and <code>swapIenc</code> with
+<code>documents_are_questions</code>.</li>
+<li>API v2 removes the <code>textless</code> and <code>encrypted</code> fields.</li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Replace <code>swapQenc</code> with <code>queries_are_answers</code> in your corpus creation
+requests.</li>
+<li>Replace <code>swapIenc</code> with <code>documents_are_questions</code> in your corpus creation
+requests.</li>
+<li>Remove the <code>textless</code> and <code>encrypted</code> fields from your requests.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="metadata-type-conversions">Metadata type conversions<a href="#metadata-type-conversions" class="hash-link" aria-label="Direct link to Metadata type conversions" title="Direct link to Metadata type conversions">​</a></h2>
+<p>Metadata remains unconverted during the document upload process, even when
+using API v2. This means that numbers return as numbers, booleans return as
+booleans, and JSON objects retain their native structure. This behavior
+differs from API v1, where metadata such as <code>section</code> or <code>publicationyear</code> might
+have been returned as strings. For more details, see <a href="/docs/search-and-retrieval/working-with-results/metadata">Reading Metadata</a>.</p>
+<p><strong>Action item:</strong></p>
+<p>Ensure client applications handle these types correctly for smooth integration.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="terminology-parameter-and-property-name-changes">Terminology, parameter, and property name changes<a href="#terminology-parameter-and-property-name-changes" class="hash-link" aria-label="Direct link to Terminology, parameter, and property name changes" title="Direct link to Terminology, parameter, and property name changes">​</a></h2>
+<ul>
+<li>API v1 uses <code>num_results</code> for specifying the maximum number of results</li>
+<li>API v2 uses <code>limit</code> for this purpose</li>
+<li>API v1 uses <code>start</code> to indicate the offset in query requests</li>
+<li>API v2 uses <code>offset</code> for this purpose</li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Replace <code>num_results</code> with <code>limit</code> in your list endpoint requests</li>
+<li>Replace <code>start</code> with <code>offset</code> in your query requests</li>
+</ul>
+<p>API v2 introduces significant changes to our API endpoints. Review these
+changes carefully and the action items to use the V2 endpoints.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="indexing-endpoint-changes">Indexing endpoint changes<a href="#indexing-endpoint-changes" class="hash-link" aria-label="Direct link to Indexing endpoint changes" title="Direct link to Indexing endpoint changes">​</a></h2>
+<ul>
+<li>API v1 has separate endpoints for indexing both structured and core
+documents (<code>/v1/index</code> and <code>/v1/core/index</code>).</li>
+<li>API v2 combines both types of document indexing into a single
+endpoint (<code>/v2/corpora/:corpus_key/documents</code>).</li>
+</ul>
+<p><strong>Action items:</strong> Update your indexing requests to use the new unified endpoint,
+specifying the document <code>type</code> in the request body.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="file-upload-changes">File upload changes<a href="#file-upload-changes" class="hash-link" aria-label="Direct link to File upload changes" title="Direct link to File upload changes">​</a></h3>
+<ul>
+<li>File Upload API v1 supports uploading JSON files.</li>
+<li>File Upload API v2 removes support for uploading JSON files. Use the
+Indexing API v2 instead, if you need to index JSON files.</li>
+</ul>
+<p><strong>Action items:</strong> Use the <a href="/docs/rest-api/create-corpus-document">Add a document to a corpus</a>
+endpoint at <code>/v2/corpora/{corpus_key}/documents</code>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="query-endpoint-changes">Query endpoint changes<a href="#query-endpoint-changes" class="hash-link" aria-label="Direct link to Query endpoint changes" title="Direct link to Query endpoint changes">​</a></h2>
+<ul>
+<li>API v1 supports batch querying (<code>/v1/query</code> and <code>/v1/stream-query</code>).</li>
+<li>API v2 <strong>does not</strong> support batch querying and uses a single query
+endpoint (<code>/v2/query</code>).</li>
+<li>API v2 introduces a simple single-corpus query endpoint with a GET
+request (<code>/v2/corpora/:corpus_key/query</code>) for lightweight searches on a specific corpus.</li>
+<li>API v2 also provides an advanced corpus query endpoint with a POST
+request (<code>/v2/corpora/:corpus_key/query</code>) with more filtering and customization options.</li>
+<li>V2 <strong>does not</strong> have a stream-query endpoint like v1. Instead, set
+<code>stream_response</code> to <code>true</code> if you want to stream query responses</li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Update your query requests to use the new single query endpoint, removing
+any batch-related parameters and make multiple requests instead.</li>
+<li>Remove any batch-related parameters from your query requests.</li>
+<li>If you require streaming responses, set <code>stream_response</code> to <code>true</code> in the
+request body.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summarization-request-changes">Summarization request changes<a href="#summarization-request-changes" class="hash-link" aria-label="Direct link to Summarization request changes" title="Direct link to Summarization request changes">​</a></h3>
+<ul>
+<li>API v1 allows multiple summarization requests within a single query request.</li>
+<li>API v2 supports only a single summarization request per query.</li>
+<li>API v1 requires only the prompt name for summarization requests.</li>
+<li>API v2 requires both the summarizer (model) name and the prompt name.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="response-language-changes">Response language changes<a href="#response-language-changes" class="hash-link" aria-label="Direct link to Response language changes" title="Direct link to Response language changes">​</a></h3>
+<ul>
+<li>API v1 supports two character response languages, such as <code>en</code>.</li>
+<li>API v2 uses <code>auto</code> or the specific three-character 639-3 version of the following
+language codes: <code>eng</code>, <code>deu</code>, <code>fra</code>, <code>zho</code>, <code>kor</code>, <code>ara</code>, <code>rus</code>, <code>tha</code>, <code>nld</code>, <code>ita</code>, <code>por</code>, <code>spa</code>,
+<code>jpn</code>, <code>pol</code>, <code>tur</code>, <code>vie</code>, <code>ind</code>, <code>ces</code>, <code>ukr</code>, <code>ell</code>, <code>heb</code>, <code>fas</code>, <code>hin</code>, <code>urd</code>, <code>swe</code>, <code>ben</code>, <code>msa</code>, <code>ron</code></li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Modify your query requests to include only one summarization request.</li>
+<li>Modify your summarization requests to include both the model name and prompt
+name.</li>
+<li>Modify your summarization response languages to <code>auto</code> or change a two-character
+language code to the supported three-character language code such as
+<code>en</code> to <code>eng</code>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="chat-endpoint-changes">Chat endpoint changes<a href="#chat-endpoint-changes" class="hash-link" aria-label="Direct link to Chat endpoint changes" title="Direct link to Chat endpoint changes">​</a></h2>
+<ul>
+<li>API v1 uses <code>/v1/list-conversations</code>, <code>/v1/read-conversations</code>, <code>/v1/delete-conversations</code>,
+<code>/v1/delete-turns</code>, and <code>/v1/disable-turns</code> endpoints for managing chats and conversations.</li>
+<li>API v2 introduces <code>/v2/chats</code> and the <code>/v2/chats/{chat_id}/turns</code> endpoints
+for listing, creating, retrieving, updating, and deleting chats and turns.</li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Modify your chat and conversation management configurations to use the new
+endpoints and request/response structures.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="corpus-management-endpoint-changes">Corpus management endpoint changes<a href="#corpus-management-endpoint-changes" class="hash-link" aria-label="Direct link to Corpus management endpoint changes" title="Direct link to Corpus management endpoint changes">​</a></h2>
+<ul>
+<li>To create a corpus, API v1 uses <code>/v1/create-corpus</code>, API v2 uses <code>/v2/corpora</code>.</li>
+<li>To list corpora, API v1 uses <code>/v1/list-corpora</code>, API v2 uses <code>/v2/corpora</code>.</li>
+<li>To read corpus data, API v1 uses <code>/v1/read-corpus</code>, API v2
+uses <code>/v2/corpora/:corpus_key</code>.</li>
+<li>To delete a corpus, API v1 uses <code>/v1/delete-corpus</code>, API v2
+uses <code>/v2/corpora/:corpus_key</code>.</li>
+<li>To enable or disable a corpus, API v1 uses <code>/v1/update-corpus-enablement</code>, API v2
+uses <code>/v2/corpora/:corpus_key</code> with the PATCH method.</li>
+<li>To update corpus filters, API v1 uses <code>/v1/replace-corpus-filter-attrs</code>, API v2
+uses <code>/v2/corpora/:corpus_key</code> with the PATCH method.</li>
+<li>To reset a corpus, API v1 uses <code>/v1/reset-corpus</code>, API v2
+uses <code>/v2/corpora/:corpus_key/reset</code>.</li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Update your corpus creation requests to use the <code>/v2/corpora</code> endpoint with
+a POST request.</li>
+<li>Modify your corpus listing requests to use the <code>/v2/corpora</code> endpoint with
+a GET request.</li>
+<li>Update your corpus retrieval requests to use the <code>/v2/corpora/:corpus_key</code>
+endpoint with a GET request.</li>
+<li>Modify your corpus deletion requests to use the<code> /v2/corpora/:corpus_key</code>
+endpoint with a DELETE request.</li>
+<li>Update your corpus enablement/disablement and filter update requests to use
+the <code>/v2/corpora/:corpus_key</code> endpoint with a PATCH request.</li>
+<li>Modify your corpus reset requests to use the <code>/v2/corpora/:corpus_key/reset</code>
+endpoint with a POST request.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="document-management-endpoint-changes">Document management endpoint changes<a href="#document-management-endpoint-changes" class="hash-link" aria-label="Direct link to Document management endpoint changes" title="Direct link to Document management endpoint changes">​</a></h2>
+<ul>
+<li>To list documents, API v1 uses /<code>v1/list-documents</code>, API v2
+uses <code>/v2/corpora/:corpus_key/documents</code>.</li>
+<li>To delete documents, API v1 uses <code>/v1/delete-doc</code>, API v2
+uses <code>/v2/corpora/:corpus_key/documents/{document_id}</code>.</li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Update your document listing requests to use the <code>/v2/corpora/:corpus_key/documents</code> endpoint
+with a GET request.</li>
+<li>Modify your document deletion requests to use the <code>/v2/corpora/:corpus_key/documents/{document_id}</code> endpoint
+with a DELETE request.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="job-management-endpoint-changes">Job management endpoint changes<a href="#job-management-endpoint-changes" class="hash-link" aria-label="Direct link to Job management endpoint changes" title="Direct link to Job management endpoint changes">​</a></h2>
+<ul>
+<li>To list jobs, API v1 uses <code>/v1/list-jobs</code>, API v2 uses <code>/v2/jobs</code>.</li>
+<li>API v2 introduces <code>/v2/jobs/{job_id}</code> to retrieve jobs.</li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Update your job listing requests to use the <code>/v2/jobs</code> endpoint with a GET request.</li>
+<li>Update your job retrieval requests using the <code>/v2/jobs/{job_id}</code> endpoint with a GET request.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="user-management-endpoint-changes">User management endpoint changes<a href="#user-management-endpoint-changes" class="hash-link" aria-label="Direct link to User management endpoint changes" title="Direct link to User management endpoint changes">​</a></h2>
+<ul>
+<li>To create a user, API v1 uses: <code>/v1/manage-user</code> with <code>USER_ACTION_TYPE__ADD</code>,
+API v2 uses <code>/v2/users</code>.</li>
+<li>To list users, API v1 uses: <code>/v1/list-users</code>, API v2 uses <code>/v2/users</code>.</li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Modify your list users requests to use the <code>/v2/users</code> endpoint with a GET
+request.</li>
+<li>Update your user creation requests to use the <code>/v2/users</code> endpoint with a
+POST request.</li>
+<li>Implement user retrieval functionality using the <code>/v2/users/{username}</code>
+endpoint with a GET request.</li>
+<li>Update your user update requests to use the <code>/v2/users/{username}</code> endpoint
+with a PATCH request.</li>
+<li>Modify your user deletion requests to use the <code>/v2/users/{username}</code> endpoint
+with a DELETE request.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="retrieve-user">Retrieve user<a href="#retrieve-user" class="hash-link" aria-label="Direct link to Retrieve user" title="Direct link to Retrieve user">​</a></h3>
+<ul>
+<li>API v1 does not have an equivalent endpoint to get a user.</li>
+<li>API v2 uses <code>/v2/users/{user_id}</code></li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Implement user retrieval functionality using the new endpoint, providing the <code>user_id</code> path parameter.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-user">Update user<a href="#update-user" class="hash-link" aria-label="Direct link to Update user" title="Direct link to Update user">​</a></h3>
+<ul>
+<li>API v1 has <code>/v1/manage-user</code> with various user action types</li>
+<li>API v2 has <code>/v2/users/{user_id}</code> with the PATCH method</li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Consolidate your user update requests to use the new endpoint with the
+PATCH method, updating the request body as needed.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="delete-user">Delete user<a href="#delete-user" class="hash-link" aria-label="Direct link to Delete user" title="Direct link to Delete user">​</a></h3>
+<ul>
+<li>API v1 has <code>/v1/manage-user</code> with <code>USER_ACTION_TYPE__DELETE</code></li>
+<li>API v2 has <code>/v2/users/{user_id}</code> with the DELETE method</li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Update your user creation requests to use the new endpoint
+and request body structure.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="api-key-and-app-client-management-endpoint-changes">API key and App client management endpoint changes<a href="#api-key-and-app-client-management-endpoint-changes" class="hash-link" aria-label="Direct link to API key and App client management endpoint changes" title="Direct link to API key and App client management endpoint changes">​</a></h2>
+<ul>
+<li>API v1 uses <code>/v1/create-api-key</code>, <code>/v1/delete-api-key</code>, <code>/v1/enable-api-key</code>,
+and <code>/v1/list-api-keys</code> endpoints for managing API keys.</li>
+<li>API v2 introduces <code>/v2/api_keys</code> and <code>/v2/app_clients</code> endpoints for creating,
+retrieving, updating, and deleting API keys and app clients.</li>
+</ul>
+<p><strong>Action items:</strong></p>
+<ul>
+<li>Update your API key creation requests to use the <code>/v2/api_keys</code> endpoint
+with a POST request.</li>
+<li>Modify your API key listing requests to use the <code>/v2/api_keys</code> endpoint with
+a GET request.</li>
+<li>Implement API key retrieval functionality using the <code>/v2/api_keys/{api_key_id}</code>
+endpoint with a GET request.</li>
+<li>Update your API key update requests to use the <code>/v2/api_keys/{api_key_id}</code>
+endpoint with a PATCH request.</li>
+<li>Modify your API key deletion requests to use the <code>/v2/api_keys/{api_key_id}</code>
+endpoint with a DELETE request.</li>
+<li>Implement app client management functionality using the corresponding
+<code>/v2/app_clients</code> endpoints.</li>
+</ul></div></div></div><div class="row"><div class="col col--12"><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vectara/vectara-docs/tree/master/www/docs/migration-guide-api-v2.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2026-03-18T20:50:33.000Z" itemprop="dateModified">Mar 18, 2026</time></b> by <b>Aamir</b></span></div></div></footer></div></div></article><div class="row"><div class="col col--12"><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#key-dates" class="table-of-contents__link toc-highlight">Key Dates</a></li><li><a href="#base-url-changes" class="table-of-contents__link toc-highlight">Base URL changes</a></li><li><a href="#authentication-changes" class="table-of-contents__link toc-highlight">Authentication changes</a></li><li><a href="#percent-encoding-for-special-characters" class="table-of-contents__link toc-highlight">Percent encoding for special characters</a></li><li><a href="#corpus-key-replaces-corpus-id" class="table-of-contents__link toc-highlight">Corpus Key replaces Corpus ID</a><ul><li><a href="#corpus-object-changes" class="table-of-contents__link toc-highlight">Corpus object changes</a></li></ul></li><li><a href="#metadata-type-conversions" class="table-of-contents__link toc-highlight">Metadata type conversions</a></li><li><a href="#terminology-parameter-and-property-name-changes" class="table-of-contents__link toc-highlight">Terminology, parameter, and property name changes</a></li><li><a href="#indexing-endpoint-changes" class="table-of-contents__link toc-highlight">Indexing endpoint changes</a><ul><li><a href="#file-upload-changes" class="table-of-contents__link toc-highlight">File upload changes</a></li></ul></li><li><a href="#query-endpoint-changes" class="table-of-contents__link toc-highlight">Query endpoint changes</a><ul><li><a href="#summarization-request-changes" class="table-of-contents__link toc-highlight">Summarization request changes</a></li><li><a href="#response-language-changes" class="table-of-contents__link toc-highlight">Response language changes</a></li></ul></li><li><a href="#chat-endpoint-changes" class="table-of-contents__link toc-highlight">Chat endpoint changes</a></li><li><a href="#corpus-management-endpoint-changes" class="table-of-contents__link toc-highlight">Corpus management endpoint changes</a></li><li><a href="#document-management-endpoint-changes" class="table-of-contents__link toc-highlight">Document management endpoint changes</a></li><li><a href="#job-management-endpoint-changes" class="table-of-contents__link toc-highlight">Job management endpoint changes</a></li><li><a href="#user-management-endpoint-changes" class="table-of-contents__link toc-highlight">User management endpoint changes</a><ul><li><a href="#retrieve-user" class="table-of-contents__link toc-highlight">Retrieve user</a></li><li><a href="#update-user" class="table-of-contents__link toc-highlight">Update user</a></li><li><a href="#delete-user" class="table-of-contents__link toc-highlight">Delete user</a></li></ul></li><li><a href="#api-key-and-app-client-management-endpoint-changes" class="table-of-contents__link toc-highlight">API key and App client management endpoint changes</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">APIs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/indexing-apis/indexing">Indexing</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/search-apis/search">Search</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/admin-apis/admin">Admin</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Vectara, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

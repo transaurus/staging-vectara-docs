@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-changelog" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Vectara Documentation Changelog | Vectara Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.vectara.com/docs/changelog"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Vectara Documentation Changelog | Vectara Docs"><meta data-rh="true" name="description" content="---"><meta data-rh="true" property="og:description" content="---"><link data-rh="true" rel="icon" href="/img/vectara_logo.svg"><link data-rh="true" rel="canonical" href="https://docs.vectara.com/docs/changelog"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/changelog" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/changelog" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Vectara Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Vectara Docs Atom Feed">
+
+
+
+
+
+
+
+
+
+<script src="/analytics.js" async></script>
+<script src="/scripts/reodev.js" async></script><link rel="stylesheet" href="/assets/css/styles.50104ce9.css">
+<script src="/assets/js/runtime~main.5e1f3244.js" defer="defer"></script>
+<script src="/assets/js/main.09506697.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/vectara_wordmark.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/vectara_wordmark_light.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/">Docs</a><a class="navbar__item navbar__link" href="/docs/rest-api">API Reference</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">SDKs</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/sdk/vectara-python-sdk">Python</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Release Information</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/release-notes">Release Notes</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/docs/changelog">Changelog</a></li></ul></div></div><div class="navbar__items navbar__items--right"><div class="searchBar navbarSearchContainer_Bca1"></div><a href="https://console.vectara.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Console</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/docs/changelog">Documentation Changelog</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_xLCN"><div class="docItemContainer_jfFK"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Documentation Changelog</span><meta itemprop="position" content="1"></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: 2.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Vectara Documentation Changelog</h1></header><div class="row"><div class="col col--12 markdown"><hr>
+<h1>January 2026</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes">📝 Documentation Changes<a href="#-documentation-changes" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Enhance Agents content with updated quickstart, concepts, instructions, and tools (#539)</li>
+</ul>
+<hr>
+<h1>December 2025</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features">✨ New Features<a href="#-new-features" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add new integration between Vectara and Speechmatics (#538)</li>
+<li>Enhance agents with configurable, autonomous subagents (#526)</li>
+<li>Enhance agent sessions with artifact storage (#524)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-1">📝 Documentation Changes<a href="#-documentation-changes-1" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Add a tutorial about how to build a chatbot with the Agent APIs (#542)</li>
+<li>Misc documentation and link fixes (#541)</li>
+<li>Update Vectara trial page (#540)</li>
+<li>Add List metadata types and IN operator syntax examples (#537)</li>
+<li>Restructure API Reference sidebar categories (#536)</li>
+</ul>
+<hr>
+<h1>November 2025</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes">📚 API Changes<a href="#-api-changes" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Enhance API Reference with Supported API Key Types for Each Endpoint (#530)</li>
+<li>Enhance API Reference endpoint descriptions (#527)</li>
+<li>Update the API Reference with Lambda Tool and Artifact enhancements (#517)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-2">📝 Documentation Changes<a href="#-documentation-changes-2" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Enhance search and retrieval section (#529)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-platform-updates">🛠 Documentation Platform Updates<a href="#-documentation-platform-updates" class="hash-link" aria-label="Direct link to 🛠 Documentation Platform Updates" title="Direct link to 🛠 Documentation Platform Updates">​</a></h3>
+<ul>
+<li>Enhance navbar design and convert markup to markdown. (#528)</li>
+<li>Navigation improvements (#521)</li>
+<li>Enhance documentation structure with new layout (#519)</li>
+<li>Enhance CodePanel v2 with a live code editor and syntax highlighting improvements (#508)</li>
+</ul>
+<hr>
+<h1>October 2025</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-1">✨ New Features<a href="#-new-features-1" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Enhance Agents with Retry LLM Configuration (#510)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-1">📚 API Changes<a href="#-api-changes-1" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Add Agent LLM Retry Configuration to API Reference (#511)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-3">📝 Documentation Changes<a href="#-documentation-changes-3" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Add new tutorial on how to use OpenAI SDK with Vectara Chat Completions API (#509)</li>
+<li>Add Conversational AI content to Platform and Agents overviews (#507)</li>
+<li>Update links and formatting in Python SDK Documents (#505)</li>
+</ul>
+<hr>
+<h1>September 2025</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-2">✨ New Features<a href="#-new-features-2" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Introduce the tech preview of Vectara Agents Framework (#491)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-2">📚 API Changes<a href="#-api-changes-2" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Fix API Reference for Tool and Instruction sections (#502)</li>
+<li>Reorganize Agent Sessions in API Reference (#499)</li>
+<li>Add Agents APIs to API Reference (#497)</li>
+<li>Enhance API Reference with additional improved examples (#495)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-4">📝 Documentation Changes<a href="#-documentation-changes-4" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Fix MCP broken link in the agents page (#504)</li>
+<li>Enhance Agents documentation for Tools and Instructions (#503)</li>
+<li>Refresh API Reference (#501)</li>
+<li>Introduce new section about Private Deployment options such as on premise (#498)</li>
+<li>Enhance documentation around data I/O, Agents, model selection, and BYO-LLM with additional API Concepts cleanup for accuracy and discoverability (#496)</li>
+</ul>
+<hr>
+<h1>August 2025</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-3">✨ New Features<a href="#-new-features-3" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add documentation for the tech preview of Fuzzy Metadata Search (#490)</li>
+<li>Add content about the Vectara Postman Collection (#487)</li>
+<li>Add comprehensive documentation for new Vectara Python SDK (#471)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-3">📚 API Changes<a href="#-api-changes-3" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Add Metadata Query API to API Reference (#492)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-5">📝 Documentation Changes<a href="#-documentation-changes-5" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Add data egress process content (#489)</li>
+<li>Add topic about how to delete an account (#486)</li>
+<li>Add comprehensive documentation for new Vectara Python SDK (#471)</li>
+</ul>
+<hr>
+<h1>July 2025</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-4">✨ New Features<a href="#-new-features-4" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add documentation for the Vectara Admin Center, a centralized interface for managing on-premise and VPC deployments (#485)</li>
+<li>New Consistency-Adjusted Index Capability in Open RAG Eval (#479)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-6">📝 Documentation Changes<a href="#-documentation-changes-6" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Fix body request render in API Reference (#483)</li>
+<li>Enhance API Reference usability with automated API key type badges (#481)</li>
+<li>Add detailed mapping of endpoints to required API key types (#477)</li>
+<li>Update Query History and Configure Queries sections, enhancing descriptions and screenshots (#476)</li>
+<li>Enhance chatbot tutorial with production readiness guidance (#473)</li>
+<li>Add guidance on using expected value formats with Intelligent Query Rewriting (#464)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-platform-updates-1">🛠 Documentation Platform Updates<a href="#-documentation-platform-updates-1" class="hash-link" aria-label="Direct link to 🛠 Documentation Platform Updates" title="Direct link to 🛠 Documentation Platform Updates">​</a></h3>
+<ul>
+<li>Migrate codeblocks to use the new CodePanel plugin formatting (#482)</li>
+<li>Enable syntax highlighting in CodePanel component (#478)</li>
+</ul>
+<hr>
+<h1>June 2025</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-5">✨ New Features<a href="#-new-features-5" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add Query-Aware Hallucination Detection and Correction to the Vectara Hallucination Corrector (#468)</li>
+<li>Add new supported languages and enhancements with HHEM 2.3 (#467)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-7">📝 Documentation Changes<a href="#-documentation-changes-7" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Enhance API Documentation with Production-Ready Examples for Query, Upload, Index, and Chat Endpoints (#472)</li>
+<li>Refresh list of currently available generation presets (prompts) (#466)</li>
+<li>Add tutorial about how to build a chatbot with the Chat API (#463)</li>
+<li>Update screenshots for console updates (#452)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates">📋 Example Updates<a href="#-example-updates" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Enhance API Documentation with Production-Ready Examples for Query, Upload, Index, and Chat Endpoints (#472)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-platform-updates-2">🛠 Documentation Platform Updates<a href="#-documentation-platform-updates-2" class="hash-link" aria-label="Direct link to 🛠 Documentation Platform Updates" title="Direct link to 🛠 Documentation Platform Updates">​</a></h3>
+<ul>
+<li>Create new CodePanel component for customizable code samples with language selection, annotations, and layout configuration (#470)</li>
+</ul>
+<hr>
+<h1>May 2025</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-6">✨ New Features<a href="#-new-features-6" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add documentation for the List Hallucination Correctors API (#453)</li>
+<li>Add documentation for the tech preview of the Vectara Hallucination Corrector (#442)</li>
+<li>Add documentation for Table Summarization with Custom Prompts (#436)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-4">📚 API Changes<a href="#-api-changes-4" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Update the Correct Hallucinations endpoint in the API Reference (#456)</li>
+<li>Add Hallucination Correctors endpoint to the API Reference (#454)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-8">📝 Documentation Changes<a href="#-documentation-changes-8" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Improve API Reference description formatting (#460)</li>
+<li>Update the Correct Hallucinations API Definition (#457)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-1">📋 Example Updates<a href="#-example-updates-1" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Update Hallucination Corrector model example (#459)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-platform-updates-3">🛠 Documentation Platform Updates<a href="#-documentation-platform-updates-3" class="hash-link" aria-label="Direct link to 🛠 Documentation Platform Updates" title="Direct link to 🛠 Documentation Platform Updates">​</a></h3>
+<ul>
+<li>Update Docusaurus configuration to show last date a topic was updated (#462)</li>
+</ul>
+<hr>
+<h1>April 2025</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-7">✨ New Features<a href="#-new-features-7" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add documentation for the Chat Completions API (#446)</li>
+<li>Add documentation for the Evaluate Factual Consistency (HHEM) API (#445)</li>
+<li>Add documentation for Mockingbird 2 (#439)</li>
+<li>Add documentation to define a custom LLM configuration to use models from OpenAI, Anthropic, and Google (#437)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-5">📚 API Changes<a href="#-api-changes-5" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Add the Evaluate Factual Consistency API and the Chat Completions API to the API Reference (#444)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-9">📝 Documentation Changes<a href="#-documentation-changes-9" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Expand Authentication section with new guides on enterprise access patterns, organizational role scoping, and authorization workflows (#426)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-platform-updates-4">🛠 Documentation Platform Updates<a href="#-documentation-platform-updates-4" class="hash-link" aria-label="Direct link to 🛠 Documentation Platform Updates" title="Direct link to 🛠 Documentation Platform Updates">​</a></h3>
+<ul>
+<li>Refine design of heading styles (#450)</li>
+<li>Install Mermaid for creating diagrams (#443)</li>
+<li>Update package.json with API documentation build script (#438)</li>
+<li>Upgrade Docusaurus Platform from 2.4.3 to 3.7 (#422)</li>
+</ul>
+<hr>
+<h1>March 2025</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-8">✨ New Features<a href="#-new-features-8" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add documentation for the tech preview of the Expanded Encoder Management (#425)</li>
+<li>Add documentation for the tech preview of the expanded LLM Management APIs (#420)</li>
+<li>Add content for new integration between Vectara and Confluent (#414)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-6">📚 API Changes<a href="#-api-changes-6" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Add List Table Extractors and Get OAuth Token to the API Reference (#430)</li>
+<li>Add the Delete LLM API, Get LLM API, and Create Encoder API and Chunking Strategy to the API Reference  (#423)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-10">📝 Documentation Changes<a href="#-documentation-changes-10" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Update Encoder parameters (#433)</li>
+<li>Clarify that filterable metadata fields are not encrypted (#427)</li>
+<li>Update content and screenshots for the File Upload UI, the Documents UI, and the Query UI (#421)</li>
+<li>Update model_parameters with new llm_name parameter in the advanced summarization options (#419)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-2">📋 Example Updates<a href="#-example-updates-2" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Update Encoder examples (#431)</li>
+</ul>
+<hr>
+<h1>February 2025</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-9">✨ New Features<a href="#-new-features-9" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add documentation for the tech preview of Integrating External LLMs (#413)</li>
+<li>Add documentation for the tech preview of Document Summarization (#412)</li>
+<li>Add documentation for the tech preview of Intelligent Query Rewriting (#408)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-7">📚 API Changes<a href="#-api-changes-7" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Add the Summarize Document API, Create LLM API, and Compute Corpus Size API to the API Reference (#417)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-11">📝 Documentation Changes<a href="#-documentation-changes-11" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Update UI steps on how to reset or delete the corpus (#404)</li>
+</ul>
+<hr>
+<h1>January 2025</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-10">✨ New Features<a href="#-new-features-10" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Updated to enable Typescript SDK (#393)</li>
+<li>Update HHEM documentation for HHME-2.2 (#379)</li>
+<li>Add documentation for the new Knee Reranking feature (#378)</li>
+<li>Add new HHEM supported languages and some content enhancements (#352)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-8">📚 API Changes<a href="#-api-changes-8" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Uploading JSON in API v2 (#394)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-12">📝 Documentation Changes<a href="#-documentation-changes-12" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Improve Getting Started section layout (#396)</li>
+<li>Uploading JSON in API v2 (#394)</li>
+<li>Fix broken links in generative prompts (#391)</li>
+<li>Fix encoder example with correct value (#388)</li>
+<li>Add documentation changelog workflow (#385)</li>
+<li>Fix OAuth2 URL and update screenshot (#384)</li>
+<li>Add a dedicated changelog for documentation updates, API enhancements and bug fixes (#383)</li>
+<li>Add HHEM 2.2 enhancements to Release Notes (#381)</li>
+<li>Add new HHEM supported languages and some content enhancements (#352)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-3">📋 Example Updates<a href="#-example-updates-3" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Fix encoder example with correct value (#388)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-deprecated">🗑 Deprecated<a href="#-deprecated" class="hash-link" aria-label="Direct link to 🗑 Deprecated" title="Direct link to 🗑 Deprecated">​</a></h3>
+<ul>
+<li>Uploading JSON in API v2 (#394)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-platform-updates-5">🛠 Documentation Platform Updates<a href="#-documentation-platform-updates-5" class="hash-link" aria-label="Direct link to 🛠 Documentation Platform Updates" title="Direct link to 🛠 Documentation Platform Updates">​</a></h3>
+<ul>
+<li>Update Doc Changelog workflow action (#386)</li>
+</ul>
+<hr>
+<h1>December 2024</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-11">✨ New Features<a href="#-new-features-11" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add documentation for the new Update and Replace Metadata API Definitions (#371)</li>
+<li>Add documentation for the querying table data feature (#365)</li>
+<li>Add query observability feature to docs (#362)</li>
+<li>Add documentation for new chunking strategy parameter (#361)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-9">📚 API Changes<a href="#-api-changes-9" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Add documentation for the new Update and Replace Metadata API Definitions (#371)</li>
+<li>Add API Reference updates for the new tabular data extraction feature (#366)</li>
+<li>Add documentation for the querying table data feature (#365)</li>
+<li>Add query observability feature to docs (#362)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-13">📝 Documentation Changes<a href="#-documentation-changes-13" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Improve information architecture of the Capabilities section and metadata content (#374)</li>
+<li>Update table extract details (#370)</li>
+<li>Update table_extraction_config parameter (#369)</li>
+<li>Fix link to the table data blog in release notes (#368)</li>
+<li>Userfn example supports traditional if statement (#367)</li>
+<li>Add documentation for the querying table data feature (#365)</li>
+<li>Add documentation for new chunking strategy parameter (#361)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-4">📋 Example Updates<a href="#-example-updates-4" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Userfn example supports traditional if statement (#367)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-deprecated-1">🗑 Deprecated<a href="#-deprecated-1" class="hash-link" aria-label="Direct link to 🗑 Deprecated" title="Direct link to 🗑 Deprecated">​</a></h3>
+<ul>
+<li>Add API v1 deprecation notices (#375)</li>
+</ul>
+<hr>
+<h1>November 2024</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-12">✨ New Features<a href="#-new-features-12" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add chunking strategy and update descriptions (#351)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-10">📚 API Changes<a href="#-api-changes-10" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Add chunking strategy and update descriptions (#351)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-14">📝 Documentation Changes<a href="#-documentation-changes-14" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Update how metadata structuring is handled in API v2 (#358)</li>
+<li>Update descriptions for Pro and Enterprise (#356)</li>
+<li>update <code>fern.config.json</code> and <code>generators.yml</code> to use latest version. (#355)</li>
+<li>Enhance the list of Vectara demos and applications (#354)</li>
+<li>Move Reranking subsection (#353)</li>
+<li>Add chunking strategy and update descriptions (#351)</li>
+</ul>
+<hr>
+<h1>October 2024</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-13">✨ New Features<a href="#-new-features-13" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Reflect product transition to free trial across documentation (#350)</li>
+<li>Add new Integrations section that highlights community collaborations and partnerships (#346)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-11">📚 API Changes<a href="#-api-changes-11" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Reflect product transition to free trial across documentation (#350)</li>
+<li>updated introduction with proper links (#338)</li>
+<li>Get number of documents and document parts (#332)</li>
+<li>Add search cutoffs, null handing, and refresh API reference (#331)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-15">📝 Documentation Changes<a href="#-documentation-changes-15" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Reflect product transition to free trial across documentation (#350)</li>
+<li>Incorrect syntax in the null score usage chain example (#349)</li>
+<li>Correct udf page misspelling. (#348)</li>
+<li>Add new Integrations section that highlights community collaborations and partnerships (#346)</li>
+<li>Update docs for handling filenames with non-ASCII characters in API v2 (#345)</li>
+<li>Add Release Notes to the docs (#344)</li>
+<li>Upgrade OpenAPI docs theme. (#340)</li>
+<li>Add Video Tutorials section. (#334)</li>
+<li>Get number of documents and document parts (#332)</li>
+<li>Add search cutoffs, null handing, and refresh API reference (#331)</li>
+<li>Update Chain Reranker topic about the array and examples (#330)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-5">📋 Example Updates<a href="#-example-updates-5" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Incorrect syntax in the null score usage chain example (#349)</li>
+<li>✨ Add query snippet example (#342)</li>
+<li>Update Chain Reranker topic about the array and examples (#330)</li>
+</ul>
+<hr>
+<h1>September 2024</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-14">✨ New Features<a href="#-new-features-14" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add Chain Reranker content (#320)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-12">📚 API Changes<a href="#-api-changes-12" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Add request timeouts in docs (#326)</li>
+<li>Update corpus API documentation (#324)</li>
+<li>Add Chain Reranker content (#320)</li>
+<li>Add Generation Presets content to docs (#318)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-16">📝 Documentation Changes<a href="#-documentation-changes-16" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Update corpus API documentation (#324)</li>
+<li>Add more UDF examples (#323)</li>
+<li>Update Quick Start (#322)</li>
+<li>Add name and description to Update Corpus (#319)</li>
+<li>Add Generation Presets content to docs (#318)</li>
+<li>Update metadata filter topics (#312)</li>
+<li>Update prompt syntax (#283)</li>
+<li>Update custom prompt topics with Query endpoint details and links (#276)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-6">📋 Example Updates<a href="#-example-updates-6" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Add more UDF examples (#323)</li>
+</ul>
+<hr>
+<h1>August 2024</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-15">✨ New Features<a href="#-new-features-15" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add User Defined Functions Reranker content (#314)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-13">📚 API Changes<a href="#-api-changes-13" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Update query order and labels (#310)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-17">📝 Documentation Changes<a href="#-documentation-changes-17" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Improve grpc example for UDF (#317)</li>
+<li>Add User Defined Functions Reranker content (#314)</li>
+<li>Update introductions to topics in Getting Started and Capabilities (#313)</li>
+<li>Update query order and labels (#310)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-7">📋 Example Updates<a href="#-example-updates-7" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Improve grpc example for UDF (#317)</li>
+</ul>
+<hr>
+<h1>July 2024</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-16">✨ New Features<a href="#-new-features-16" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add and update topics for Mockingbird (#308)</li>
+<li>Add GPT 4o to list of summarizers (#303)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-14">📚 API Changes<a href="#-api-changes-14" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Wrap tabs in API reference so they don&#x27;t get clipped. (#301)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-18">📝 Documentation Changes<a href="#-documentation-changes-18" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Add note about original BM25 (#309)</li>
+<li>Update corpus key and file upload content (#306)</li>
+<li>Wrap tabs in API reference so they don&#x27;t get clipped. (#301)</li>
+<li>Fix typos and update screenshots (#299)</li>
+<li>Update part.is_title field description (#216)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-8">📋 Example Updates<a href="#-example-updates-8" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Update part.is_title field description (#216)</li>
+</ul>
+<hr>
+<h1>June 2024</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-17">✨ New Features<a href="#-new-features-17" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add new REST API v2 specifications to the documentation (#250)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-15">📚 API Changes<a href="#-api-changes-15" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Rename API Playground references to API Reference. (#295)</li>
+<li>Update API v2 migration guide (#294)</li>
+<li>Put generation_end into the reference. (#291)</li>
+<li>Re-enable accordion transition in API playground, to fix bug in which content height wasn&#x27;t updated correctly (#287)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-19">📝 Documentation Changes<a href="#-documentation-changes-19" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Fix oauth examples. (#300)</li>
+<li>Update API v2 download URL (#298)</li>
+<li>Fix typos in spec. (#296)</li>
+<li>Rename API Playground references to API Reference. (#295)</li>
+<li>Change nav from API Playground -&gt; API Reference. (#293)</li>
+<li>Fix tips in query endpoint (#288)</li>
+<li>Re-enable accordion transition in API playground, to fix bug in which content height wasn&#x27;t updated correctly (#287)</li>
+<li>Fix link to Reranking blog (#286)</li>
+<li>Add new REST API v2 specifications to the documentation (#250)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-9">📋 Example Updates<a href="#-example-updates-9" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Fix oauth examples. (#300)</li>
+</ul>
+<hr>
+<h1>May 2024</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-18">✨ New Features<a href="#-new-features-18" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Update Reranker topic with the new Vectara Multilingual Reranker v1 (#281)</li>
+<li>Add citation summary feature content (#277)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-20">📝 Documentation Changes<a href="#-documentation-changes-20" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Fix query body request (#285)</li>
+<li>Point ReactSearch to updated reranker (#280)</li>
+<li>Update citation section (#279)</li>
+<li>Fix reranking link (#278)</li>
+<li>Add examples for functions and operations (#275)</li>
+<li>Add summarized search (#274)</li>
+<li>Update Information Architecture with new sections for Capabilities and Use Cases (#259)</li>
+</ul>
+<hr>
+<h1>April 2024</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-19">✨ New Features<a href="#-new-features-19" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add docs for stream concatenation, React-Chatbot, and Stream-Query-Client (#260)</li>
+<li>Add Stream Query to the API Playground (#257)</li>
+<li>Add new Stream Query API Definition content (#256)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-16">📚 API Changes<a href="#-api-changes-16" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Improve List Conversations API parameter descriptions (#266)</li>
+<li>Improve prompt examples in query, and update the enable api key and file upload endpoints (#265)</li>
+<li>Update prompts to use single-quote in examples (#264)</li>
+<li>Update Create Corpus default example (#262)</li>
+<li>Fix values in the query body endpoint (#258)</li>
+<li>Add Stream Query to the API Playground (#257)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-21">📝 Documentation Changes<a href="#-documentation-changes-21" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Improve List Conversations API parameter descriptions (#266)</li>
+<li>Improve prompt examples in query, and update the enable api key and file upload endpoints (#265)</li>
+<li>Add context configuration to Query and Highlighting topics (#261)</li>
+<li>Fix values in the query body endpoint (#258)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-10">📋 Example Updates<a href="#-example-updates-10" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Improve prompt examples in query, and update the enable api key and file upload endpoints (#265)</li>
+<li>Update prompts to use single-quote in examples (#264)</li>
+<li>Update Create Corpus default example (#262)</li>
+<li>Add context configuration to Query and Highlighting topics (#261)</li>
+<li>Fix values in the query body endpoint (#258)</li>
+</ul>
+<hr>
+<h1>March 2024</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-20">✨ New Features<a href="#-new-features-20" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Update the API Playground with Factual Consistency Score (#254)</li>
+<li>Add content about the new Factual Consistency Score (#252)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-17">📚 API Changes<a href="#-api-changes-17" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Update Playground example for FCS (#255)</li>
+<li>Update the API Playground with Factual Consistency Score (#254)</li>
+<li>Update API References examples for Query, Indexing, and API Keys (#251)</li>
+<li>Update Query example in API Playground (#247)</li>
+<li>Update API Reference examples for consistency (#240)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-22">📝 Documentation Changes<a href="#-documentation-changes-22" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Update file formats and document structuring (#253)</li>
+<li>Update API Reference examples for consistency (#240)</li>
+<li>Update Chat APIs overview (#237)</li>
+<li>Update API Reference section with improved structure and flow (#231)</li>
+<li>Add Content-Disposition header to set the Document ID (#214)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-11">📋 Example Updates<a href="#-example-updates-11" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Update Playground example for FCS (#255)</li>
+<li>Update file formats and document structuring (#253)</li>
+<li>Add content about the new Factual Consistency Score (#252)</li>
+<li>Update API References examples for Query, Indexing, and API Keys (#251)</li>
+<li>Update Query example in API Playground (#247)</li>
+<li>Update API Reference examples for consistency (#240)</li>
+<li>Add Content-Disposition header to set the Document ID (#214)</li>
+</ul>
+<hr>
+<h1>February 2024</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-21">✨ New Features<a href="#-new-features-21" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add Generative Prompts section (#238)</li>
+<li>Add documentation for the new Vectara Chat (#235)</li>
+<li>Add documentation for the Personal API Key, Index, and Query Keys (#233)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-18">📚 API Changes<a href="#-api-changes-18" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Add custom prompts to Query (#239)</li>
+<li>Update the API Playground for Chat APIs (#236)</li>
+<li>Add documentation for the new Vectara Chat (#235)</li>
+<li>Update API Playground for the Personal API Keys (#234)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-23">📝 Documentation Changes<a href="#-documentation-changes-23" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Add Generative Prompts section (#238)</li>
+<li>Update the API Playground for Chat APIs (#236)</li>
+<li>Add documentation for the Personal API Key, Index, and Query Keys (#233)</li>
+<li>Update console and corpus content around account and corpus creation (#224)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-12">📋 Example Updates<a href="#-example-updates-12" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Add custom prompts to Query (#239)</li>
+<li>Add documentation for the new Vectara Chat (#235)</li>
+</ul>
+<hr>
+<h1>January 2024</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-22">✨ New Features<a href="#-new-features-22" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add Create-UI and refine copy and layout of Build Apps landing page (#230)</li>
+<li>Add Get Usage Metrics to API Playground (#226)</li>
+<li>Add List Documents content to Console and API Reference (#218)</li>
+<li>Add Account and Corpus Management APIs to Playground (#217)</li>
+<li>Add Read Corpus and Update Corpus Enablement topics (#211)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-api-changes-19">📚 API Changes<a href="#-api-changes-19" class="hash-link" aria-label="Direct link to 📚 API Changes" title="Direct link to 📚 API Changes">​</a></h3>
+<ul>
+<li>Add Get Usage Metrics to API Playground (#226)</li>
+<li>Update File Upload API specs (#220)</li>
+<li>Add List Documents to API Playground (#219)</li>
+<li>Add List Documents content to Console and API Reference (#218)</li>
+<li>Add Account and Corpus Management APIs to Playground (#217)</li>
+<li>Add Read Corpus and Update Corpus Enablement topics (#211)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-24">📝 Documentation Changes<a href="#-documentation-changes-24" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Add Create-UI and refine copy and layout of Build Apps landing page (#230)</li>
+<li>Add Build Applications section (#229)</li>
+<li>Update banner with Airbyte partnership information (#225)</li>
+<li>Update File Upload API specs (#220)</li>
+<li>Fix reranker URL and update search topic with new formatting (#213)</li>
+<li>Improve the Index API Definition content (#208)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-13">📋 Example Updates<a href="#-example-updates-13" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Update List Documents response example (#221)</li>
+<li>Add Read Corpus and Update Corpus Enablement topics (#211)</li>
+</ul>
+<hr>
+<h1>December 2023</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-23">✨ New Features<a href="#-new-features-23" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add Manager User and List Users to API Playground (#206)</li>
+<li>Add List Users and Manage Users topics (#204)</li>
+<li>create, delete, enable, list API keys (#201)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-25">📝 Documentation Changes<a href="#-documentation-changes-25" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Fix Q&amp;A redirect (#209)</li>
+<li>Indexing documentation is out of date. (#205)</li>
+<li>Migrate from data store term to corpus. (#203)</li>
+<li>Add API Keys topics to API Reference (#195)</li>
+<li>Improve Information Architecture and update several examples (#193)</li>
+<li>Add MMR to the Reranking topic (#191)</li>
+<li>Add content about Data Ingestion (#188)</li>
+<li>Add content about the Index Request Headers (#187)</li>
+<li>Updated content about the English and MMR rerankers (#185)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-14">📋 Example Updates<a href="#-example-updates-14" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Improve Information Architecture and update several examples (#193)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-platform-updates-6">🛠 Documentation Platform Updates<a href="#-documentation-platform-updates-6" class="hash-link" aria-label="Direct link to 🛠 Documentation Platform Updates" title="Direct link to 🛠 Documentation Platform Updates">​</a></h3>
+<ul>
+<li>Support deep-linking to a search. (#200)</li>
+<li>Support search on narrower screens (e.g. mobile) (#197)</li>
+</ul>
+<hr>
+<h1>November 2023</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-features-24">✨ New Features<a href="#-new-features-24" class="hash-link" aria-label="Direct link to ✨ New Features" title="Direct link to ✨ New Features">​</a></h3>
+<ul>
+<li>Add update filter attributes and list jobs to the OpenAPI spec (#176)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-changes-26">📝 Documentation Changes<a href="#-documentation-changes-26" class="hash-link" aria-label="Direct link to 📝 Documentation Changes" title="Direct link to 📝 Documentation Changes">​</a></h3>
+<ul>
+<li>Update banner for the new metadata filtering capability (#182)</li>
+<li>Add update filter attributes and list jobs to the OpenAPI spec (#176)</li>
+<li>Add content about structuring document data (#155)</li>
+<li>Update Code Samples with specific category for Query Operations (#151)</li>
+<li>Update Quick Start with steps, field names, and screenshots (#149)</li>
+<li>Add the grpc-timeout option in header to several topics (#148)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-example-updates-15">📋 Example Updates<a href="#-example-updates-15" class="hash-link" aria-label="Direct link to 📋 Example Updates" title="Direct link to 📋 Example Updates">​</a></h3>
+<ul>
+<li>Update Code Samples with specific category for Query Operations (#151)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-platform-updates-7">🛠 Documentation Platform Updates<a href="#-documentation-platform-updates-7" class="hash-link" aria-label="Direct link to 🛠 Documentation Platform Updates" title="Direct link to 🛠 Documentation Platform Updates">​</a></h3>
+<ul>
+<li>Customize Not Found page. (#184)</li>
+<li>Make search more prominent. (#183)</li>
+<li>Add a console button to the navigation bar (#168)</li>
+<li>Update search with Ctrl-K shortcut. (#164)</li>
+<li>Ensure rendering a single instance of search (#163)</li>
+<li>Fix rendering of API Playground code in dark mode. (#159)</li>
+<li>Add TopicButton, Grid, and Spacer components. (#147)</li>
+</ul></div></div></div><div class="row"><div class="col col--12"><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vectara/vectara-docs/tree/master/www/docs/DocCHANGELOG.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2026-03-18T20:50:33.000Z" itemprop="dateModified">Mar 18, 2026</time></b> by <b>Aamir</b></span></div></div></footer></div></div></article><div class="row"><div class="col col--12"><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-documentation-changes" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-new-features" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-documentation-changes-1" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-api-changes" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-2" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-documentation-platform-updates" class="table-of-contents__link toc-highlight">🛠 Documentation Platform Updates</a></li><li><a href="#-new-features-1" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-1" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-3" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-new-features-2" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-2" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-4" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-new-features-3" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-3" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-5" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-new-features-4" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-documentation-changes-6" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-documentation-platform-updates-1" class="table-of-contents__link toc-highlight">🛠 Documentation Platform Updates</a></li><li><a href="#-new-features-5" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-documentation-changes-7" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-documentation-platform-updates-2" class="table-of-contents__link toc-highlight">🛠 Documentation Platform Updates</a></li><li><a href="#-new-features-6" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-4" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-8" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-1" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-documentation-platform-updates-3" class="table-of-contents__link toc-highlight">🛠 Documentation Platform Updates</a></li><li><a href="#-new-features-7" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-5" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-9" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-documentation-platform-updates-4" class="table-of-contents__link toc-highlight">🛠 Documentation Platform Updates</a></li><li><a href="#-new-features-8" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-6" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-10" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-2" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-new-features-9" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-7" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-11" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-new-features-10" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-8" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-12" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-3" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-deprecated" class="table-of-contents__link toc-highlight">🗑 Deprecated</a></li><li><a href="#-documentation-platform-updates-5" class="table-of-contents__link toc-highlight">🛠 Documentation Platform Updates</a></li><li><a href="#-new-features-11" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-9" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-13" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-4" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-deprecated-1" class="table-of-contents__link toc-highlight">🗑 Deprecated</a></li><li><a href="#-new-features-12" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-10" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-14" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-new-features-13" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-11" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-15" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-5" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-new-features-14" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-12" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-16" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-6" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-new-features-15" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-13" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-17" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-7" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-new-features-16" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-14" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-18" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-8" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-new-features-17" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-15" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-19" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-9" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-new-features-18" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-documentation-changes-20" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-new-features-19" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-16" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-21" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-10" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-new-features-20" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-17" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-22" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-11" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-new-features-21" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-18" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-23" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-12" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-new-features-22" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-api-changes-19" class="table-of-contents__link toc-highlight">📚 API Changes</a></li><li><a href="#-documentation-changes-24" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-13" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-new-features-23" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-documentation-changes-25" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-14" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-documentation-platform-updates-6" class="table-of-contents__link toc-highlight">🛠 Documentation Platform Updates</a></li><li><a href="#-new-features-24" class="table-of-contents__link toc-highlight">✨ New Features</a></li><li><a href="#-documentation-changes-26" class="table-of-contents__link toc-highlight">📝 Documentation Changes</a></li><li><a href="#-example-updates-15" class="table-of-contents__link toc-highlight">📋 Example Updates</a></li><li><a href="#-documentation-platform-updates-7" class="table-of-contents__link toc-highlight">🛠 Documentation Platform Updates</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">APIs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/indexing-apis/indexing">Indexing</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/search-apis/search">Search</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/admin-apis/admin">Admin</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Vectara, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

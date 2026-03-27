@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-build/prepare-data/metadata-filters/func-opr" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Functions and Operators | Vectara Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.vectara.com/docs/build/prepare-data/metadata-filters/func-opr"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Functions and Operators | Vectara Docs"><meta data-rh="true" name="description" content="Most operators in  have the same precedence and are left-associative."><meta data-rh="true" property="og:description" content="Most operators in  have the same precedence and are left-associative."><link data-rh="true" rel="icon" href="/img/vectara_logo.svg"><link data-rh="true" rel="canonical" href="https://docs.vectara.com/docs/build/prepare-data/metadata-filters/func-opr"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/build/prepare-data/metadata-filters/func-opr" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/build/prepare-data/metadata-filters/func-opr" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Vectara Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Vectara Docs Atom Feed">
+
+
+
+
+
+
+
+
+
+<script src="/analytics.js" async></script>
+<script src="/scripts/reodev.js" async></script><link rel="stylesheet" href="/assets/css/styles.50104ce9.css">
+<script src="/assets/js/runtime~main.5e1f3244.js" defer="defer"></script>
+<script src="/assets/js/main.09506697.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/vectara_wordmark.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/vectara_wordmark_light.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/">Docs</a><a class="navbar__item navbar__link" href="/docs/rest-api">API Reference</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">SDKs</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/sdk/vectara-python-sdk">Python</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Release Information</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/release-notes">Release Notes</a></li><li><a class="dropdown__link" href="/docs/changelog">Changelog</a></li></ul></div></div><div class="navbar__items navbar__items--right"><div class="searchBar navbarSearchContainer_Bca1"></div><a href="https://console.vectara.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Console</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_xLCN"><div class="docItemContainer_jfFK"><article><span class="theme-doc-version-badge badge badge--secondary">Version: 2.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Functions and Operators</h1></header><div class="row"><div class="col col--12 markdown"><p>Most operators in <!-- -->Vectara<!-- --> have the same precedence and are left-associative.
+You need to use parenthesis to enforce a different precedence.</p>
+<p>The following table indicates the supported operators and their precedence (highest to lowest).
+Non-binary operators do not specify associativity.</p>
+<table><thead><tr><th>Operator</th><th>Associativity</th><th>Description</th></tr></thead><tbody><tr><td><code>+</code>, <code>-</code></td><td>-</td><td>unary plus and minus</td></tr><tr><td><code>*</code>, <code>/</code>, <code>%</code></td><td>left</td><td>multiplication, division, modulo</td></tr><tr><td><code>+</code>, <code>-</code></td><td>left</td><td>addition, subtraction</td></tr><tr><td><code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code></td><td>left</td><td>comparison</td></tr><tr><td><code>=</code>, <code>==</code>, <code>!=</code>, <code>&lt;&gt;</code></td><td>left</td><td>comparison</td></tr><tr><td><code>IS NULL</code>, <code>IS NOT NULL</code></td><td>-</td><td>NULL comparison</td></tr><tr><td><code>IN</code></td><td>-</td><td>range containment</td></tr><tr><td><code>NOT</code></td><td>-</td><td>logical negation</td></tr><tr><td><code>AND</code></td><td>left</td><td>logical conjunction</td></tr><tr><td><code>OR</code></td><td>left</td><td>logical disjunction</td></tr></tbody></table>
+<p>These operators provide a powerful way to filter and retrieve documents. By
+using them effectively, users can create complex queries to find the most
+relevant documents for their specific use cases. Let&#x27;s look at these operators
+in more detail:</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="unary-plus-and-minus-operators---">Unary plus and minus operators (<code>+</code>, <code>-</code>)<a href="#unary-plus-and-minus-operators---" class="hash-link" aria-label="Direct link to unary-plus-and-minus-operators---" title="Direct link to unary-plus-and-minus-operators---">​</a></h2>
+<p>The unary plus and minus operators indicate a positive or negative numeric
+value. Use when you need to filter documents based on numeric fields that can
+have both positive and negative values, such as scores, ratings, or
+temperatures.</p>
+<p>For example, filter documents with a score greater than (or less than)
+specific scores with the positive or negative sign:</p>
+<ul>
+<li>
+<p><strong>Unary plus</strong> - Filter documents with a score greater than
+positive 10:</p>
+<p><code>doc.score &gt; 10</code></p>
+</li>
+<li>
+<p><strong>Unary minus</strong>  - Filter documents with a score less
+than negative 5:</p>
+<p><code>doc.score &lt; -5</code></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="multiplication-division-and-modulo-operators---">Multiplication, division, and modulo operators (<code>*</code>, <code>/</code> <code>%</code>)<a href="#multiplication-division-and-modulo-operators---" class="hash-link" aria-label="Direct link to multiplication-division-and-modulo-operators---" title="Direct link to multiplication-division-and-modulo-operators---">​</a></h2>
+<p>These operators perform mathematical operations on numeric values to multiply,
+divide, and find the remainder of a value. Use when involving calculating
+prices with taxes, determining the number of pages or items
+per group, or finding documents with specific numeric patterns.</p>
+<p>For example use multiplication to filter on price, total pages,
+and page count to find odd or even numbers.</p>
+<ul>
+<li><strong>Multiplication</strong> - Filters documents where the price increased by 10% is
+greater than 100:</li>
+</ul>
+<p><code>doc.price * 1.1 &gt; 100</code></p>
+<ul>
+<li><strong>Division</strong> - Filters documents where the total number of pages divided by
+10 is less than 20:</li>
+</ul>
+<p><code>doc.totalpages / 10 &lt; 20</code></p>
+<ul>
+<li><strong>Modulo</strong> - Filters documents where the page count is
+divisible by 3:</li>
+</ul>
+<p><code>doc.pagecount % 3 = 0</code></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="addition-and-subtraction-operators---">Addition and subtraction operators (<code>+</code>, <code>-</code>)<a href="#addition-and-subtraction-operators---" class="hash-link" aria-label="Direct link to addition-and-subtraction-operators---" title="Direct link to addition-and-subtraction-operators---">​</a></h2>
+<p>These addition and subtraction operators perform arithmetic operations on
+numeric values. Use for tasks like adjusting scores or prices
+based on specific criteria or comparing values with a certain threshold.</p>
+<p>For example, filter on scores above a specific number or prices after discount.</p>
+<ul>
+<li>
+<p><strong>Addition</strong> - Filters documents where the score plus 10 is greater than or
+equal to 80:</p>
+<p><code>doc.score + 10 &gt;= 80</code></p>
+</li>
+<li>
+<p><strong>Subtraction</strong> - Filters documents where the price minus the discount is
+less than or equal to 50:</p>
+<p><code>doc.price - doc.discount &lt;= 50</code></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="less-and-greater-comparison-operators----">Less and greater comparison operators (<code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>)<a href="#less-and-greater-comparison-operators----" class="hash-link" aria-label="Direct link to less-and-greater-comparison-operators----" title="Direct link to less-and-greater-comparison-operators----">​</a></h2>
+<p>These comparison operators are used to filter documents based on specific
+conditions. Use for a wide range of use cases, such as finding
+documents within a certain price range, date range, or any other numeric or
+comparable values.</p>
+<p>For example, filter on prices below a specific number, ratings below a
+threshold, publish dates after a specific date, and scores above a specific
+number.</p>
+<ul>
+<li>
+<p><strong>Less than (<code>&lt;</code>)</strong> - Filters documents where the price is less than 100:</p>
+<p><code>doc.price &lt; 100</code></p>
+</li>
+<li>
+<p><strong>Less than or equal to (<code>&lt;=</code>)</strong> - Filters documents where the rating is less
+than or equal to 4.5:</p>
+<p><code>doc.rating &lt;= 4.5</code></p>
+</li>
+<li>
+<p><strong>Greater than (<code>&gt;</code>)</strong> - Filters documents published after January 1, 2022:</p>
+<p><code>doc.publishdate &gt; &#x27;2022-01-01&#x27;</code></p>
+</li>
+<li>
+<p><strong>Greater than or equal to (<code>&gt;=</code>)</strong> - Filters documents with a score greater
+than or equal to 80:</p>
+<p><code>doc.score &gt;= 80</code></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="equality-and-inequality-operators----">Equality and inequality operators (<code>=</code>, <code>==</code>, <code>!=</code>, <code>&lt;&gt;</code>)<a href="#equality-and-inequality-operators----" class="hash-link" aria-label="Direct link to equality-and-inequality-operators----" title="Direct link to equality-and-inequality-operators----">​</a></h2>
+<p>These comparison operators check for equality or inequality for each side
+of the function. Use for filtering documents based on specific
+values of fields, such as categories, statuses, or names.</p>
+<p>For example, filter on a specific category or status, or filter all except for
+that category.</p>
+<ul>
+<li>
+<p><strong>Equals (<code>=</code> or <code>==</code>)</strong> - Filters documents where the category is &quot;Technology&quot;
+or the status is &quot;active&quot;:</p>
+<p><code>doc.category = &#x27;Technology&#x27;</code> or <code>doc.status == &#x27;active&#x27;</code></p>
+</li>
+<li>
+<p><strong>Does not equal to (<code>!=</code> or <code>&lt;&gt;</code>)</strong> - Filters documents where the category is
+neither &quot;Sports&quot; or &quot;Entertainment&quot;:</p>
+<p><code>doc.category != &#x27;Sports&#x27;</code> or <code>doc.category &lt;&gt; &#x27;Entertainment&#x27;</code></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="null-comparison-operators-is-null-is-not-null">NULL comparison operators (<code>IS NULL</code>, <code>IS NOT NULL</code>)<a href="#null-comparison-operators-is-null-is-not-null" class="hash-link" aria-label="Direct link to null-comparison-operators-is-null-is-not-null" title="Direct link to null-comparison-operators-is-null-is-not-null">​</a></h2>
+<p>These operators check whether or not a value is NULL (empty or missing). Use
+for filtering documents based on the presence or absence of values
+in specific fields.</p>
+<p>For example, filter on no author or only data that has a description.</p>
+<ul>
+<li>
+<p><strong>Value is null</strong> - Filters documents where the author field is empty or
+missing:</p>
+<p><code>doc.author IS NULL</code></p>
+</li>
+<li>
+<p><strong>Value is not null</strong> - Filters documents where the description field has a
+value:</p>
+<p><code>doc.description IS NOT NULL</code></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="range-containment-operator-in">Range containment operator (<code>IN</code>)<a href="#range-containment-operator-in" class="hash-link" aria-label="Direct link to range-containment-operator-in" title="Direct link to range-containment-operator-in">​</a></h2>
+<p>The <code>IN</code> operator checks if a value is within a specified set. Use for
+filtering documents based on multiple possible values for a field,
+such as categories, tags, or statuses.</p>
+<p>For example, filter on two specific categories or statuses.</p>
+<ul>
+<li>
+<p><strong>Value is in a category</strong> - Filters documents where the category is either
+&quot;Science&quot; or &quot;History&quot;:</p>
+<p><code>doc.category IN (&#x27;Science&#x27;, &#x27;History&#x27;)</code></p>
+</li>
+<li>
+<p><strong>Value is a particular status</strong> - Filters documents where the status is either
+&quot;active&quot; or &quot;pending&quot;:</p>
+<p><code>doc.status IN (&#x27;active&#x27;, &#x27;pending&#x27;)</code></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="negation-operator-not">Negation operator (<code>NOT</code>)<a href="#negation-operator-not" class="hash-link" aria-label="Direct link to negation-operator-not" title="Direct link to negation-operator-not">​</a></h2>
+<p>The <code>NOT</code> operator is used to negate a condition, returning documents that do
+not match the specified criteria. Use for excluding certain documents
+based on specific field values.</p>
+<p>For example, filter on everything but a specific category or below a certain
+score.</p>
+<ul>
+<li>
+<p><strong>Value is not in a specific category</strong> - Filters documents where the category is
+not &quot;Technology&quot;:</p>
+<p><code>NOT (doc.category = &#x27;Technology&#x27;)</code></p>
+</li>
+<li>
+<p><strong>Value is not less than a score of <code>50</code></strong> - Filters documents where the score is
+greater than or equal to 50:</p>
+<p><code>NOT (doc.score &lt; 50)</code></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conjunction-operator-and">Conjunction operator (<code>AND</code>)<a href="#conjunction-operator-and" class="hash-link" aria-label="Direct link to conjunction-operator-and" title="Direct link to conjunction-operator-and">​</a></h2>
+<p>The <code>AND</code> operator combines multiple conditions, requiring all conditions to
+be true. Use for narrowing down search results based on multiple
+factors.</p>
+<p>For example, filter on score and publish date ranges, or on a specific
+category and author.</p>
+<ul>
+<li>
+<p><strong>Specify score and publish date</strong> - Filters documents with a score greater than
+80 and published after January 1, 2022:</p>
+<p><code>doc.score &gt; 80 AND doc.publishdate &gt; &#x27;2022-01-01&#x27;</code></p>
+</li>
+<li>
+<p><strong>Specify category and author</strong> - Filters documents where the category is
+&quot;Technology&quot; and the author is &quot;John Smith&quot;:</p>
+<p><code>doc.category = &#x27;Technology&#x27; AND doc.author = &#x27;John Smith&#x27;</code></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="logical-disjunction-or">Logical disjunction (<code>OR</code>)<a href="#logical-disjunction-or" class="hash-link" aria-label="Direct link to logical-disjunction-or" title="Direct link to logical-disjunction-or">​</a></h2>
+<p>The <code>OR</code> operator combines multiple conditions, requiring at least one
+condition to be true. Use for broadening search results based on
+multiple possible values.</p>
+<p>For example, filter on documents with one of two specific categories or
+documents that either active or above a certain score.</p>
+<ul>
+<li>
+<p><strong>Specify one of two possible categories</strong> - Filters documents where the category
+is either &quot;Technology&quot; or &quot;Business&quot;:</p>
+<p><code>doc.category = &#x27;Technology&#x27; OR doc.category = &#x27;Business&#x27;</code></p>
+</li>
+<li>
+<p><strong>Specify one of two attributes</strong> - Filters documents where the status is &quot;active&quot;
+or the score is greater than 90:</p>
+<p><code>doc.status = &#x27;active&#x27; OR doc.score &gt; 90</code></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="operator-combinations">Operator combinations<a href="#operator-combinations" class="hash-link" aria-label="Direct link to Operator combinations" title="Direct link to Operator combinations">​</a></h2>
+<p>Combining different operators enables you to create more specific filtering
+conditions. By using parentheses and combining these operators in different
+ways, you can effectively narrow or broaden your query results to find the
+most relevant documents. The following examples show combinations such as
+&quot;IN and AND,&quot; &quot;NOT and AND,&quot; &quot;OR and &quot;AND,&quot; and &quot;Not and IN and AND.&quot;</p>
+<ul>
+<li>
+<p><strong>Specify one of two possible categories and a published year</strong> - Filters
+documents where the category is either &quot;Science&quot; or &quot;Technology&quot; AND the
+published year is greater than 2020:</p>
+<p><code>doc.category IN (&#x27;Science&#x27;, &#x27;Technology&#x27;) AND doc.publishedyear &gt; 2020</code></p>
+</li>
+<li>
+<p><strong>Value is NOT a status and category</strong> - Filters documents that are both NOT
+in the &quot;draft&quot; status AND &quot;Technology&quot; category:</p>
+<p><code>NOT (doc.status = &#x27;draft&#x27; AND doc.category = &#x27;Technology)</code></p>
+</li>
+<li>
+<p><strong>Specify a status or qualified score</strong> - Filters documents where the status
+is &quot;active&quot; or the score is greater than 90 as long as the status is also
+&quot;pending&quot;:</p>
+<p><code>doc.status = &#x27;active&#x27; OR (doc.status = &#x27;pending&#x27; AND doc.score &gt; 90)</code></p>
+</li>
+<li>
+<p><strong>Value is not in a category and with a specific score</strong> - Filters
+documents that are NOT in the &quot;Sports&quot; or &quot;Entertainment&quot; category AND have
+a score greater than or equal to 50:</p>
+<p><code>NOT (doc.category IN (&#x27;Sports&#x27;, &#x27;Entertainment&#x27;) AND doc.score &gt;= 50)</code></p>
+</li>
+<li>
+<p><strong>Specify one of two possible categories after a date and with a specific status</strong> -
+Filters documents where the category is either &quot;Business&quot; or &quot;Finance&quot;, the
+publish date is after January 1, 2022, AND the status is &quot;published&quot;:</p>
+<p><code>doc.category IN (&#x27;Business&#x27;, &#x27;Finance&#x27;) AND doc.publishdate &gt; &#x27;2022-01-01&#x27; AND doc.status = &#x27;published&#x27;</code></p>
+</li>
+</ul></div></div></div><div class="row"><div class="col col--12"><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vectara/vectara-docs/tree/master/www/docs/build/prepare-data/metadata-filters/functions_operators.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2026-03-18T20:50:33.000Z" itemprop="dateModified">Mar 18, 2026</time></b> by <b>Aamir</b></span></div></div></footer></div></div></article><div class="row"><div class="col col--12"><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#unary-plus-and-minus-operators---" class="table-of-contents__link toc-highlight">Unary plus and minus operators (<code>+</code>, <code>-</code>)</a></li><li><a href="#multiplication-division-and-modulo-operators---" class="table-of-contents__link toc-highlight">Multiplication, division, and modulo operators (<code>*</code>, <code>/</code> <code>%</code>)</a></li><li><a href="#addition-and-subtraction-operators---" class="table-of-contents__link toc-highlight">Addition and subtraction operators (<code>+</code>, <code>-</code>)</a></li><li><a href="#less-and-greater-comparison-operators----" class="table-of-contents__link toc-highlight">Less and greater comparison operators (<code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>)</a></li><li><a href="#equality-and-inequality-operators----" class="table-of-contents__link toc-highlight">Equality and inequality operators (<code>=</code>, <code>==</code>, <code>!=</code>, <code>&lt;&gt;</code>)</a></li><li><a href="#null-comparison-operators-is-null-is-not-null" class="table-of-contents__link toc-highlight">NULL comparison operators (<code>IS NULL</code>, <code>IS NOT NULL</code>)</a></li><li><a href="#range-containment-operator-in" class="table-of-contents__link toc-highlight">Range containment operator (<code>IN</code>)</a></li><li><a href="#negation-operator-not" class="table-of-contents__link toc-highlight">Negation operator (<code>NOT</code>)</a></li><li><a href="#conjunction-operator-and" class="table-of-contents__link toc-highlight">Conjunction operator (<code>AND</code>)</a></li><li><a href="#logical-disjunction-or" class="table-of-contents__link toc-highlight">Logical disjunction (<code>OR</code>)</a></li><li><a href="#operator-combinations" class="table-of-contents__link toc-highlight">Operator combinations</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">APIs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/indexing-apis/indexing">Indexing</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/search-apis/search">Search</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/admin-apis/admin">Admin</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Vectara, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-learn/grounded-generation/model-selection" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">LLM selection | Vectara Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.vectara.com/docs/learn/grounded-generation/model-selection"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="LLM selection | Vectara Docs"><meta data-rh="true" name="description" content="Selecting the right model for your application helps you meet specific use"><meta data-rh="true" property="og:description" content="Selecting the right model for your application helps you meet specific use"><link data-rh="true" rel="icon" href="/img/vectara_logo.svg"><link data-rh="true" rel="canonical" href="https://docs.vectara.com/docs/learn/grounded-generation/model-selection"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/learn/grounded-generation/model-selection" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/learn/grounded-generation/model-selection" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Vectara Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Vectara Docs Atom Feed">
+
+
+
+
+
+
+
+
+
+<script src="/analytics.js" async></script>
+<script src="/scripts/reodev.js" async></script><link rel="stylesheet" href="/assets/css/styles.50104ce9.css">
+<script src="/assets/js/runtime~main.5e1f3244.js" defer="defer"></script>
+<script src="/assets/js/main.09506697.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/vectara_wordmark.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/vectara_wordmark_light.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/">Docs</a><a class="navbar__item navbar__link" href="/docs/rest-api">API Reference</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">SDKs</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/sdk/vectara-python-sdk">Python</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Release Information</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/release-notes">Release Notes</a></li><li><a class="dropdown__link" href="/docs/changelog">Changelog</a></li></ul></div></div><div class="navbar__items navbar__items--right"><div class="searchBar navbarSearchContainer_Bca1"></div><a href="https://console.vectara.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Console</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_xLCN"><div class="docItemContainer_jfFK"><article><span class="theme-doc-version-badge badge badge--secondary">Version: 2.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>LLM selection</h1></header><div class="row"><div class="col col--12 markdown"><p>Selecting the right model for your application helps you meet specific use
+case requirements. Vectara provides flexible model selection capabilities
+that support both Vectara-provided presets and the ability to add your own
+models.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generation-presets">Generation presets<a href="#generation-presets" class="hash-link" aria-label="Direct link to Generation presets" title="Direct link to Generation presets">​</a></h2>
+<p><a href="/docs/learn/grounded-generation/select-a-summarizer">Generation presets</a> provide curated model configurations optimized for
+specific use cases and simplify model selection. We recommend the following
+generation presets:</p>
+<ul>
+<li><code>mockingbird-2.0</code> - Vectara&#x27;s RAG-optimized LLM with superior citation accuracy</li>
+<li><code>vectara-summary-ext-24-05-med-omni</code> - GPT-4o for enhanced citations</li>
+<li><code>vectara-summary-table-query-ext-dec-2024-gpt-4o</code> - Optimized for table data</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bring-your-own-llm">Bring Your Own LLM<a href="#bring-your-own-llm" class="hash-link" aria-label="Direct link to Bring Your Own LLM" title="Direct link to Bring Your Own LLM">​</a></h2>
+<p>Organizations can integrate third-party LLMs using Vectara&#x27;s <a href="/docs/search-and-retrieval/bring-your-own-llm">Bring Your Own LLM</a>
+capability.</p>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Important</div><div class="admonitionContent_BuS1"><p>Custom LLMs cannot be used directly in queries. They must be referenced
+through generation presets.</p></div></div>
+<ol>
+<li><strong>Register your LLM</strong> using the Create LLM API endpoint (<code>POST /v2/llms</code>)<!-- -->
+<ul>
+<li>Supports OpenAI-compatible APIs (including Anthropic Claude)</li>
+<li>Supports Vertex AI (Google Gemini models)</li>
+<li>Supports OpenAI Responses API (reasoning models like o1, o3)</li>
+</ul>
+</li>
+<li><strong>Create or use a generation preset</strong> that references your LLM by name</li>
+<li><strong>Use the preset</strong> in queries with <code>generation_preset_name</code></li>
+</ol>
+<p><strong>Override option</strong>: You can override a preset&#x27;s LLM using <code>model_parameters.llm_name</code>:</p>
+<div class="codePanel_roBT stackedLayout_Jnlf" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">OVERRIDE PRESET LLM</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->json syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="json" selected="">json</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy json code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="json code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="supported-model-types">Supported model types<a href="#supported-model-types" class="hash-link" aria-label="Direct link to Supported model types" title="Direct link to Supported model types">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vectara-native-models">Vectara native models<a href="#vectara-native-models" class="hash-link" aria-label="Direct link to Vectara native models" title="Direct link to Vectara native models">​</a></h3>
+<p><strong>Mockingbird LLMs</strong></p>
+<ul>
+<li>Specifically designed for Retrieval Augmented Generation</li>
+<li>Superior citation accuracy compared to general-purpose models</li>
+<li>Excellent multilingual performance</li>
+<li>Optimized for structured data generation</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="openai-models">OpenAI models<a href="#openai-models" class="hash-link" aria-label="Direct link to OpenAI models" title="Direct link to OpenAI models">​</a></h3>
+<p><strong>Available via OpenAI-compatible API:</strong></p>
+<ul>
+<li>GPT-4, GPT-4-turbo</li>
+<li>GPT-3.5-turbo for cost-effective applications</li>
+<li>Custom fine-tuned models via OpenAI interface</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vertex-ai-models">Vertex AI Models<a href="#vertex-ai-models" class="hash-link" aria-label="Direct link to Vertex AI Models" title="Direct link to Vertex AI Models">​</a></h3>
+<p><strong>Google Cloud integration:</strong></p>
+<ul>
+<li>Gemini 2.5-flash (cost-effective, fast)</li>
+<li>Gemini 2.5-pro (high performance)</li>
+<li>Gemini 2.0-experimental (latest features)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="claude-models">Claude Models<a href="#claude-models" class="hash-link" aria-label="Direct link to Claude Models" title="Direct link to Claude Models">​</a></h3>
+<p><strong>Anthropic integration:</strong></p>
+<ul>
+<li>Available via OpenAI-compatible interface</li>
+<li>Various Claude model variants supported</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="use-case-recommendations">Use Case Recommendations<a href="#use-case-recommendations" class="hash-link" aria-label="Direct link to Use Case Recommendations" title="Direct link to Use Case Recommendations">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="rag-applications">RAG applications<a href="#rag-applications" class="hash-link" aria-label="Direct link to RAG applications" title="Direct link to RAG applications">​</a></h3>
+<p><strong>Recommended model</strong>: <code>mockingbird-2.0</code></p>
+<ul>
+<li><strong>Why</strong>: Designed specifically for RAG use cases</li>
+<li><strong>Benefits</strong>: Enhanced citation accuracy, better context understanding</li>
+<li><strong>Best For</strong>: Enterprise applications requiring high-quality summaries with reliable source attribution</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="general-summarization">General summarization<a href="#general-summarization" class="hash-link" aria-label="Direct link to General summarization" title="Direct link to General summarization">​</a></h3>
+<p><strong>Recommended models</strong>: GPT-4 variants</p>
+<ul>
+<li><strong>Why</strong>: Versatile performance across different content types</li>
+<li><strong>Benefits</strong>: Strong reasoning capabilities, broad knowledge</li>
+<li><strong>Best For</strong>: Applications requiring creative or analytical summaries</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cost-effective-solutions">Cost-effective solutions<a href="#cost-effective-solutions" class="hash-link" aria-label="Direct link to Cost-effective solutions" title="Direct link to Cost-effective solutions">​</a></h3>
+<p><strong>Recommended model</strong>: GPT-3.5-turbo or Gemini Flash</p>
+<ul>
+<li><strong>Why</strong>: Lower cost per token while maintaining good quality</li>
+<li><strong>Benefits</strong>: Faster response times, reduced operational costs</li>
+<li><strong>Best For</strong>: High-volume applications with simpler summarization needs</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="multilingual-applications">Multilingual applications<a href="#multilingual-applications" class="hash-link" aria-label="Direct link to Multilingual applications" title="Direct link to Multilingual applications">​</a></h3>
+<p><strong>Recommended model</strong>: <code>mockingbird-2.0</code></p>
+<ul>
+<li><strong>Why</strong>: Excellent multilingual performance</li>
+<li><strong>Benefits</strong>: Consistent quality across languages</li>
+<li><strong>Best For</strong>: Global applications serving diverse language communities</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technical-documentation">Technical documentation<a href="#technical-documentation" class="hash-link" aria-label="Direct link to Technical documentation" title="Direct link to Technical documentation">​</a></h3>
+<p><strong>Recommended model</strong>: GPT-4 with structured prompts</p>
+<ul>
+<li><strong>Why</strong>: Strong performance on technical content</li>
+<li><strong>Benefits</strong>: Better handling of code, APIs, and technical concepts</li>
+<li><strong>Best For</strong>: Developer documentation and technical knowledge bases</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-model-configuration-options">Advanced model configuration options<a href="#advanced-model-configuration-options" class="hash-link" aria-label="Direct link to Advanced model configuration options" title="Direct link to Advanced model configuration options">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="nuanced-control">Nuanced control<a href="#nuanced-control" class="hash-link" aria-label="Direct link to Nuanced control" title="Direct link to Nuanced control">​</a></h3>
+<p>For applications requiring precise control over model behavior:</p>
+<div class="codePanel_roBT stackedLayout_Jnlf" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">ADVANCED MODEL PARAMETERS</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->json syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="json" selected="">json</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy json code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="json code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="parameter-recommendations">Parameter recommendations<a href="#parameter-recommendations" class="hash-link" aria-label="Direct link to Parameter recommendations" title="Direct link to Parameter recommendations">​</a></h3>
+<ul>
+<li><strong>temperature</strong>: 0.0-0.3 for factual content, 0.4-0.7 for creative content</li>
+<li><strong>max_tokens</strong>: Set based on desired response length (typically 200-2000)</li>
+<li><strong>frequency_penalty</strong>: 0.1-0.5 to reduce repetition</li>
+<li><strong>presence_penalty</strong>: 0.1-0.3 to encourage topic diversity</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="custom-prompt-templates">Custom prompt templates<a href="#custom-prompt-templates" class="hash-link" aria-label="Direct link to Custom prompt templates" title="Direct link to Custom prompt templates">​</a></h3>
+<p>Combine model selection with <a href="/docs/prompts/vectara-prompt-engine">custom prompt templates</a> for specialized applications:</p>
+<ul>
+<li>Legal document analysis</li>
+<li>Financial report summarization</li>
+<li>Scientific literature review</li>
+<li>Customer support responses</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="data-driven-model-selection">Data-driven model selection<a href="#data-driven-model-selection" class="hash-link" aria-label="Direct link to Data-driven model selection" title="Direct link to Data-driven model selection">​</a></h2>
+<p>Rather than guessing which model works best for your use case, use the
+<a href="/docs/hallucination-and-evaluation/open-eval-framework">Vectara Open Eval Framework</a> to systematically evaluate and optimize your model selection:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="systematic-evaluation-process">Systematic evaluation process<a href="#systematic-evaluation-process" class="hash-link" aria-label="Direct link to Systematic evaluation process" title="Direct link to Systematic evaluation process">​</a></h3>
+<ol>
+<li><strong>Create evaluation datasets</strong> representative of your use case</li>
+<li><strong>Test multiple model configurations</strong> with different presets and parameters</li>
+<li><strong>Measure performance</strong> using standardized metrics (UMBRELA, BERT Score, etc.)</li>
+<li><strong>Compare results</strong> to identify optimal configurations</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="beyond-black-box-selection">Beyond &quot;black box&quot; selection<a href="#beyond-black-box-selection" class="hash-link" aria-label="Direct link to Beyond &quot;black box&quot; selection" title="Direct link to Beyond &quot;black box&quot; selection">​</a></h3>
+<p>The evaluation framework transforms model selection from trial-and-error into a data-driven process:</p>
+<ul>
+<li><strong>Quantifiable results</strong> instead of subjective assessment</li>
+<li><strong>Statistical comparison</strong> between different configurations</li>
+<li><strong>Use case-specific optimization</strong> rather than generic recommendations</li>
+<li><strong>Continuous improvement</strong> through systematic re-evaluation</li>
+</ul></div></div></div><div class="row"><div class="col col--12"><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vectara/vectara-docs/tree/master/www/docs/learn/grounded-generation/model-selection.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2026-03-18T20:50:33.000Z" itemprop="dateModified">Mar 18, 2026</time></b> by <b>Aamir</b></span></div></div></footer></div></div></article><div class="row"><div class="col col--12"><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#generation-presets" class="table-of-contents__link toc-highlight">Generation presets</a></li><li><a href="#bring-your-own-llm" class="table-of-contents__link toc-highlight">Bring Your Own LLM</a></li><li><a href="#supported-model-types" class="table-of-contents__link toc-highlight">Supported model types</a><ul><li><a href="#vectara-native-models" class="table-of-contents__link toc-highlight">Vectara native models</a></li><li><a href="#openai-models" class="table-of-contents__link toc-highlight">OpenAI models</a></li><li><a href="#vertex-ai-models" class="table-of-contents__link toc-highlight">Vertex AI Models</a></li><li><a href="#claude-models" class="table-of-contents__link toc-highlight">Claude Models</a></li></ul></li><li><a href="#use-case-recommendations" class="table-of-contents__link toc-highlight">Use Case Recommendations</a><ul><li><a href="#rag-applications" class="table-of-contents__link toc-highlight">RAG applications</a></li><li><a href="#general-summarization" class="table-of-contents__link toc-highlight">General summarization</a></li><li><a href="#cost-effective-solutions" class="table-of-contents__link toc-highlight">Cost-effective solutions</a></li><li><a href="#multilingual-applications" class="table-of-contents__link toc-highlight">Multilingual applications</a></li><li><a href="#technical-documentation" class="table-of-contents__link toc-highlight">Technical documentation</a></li></ul></li><li><a href="#advanced-model-configuration-options" class="table-of-contents__link toc-highlight">Advanced model configuration options</a><ul><li><a href="#nuanced-control" class="table-of-contents__link toc-highlight">Nuanced control</a></li><li><a href="#parameter-recommendations" class="table-of-contents__link toc-highlight">Parameter recommendations</a></li><li><a href="#custom-prompt-templates" class="table-of-contents__link toc-highlight">Custom prompt templates</a></li></ul></li><li><a href="#data-driven-model-selection" class="table-of-contents__link toc-highlight">Data-driven model selection</a><ul><li><a href="#systematic-evaluation-process" class="table-of-contents__link toc-highlight">Systematic evaluation process</a></li><li><a href="#beyond-black-box-selection" class="table-of-contents__link toc-highlight">Beyond &quot;black box&quot; selection</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">APIs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/indexing-apis/indexing">Indexing</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/search-apis/search">Search</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/api-reference/admin-apis/admin">Admin</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Vectara, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

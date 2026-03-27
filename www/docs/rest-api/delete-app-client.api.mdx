@@ -1,0 +1,71 @@
+---
+id: delete-app-client
+title: "Delete an App Client"
+description: "Remove an application client configuration from the customer account."
+sidebar_label: "Delete an App Client"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFV11vGzcQ/CsLPrXGSXLdPAlBUSFxAaMtYjhOgcI2bIrc0zHikQw/JAuC/nux5J11spUgRRrUL5bulrsz5OwstWWRLwKb3rCZc1oJHpU18EYrNDGwu4o9jkJyzvqIcsSdGi1xM4obh7TkEn2whmuKkxiEV46Wsym7wtauELgBPkgrcloQ1tRqkXx5WHvbQmwQRArRtuiBC2GTiWNWMeuwhF1INmUSNUacOVfwsYo57nmLET1R2DJFtRvkEj2rmOEtZiyfEoY4ulYt2kSrDrFeNwizywtYK62h5UsEDnMMEbCurY8QLQjbOiqdcfqSD5TJX4NDoWqFEgIKa2QA6yGqFsGmzCGIBlvOpltW9o0pE3GREbbKqDa1bPrTrmKUV3mUbFpzHXBXfR2f0Z9KaxW+H6025/8WbkSlA8+duy8yuFeSVYWh47E5iv/iLdgaZs51iqSS+22KPuERCCF6ZRZst7uj4OCsCRjo/dnpK/p3ZJueCsCaBygyk2O2q9ir059frrlE36oQlDUBpAVjI3Ct7bqsVGYBsVHhGW5hTSTRTrds0BOTj4FSbgc0DmvNYIEGPdeA3lsPPSNYq9hQg5XHwkpqNwkthsAXSBW7/bDzjyhys3hqp6jKbnSB4fiW9G+hvJoTqXWzydIoFa0QyXvapqdK3Hu+oUON2Oa8UUVNL7ps+8jujCqGj5w0yKbswkT0hmsI6FfoS5Ux23WdgSEr5ijYIpOhiGPDIwhuYI6QAkpSe4PawV8oIvccOlMDifNEzHiEdT5/b81i/AIooejJnBMwtqM/sscavRkFuRwtvE1utNd5b6IHQS3Gxso+qigtb0NEkwWVfWyJGzb9vPVWbMV1embB1GT9umOYnhYNsR1dNMS4X9Vhpa4qAUP8uYOnbLI6m+w7PEy2B+2+I8PIh1tYJq/J3mJ0YTqZcKfGq3I6Y2VznYAieRU3OXrm1O+4mSUqdJPZvqMvZ/nbIPg9NVKRdR/wZA2W5wfPrabE0dzBEEgqnUpYxWpt1zlXYfHGo0QTFddF33aJ5sMhjRSbAY9JKTnJkdkwrcvginyGpJ5Q8vywN8fn9v/YayGLUpnaDjut1/fV+fvrbP+rl3T7dwGctytFxgHRc6noPdeQPbybznSwUFsPa5yP5pxaaeBeYXxr/rYpd1qtjCQbpFa0yZcCPMLD8QMmqbwmJmiks8rEXx6gH1n9owDc51GjlUHZT6YV98qmACHNA4oMo7Q/We7lBVxhjR6NQOheZ1+kTBKDWpjiBnMknklFtSrGWdts4RxC5EZyL/Me1klDiD6JmDyOb82tGWWY2ftMBBIzlVABTk5WZycnY4p4GBJ76FIH4NAo9NyLRgk+yFtBCmSw2q7RCx4KoGbjGsxbDPCb9dBZZQUPE2G9s55PpvQhhfslbibSitRS1z2Mb0lpHTI2ZWfj0/EpWRr6Nryr36NfKYEDzfanImw70bjgepJDR7YehRI8yS6m7SKL7bBxpRVhPEyh2kWf8n5tvWy5X45dtnuu4zU+xr1QWfZQyf3yW7Lfa7Vo4pdq0PTlIk9fbLmiCjWinHOx/HWQPfeUsyG2PE/lrufeZp+jabuf6c/baruf8P/Z9bczhIiPceI0V4ao5P3ZdpZ7w3KDD0yXVWx6eMu6q1hjQ6Tg7ZZ6+IPXux09/pTQk7vekc17xefkITdbJlWgz/1V9AtMf7jqrmM/wucubEdJ9FZnNoMRw6puGB3i393tqt4G/x267321P0qtUHj5q+OJJc2u/4HDl+7xX09k/3PjgE+JnQmBLh5eNQ5vugfXh7fnf5xfn7Pd7h/a4BE7
+sidebar_class_name: "delete api-method"
+info_path: docs/rest-api/vectara-rest-api-v-2
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete an App Client"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v2/app_clients/{app_client_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove an application client configuration from the customer account.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"header","name":"Request-Timeout","description":"The API will make a best effort to complete the request in the specified seconds or time out.","schema":{"type":"integer","minimum":1},"required":false},{"in":"header","name":"Request-Timeout-Millis","description":"The API will make a best effort to complete the request in the specified milliseconds or time out.","schema":{"type":"integer","minimum":1}},{"name":"app_client_id","in":"path","description":"The ID of App Client.","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"The App Client was deleted."},"403":{"description":"Permissions do not allow deleting this App Client.","content":{"application/json":{"schema":{"description":"A general error response with an error code and message.","type":"object","properties":{"messages":{"description":"The messages describing why the error occurred.","type":"array","items":{"title":"message","type":"string","example":"Internal server error."}},"request_id":{"description":"The ID of the request that can be used to help Vectara support debug what went wrong.","type":"string"}},"title":"Error"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
