@@ -2,6 +2,10 @@ import { themes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 
 const config: Config = {
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "zh-Hans"],
+  },
   title: "Vectara Docs",
   tagline:
     "Developer documentation for Vectara's Retrieval Augmented Generation as-a-Service (RAGaaS) Platform",

@@ -1,0 +1,662 @@
+{
+  "version.label": {
+    "message": "2.0",
+    "description": "The label for version current"
+  },
+  "sidebar.someSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Data ingestion": {
+    "message": "Data ingestion",
+    "description": "The label for category Data ingestion in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Search and retrieval": {
+    "message": "Search and retrieval",
+    "description": "The label for category Search and retrieval in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Reranking": {
+    "message": "Reranking",
+    "description": "The label for category Reranking in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Agents": {
+    "message": "Agents",
+    "description": "The label for category Agents in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Tools": {
+    "message": "Tools",
+    "description": "The label for category Tools in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Hallucination and evaluation": {
+    "message": "Hallucination and evaluation",
+    "description": "The label for category Hallucination and evaluation in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Tutorials": {
+    "message": "Tutorials",
+    "description": "The label for category Tutorials in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Tutorials.link.generated-index.title": {
+    "message": "Tutorials",
+    "description": "The generated-index page title for category Tutorials in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Tutorials.link.generated-index.description": {
+    "message": "Tutorials to help you build with Vectara",
+    "description": "The generated-index page description for category Tutorials in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Integrations": {
+    "message": "Integrations",
+    "description": "The label for category Integrations in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Security": {
+    "message": "Security",
+    "description": "The label for category Security in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Authentication methods": {
+    "message": "Authentication methods",
+    "description": "The label for category Authentication methods in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.API Authentication Examples": {
+    "message": "API Authentication Examples",
+    "description": "The label for category API Authentication Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.OAuth 2.0 Examples": {
+    "message": "OAuth 2.0 Examples",
+    "description": "The label for category OAuth 2.0 Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.API Key Examples": {
+    "message": "API Key Examples",
+    "description": "The label for category API Key Examples in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Authorization levels": {
+    "message": "Authorization levels",
+    "description": "The label for category Authorization levels in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Private deployment": {
+    "message": "Private deployment",
+    "description": "The label for category Private deployment in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category Guides in sidebar someSidebar"
+  },
+  "sidebar.restOAS.category.API Reference": {
+    "message": "API Reference",
+    "description": "The label for category API Reference in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.API Reference.link.generated-index.title": {
+    "message": "Vectara REST API 2.0",
+    "description": "The generated-index page title for category API Reference in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.API Reference.link.generated-index.description": {
+    "message": "Play around with Vectara's REST 2.0 APIs",
+    "description": "The generated-index page description for category API Reference in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Agents": {
+    "message": "Agents",
+    "description": "The label for category Agents in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Management": {
+    "message": "Management",
+    "description": "The label for category Management in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Sessions": {
+    "message": "Sessions",
+    "description": "The label for category Sessions in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Schedules": {
+    "message": "Schedules",
+    "description": "The label for category Schedules in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Instructions": {
+    "message": "Instructions",
+    "description": "The label for category Instructions in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Tools": {
+    "message": "Tools",
+    "description": "The label for category Tools in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Tool servers": {
+    "message": "Tool servers",
+    "description": "The label for category Tool servers in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Examples": {
+    "message": "Examples",
+    "description": "The label for category Examples in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Data": {
+    "message": "Data",
+    "description": "The label for category Data in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Corpora": {
+    "message": "Corpora",
+    "description": "The label for category Corpora in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Metadata": {
+    "message": "Metadata",
+    "description": "The label for category Metadata in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Documents": {
+    "message": "Documents",
+    "description": "The label for category Documents in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Upload": {
+    "message": "Upload",
+    "description": "The label for category Upload in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Index": {
+    "message": "Index",
+    "description": "The label for category Index in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Search and retrieval": {
+    "message": "Search and retrieval",
+    "description": "The label for category Search and retrieval in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Queries": {
+    "message": "Queries",
+    "description": "The label for category Queries in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Metadata query": {
+    "message": "Metadata query",
+    "description": "The label for category Metadata query in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Access control": {
+    "message": "Access control",
+    "description": "The label for category Access control in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Users": {
+    "message": "Users",
+    "description": "The label for category Users in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Authentication": {
+    "message": "Authentication",
+    "description": "The label for category Authentication in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.API keys": {
+    "message": "API keys",
+    "description": "The label for category API keys in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Application clients": {
+    "message": "Application clients",
+    "description": "The label for category Application clients in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Analytics": {
+    "message": "Analytics",
+    "description": "The label for category Analytics in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Corpus statistics": {
+    "message": "Corpus statistics",
+    "description": "The label for category Corpus statistics in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Query history": {
+    "message": "Query history",
+    "description": "The label for category Query history in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Jobs": {
+    "message": "Jobs",
+    "description": "The label for category Jobs in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Platform": {
+    "message": "Platform",
+    "description": "The label for category Platform in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Large language models": {
+    "message": "Large language models",
+    "description": "The label for category Large language models in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Encoders": {
+    "message": "Encoders",
+    "description": "The label for category Encoders in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Generation presets": {
+    "message": "Generation presets",
+    "description": "The label for category Generation presets in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Rerankers": {
+    "message": "Rerankers",
+    "description": "The label for category Rerankers in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Table extractors": {
+    "message": "Table extractors",
+    "description": "The label for category Table extractors in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Quality and evaluation": {
+    "message": "Quality and evaluation",
+    "description": "The label for category Quality and evaluation in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Factual consistency evaluation": {
+    "message": "Factual consistency evaluation",
+    "description": "The label for category Factual consistency evaluation in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.Hallucination correctors": {
+    "message": "Hallucination correctors",
+    "description": "The label for category Hallucination correctors in sidebar restOAS"
+  },
+  "sidebar.restOAS.category.LLM chat completions": {
+    "message": "LLM chat completions",
+    "description": "The label for category LLM chat completions in sidebar restOAS"
+  },
+  "sidebar.restOAS.doc.Create agent": {
+    "message": "Create agent",
+    "description": "The label for the doc item Create agent in sidebar restOAS, linking to the doc rest-api/create-agent"
+  },
+  "sidebar.restOAS.doc.List agents": {
+    "message": "List agents",
+    "description": "The label for the doc item List agents in sidebar restOAS, linking to the doc rest-api/list-agents"
+  },
+  "sidebar.restOAS.doc.Get agent": {
+    "message": "Get agent",
+    "description": "The label for the doc item Get agent in sidebar restOAS, linking to the doc rest-api/get-agent"
+  },
+  "sidebar.restOAS.doc.Update agent": {
+    "message": "Update agent",
+    "description": "The label for the doc item Update agent in sidebar restOAS, linking to the doc rest-api/update-agent"
+  },
+  "sidebar.restOAS.doc.Replace agent": {
+    "message": "Replace agent",
+    "description": "The label for the doc item Replace agent in sidebar restOAS, linking to the doc rest-api/replace-agent"
+  },
+  "sidebar.restOAS.doc.Delete agent": {
+    "message": "Delete agent",
+    "description": "The label for the doc item Delete agent in sidebar restOAS, linking to the doc rest-api/delete-agent"
+  },
+  "sidebar.restOAS.doc.Create agent session": {
+    "message": "Create agent session",
+    "description": "The label for the doc item Create agent session in sidebar restOAS, linking to the doc rest-api/create-agent-session"
+  },
+  "sidebar.restOAS.doc.List agent sessions": {
+    "message": "List agent sessions",
+    "description": "The label for the doc item List agent sessions in sidebar restOAS, linking to the doc rest-api/list-agent-sessions"
+  },
+  "sidebar.restOAS.doc.Get agent session": {
+    "message": "Get agent session",
+    "description": "The label for the doc item Get agent session in sidebar restOAS, linking to the doc rest-api/get-agent-session"
+  },
+  "sidebar.restOAS.doc.Update agent session": {
+    "message": "Update agent session",
+    "description": "The label for the doc item Update agent session in sidebar restOAS, linking to the doc rest-api/update-agent-session"
+  },
+  "sidebar.restOAS.doc.Delete agent session": {
+    "message": "Delete agent session",
+    "description": "The label for the doc item Delete agent session in sidebar restOAS, linking to the doc rest-api/delete-agent-session"
+  },
+  "sidebar.restOAS.doc.Interact with an agent": {
+    "message": "Interact with an agent",
+    "description": "The label for the doc item Interact with an agent in sidebar restOAS, linking to the doc rest-api/create-agent-input"
+  },
+  "sidebar.restOAS.doc.List events in agent session": {
+    "message": "List events in agent session",
+    "description": "The label for the doc item List events in agent session in sidebar restOAS, linking to the doc rest-api/list-agent-events"
+  },
+  "sidebar.restOAS.doc.Get event in agent session": {
+    "message": "Get event in agent session",
+    "description": "The label for the doc item Get event in agent session in sidebar restOAS, linking to the doc rest-api/get-agent-event"
+  },
+  "sidebar.restOAS.doc.Delete agent event": {
+    "message": "Delete agent event",
+    "description": "The label for the doc item Delete agent event in sidebar restOAS, linking to the doc rest-api/delete-agent-event"
+  },
+  "sidebar.restOAS.doc.Hide agent event": {
+    "message": "Hide agent event",
+    "description": "The label for the doc item Hide agent event in sidebar restOAS, linking to the doc rest-api/hide-agent-event"
+  },
+  "sidebar.restOAS.doc.Unhide agent event": {
+    "message": "Unhide agent event",
+    "description": "The label for the doc item Unhide agent event in sidebar restOAS, linking to the doc rest-api/unhide-agent-event"
+  },
+  "sidebar.restOAS.doc.List session artifacts": {
+    "message": "List session artifacts",
+    "description": "The label for the doc item List session artifacts in sidebar restOAS, linking to the doc rest-api/list-session-artifacts"
+  },
+  "sidebar.restOAS.doc.Get session artifact": {
+    "message": "Get session artifact",
+    "description": "The label for the doc item Get session artifact in sidebar restOAS, linking to the doc rest-api/get-session-artifact"
+  },
+  "sidebar.restOAS.doc.Create agent schedule": {
+    "message": "Create agent schedule",
+    "description": "The label for the doc item Create agent schedule in sidebar restOAS, linking to the doc rest-api/create-agent-schedule"
+  },
+  "sidebar.restOAS.doc.List agent schedules": {
+    "message": "List agent schedules",
+    "description": "The label for the doc item List agent schedules in sidebar restOAS, linking to the doc rest-api/list-agent-schedules"
+  },
+  "sidebar.restOAS.doc.Get agent schedule": {
+    "message": "Get agent schedule",
+    "description": "The label for the doc item Get agent schedule in sidebar restOAS, linking to the doc rest-api/get-agent-schedule"
+  },
+  "sidebar.restOAS.doc.Update agent schedule": {
+    "message": "Update agent schedule",
+    "description": "The label for the doc item Update agent schedule in sidebar restOAS, linking to the doc rest-api/update-agent-schedule"
+  },
+  "sidebar.restOAS.doc.Delete agent schedule": {
+    "message": "Delete agent schedule",
+    "description": "The label for the doc item Delete agent schedule in sidebar restOAS, linking to the doc rest-api/delete-agent-schedule"
+  },
+  "sidebar.restOAS.doc.List agent schedule executions": {
+    "message": "List agent schedule executions",
+    "description": "The label for the doc item List agent schedule executions in sidebar restOAS, linking to the doc rest-api/list-agent-schedule-executions"
+  },
+  "sidebar.restOAS.doc.Create instruction": {
+    "message": "Create instruction",
+    "description": "The label for the doc item Create instruction in sidebar restOAS, linking to the doc rest-api/create-instruction"
+  },
+  "sidebar.restOAS.doc.List instructions": {
+    "message": "List instructions",
+    "description": "The label for the doc item List instructions in sidebar restOAS, linking to the doc rest-api/list-instructions"
+  },
+  "sidebar.restOAS.doc.Get instruction": {
+    "message": "Get instruction",
+    "description": "The label for the doc item Get instruction in sidebar restOAS, linking to the doc rest-api/get-instruction"
+  },
+  "sidebar.restOAS.doc.Update instruction": {
+    "message": "Update instruction",
+    "description": "The label for the doc item Update instruction in sidebar restOAS, linking to the doc rest-api/update-instruction"
+  },
+  "sidebar.restOAS.doc.Delete instruction": {
+    "message": "Delete instruction",
+    "description": "The label for the doc item Delete instruction in sidebar restOAS, linking to the doc rest-api/delete-instruction"
+  },
+  "sidebar.restOAS.doc.Test instruction": {
+    "message": "Test instruction",
+    "description": "The label for the doc item Test instruction in sidebar restOAS, linking to the doc rest-api/test-instruction"
+  },
+  "sidebar.restOAS.doc.Delete instruction version": {
+    "message": "Delete instruction version",
+    "description": "The label for the doc item Delete instruction version in sidebar restOAS, linking to the doc rest-api/delete-instruction-version"
+  },
+  "sidebar.restOAS.doc.Create tool": {
+    "message": "Create tool",
+    "description": "The label for the doc item Create tool in sidebar restOAS, linking to the doc rest-api/create-tool"
+  },
+  "sidebar.restOAS.doc.List tools": {
+    "message": "List tools",
+    "description": "The label for the doc item List tools in sidebar restOAS, linking to the doc rest-api/list-tools"
+  },
+  "sidebar.restOAS.doc.Test Lambda tool without creation": {
+    "message": "Test Lambda tool without creation",
+    "description": "The label for the doc item Test Lambda tool without creation in sidebar restOAS, linking to the doc rest-api/test-lambda-tool-without-creation"
+  },
+  "sidebar.restOAS.doc.Get tool": {
+    "message": "Get tool",
+    "description": "The label for the doc item Get tool in sidebar restOAS, linking to the doc rest-api/get-tool"
+  },
+  "sidebar.restOAS.doc.Update tool": {
+    "message": "Update tool",
+    "description": "The label for the doc item Update tool in sidebar restOAS, linking to the doc rest-api/update-tool"
+  },
+  "sidebar.restOAS.doc.Delete tool": {
+    "message": "Delete tool",
+    "description": "The label for the doc item Delete tool in sidebar restOAS, linking to the doc rest-api/delete-tool"
+  },
+  "sidebar.restOAS.doc.Test Lambda tool": {
+    "message": "Test Lambda tool",
+    "description": "The label for the doc item Test Lambda tool in sidebar restOAS, linking to the doc rest-api/test-tool"
+  },
+  "sidebar.restOAS.doc.List tool servers": {
+    "message": "List tool servers",
+    "description": "The label for the doc item List tool servers in sidebar restOAS, linking to the doc rest-api/list-tool-servers"
+  },
+  "sidebar.restOAS.doc.Create tool server": {
+    "message": "Create tool server",
+    "description": "The label for the doc item Create tool server in sidebar restOAS, linking to the doc rest-api/create-tool-server"
+  },
+  "sidebar.restOAS.doc.Get tool Server": {
+    "message": "Get tool Server",
+    "description": "The label for the doc item Get tool Server in sidebar restOAS, linking to the doc rest-api/get-tool-server"
+  },
+  "sidebar.restOAS.doc.Update tool server": {
+    "message": "Update tool server",
+    "description": "The label for the doc item Update tool server in sidebar restOAS, linking to the doc rest-api/update-tool-server"
+  },
+  "sidebar.restOAS.doc.Delete tool server": {
+    "message": "Delete tool server",
+    "description": "The label for the doc item Delete tool server in sidebar restOAS, linking to the doc rest-api/delete-tool-server"
+  },
+  "sidebar.restOAS.doc.Synchronize tool server": {
+    "message": "Synchronize tool server",
+    "description": "The label for the doc item Synchronize tool server in sidebar restOAS, linking to the doc rest-api/sync-tool-server"
+  },
+  "sidebar.restOAS.doc.Create a corpus": {
+    "message": "Create a corpus",
+    "description": "The label for the doc item Create a corpus in sidebar restOAS, linking to the doc rest-api/create-corpus"
+  },
+  "sidebar.restOAS.doc.List corpora": {
+    "message": "List corpora",
+    "description": "The label for the doc item List corpora in sidebar restOAS, linking to the doc rest-api/list-corpora"
+  },
+  "sidebar.restOAS.doc.Delete a corpus and all its data": {
+    "message": "Delete a corpus and all its data",
+    "description": "The label for the doc item Delete a corpus and all its data in sidebar restOAS, linking to the doc rest-api/delete-corpus"
+  },
+  "sidebar.restOAS.doc.Update a corpus": {
+    "message": "Update a corpus",
+    "description": "The label for the doc item Update a corpus in sidebar restOAS, linking to the doc rest-api/update-corpus"
+  },
+  "sidebar.restOAS.doc.Remove all documents and data in a corpus": {
+    "message": "Remove all documents and data in a corpus",
+    "description": "The label for the doc item Remove all documents and data in a corpus in sidebar restOAS, linking to the doc rest-api/reset-corpus"
+  },
+  "sidebar.restOAS.doc.Replace the filter attributes of a corpus": {
+    "message": "Replace the filter attributes of a corpus",
+    "description": "The label for the doc item Replace the filter attributes of a corpus in sidebar restOAS, linking to the doc rest-api/replace-filter-attributes"
+  },
+  "sidebar.restOAS.doc.Retrieve info about a corpus": {
+    "message": "Retrieve info about a corpus",
+    "description": "The label for the doc item Retrieve info about a corpus in sidebar restOAS, linking to the doc rest-api/get-corpus"
+  },
+  "sidebar.restOAS.doc.Get filter attribute statistics for corpus metadata": {
+    "message": "Get filter attribute statistics for corpus metadata",
+    "description": "The label for the doc item Get filter attribute statistics for corpus metadata in sidebar restOAS, linking to the doc rest-api/get-filter-attribute-stats"
+  },
+  "sidebar.restOAS.doc.List the documents in the corpus": {
+    "message": "List the documents in the corpus",
+    "description": "The label for the doc item List the documents in the corpus in sidebar restOAS, linking to the doc rest-api/list-corpus-documents"
+  },
+  "sidebar.restOAS.doc.Delete a document": {
+    "message": "Delete a document",
+    "description": "The label for the doc item Delete a document in sidebar restOAS, linking to the doc rest-api/delete-corpus-document"
+  },
+  "sidebar.restOAS.doc.Bulk delete documents": {
+    "message": "Bulk delete documents",
+    "description": "The label for the doc item Bulk delete documents in sidebar restOAS, linking to the doc rest-api/bulk-delete-corpus-documents"
+  },
+  "sidebar.restOAS.doc.Retrieve a document": {
+    "message": "Retrieve a document",
+    "description": "The label for the doc item Retrieve a document in sidebar restOAS, linking to the doc rest-api/get-corpus-document"
+  },
+  "sidebar.restOAS.doc.Summarize a document": {
+    "message": "Summarize a document",
+    "description": "The label for the doc item Summarize a document in sidebar restOAS, linking to the doc rest-api/summarize-corpus-document"
+  },
+  "sidebar.restOAS.doc.Retrieve an image from a document": {
+    "message": "Retrieve an image from a document",
+    "description": "The label for the doc item Retrieve an image from a document in sidebar restOAS, linking to the doc rest-api/get-image"
+  },
+  "sidebar.restOAS.doc.Upload a file to the corpus": {
+    "message": "Upload a file to the corpus",
+    "description": "The label for the doc item Upload a file to the corpus in sidebar restOAS, linking to the doc rest-api/upload-file"
+  },
+  "sidebar.restOAS.doc.Add a document to a corpus": {
+    "message": "Add a document to a corpus",
+    "description": "The label for the doc item Add a document to a corpus in sidebar restOAS, linking to the doc rest-api/create-corpus-document"
+  },
+  "sidebar.restOAS.doc.Update document, merging the metadata.": {
+    "message": "Update document, merging the metadata.",
+    "description": "The label for the doc item Update document, merging the metadata. in sidebar restOAS, linking to the doc rest-api/update-corpus-document"
+  },
+  "sidebar.restOAS.doc.Replace the document metadata.": {
+    "message": "Replace the document metadata.",
+    "description": "The label for the doc item Replace the document metadata. in sidebar restOAS, linking to the doc rest-api/replace-corpus-document-metadata"
+  },
+  "sidebar.restOAS.doc.Simple Single Corpus Query": {
+    "message": "Simple Single Corpus Query",
+    "description": "The label for the doc item Simple Single Corpus Query in sidebar restOAS, linking to the doc rest-api/search-corpus"
+  },
+  "sidebar.restOAS.doc.Advanced Single Corpus Query": {
+    "message": "Advanced Single Corpus Query",
+    "description": "The label for the doc item Advanced Single Corpus Query in sidebar restOAS, linking to the doc rest-api/query-corpus"
+  },
+  "sidebar.restOAS.doc.Multiple Corpora Query": {
+    "message": "Multiple Corpora Query",
+    "description": "The label for the doc item Multiple Corpora Query in sidebar restOAS, linking to the doc rest-api/query"
+  },
+  "sidebar.restOAS.doc.Query across metadata fields in a corpus": {
+    "message": "Query across metadata fields in a corpus",
+    "description": "The label for the doc item Query across metadata fields in a corpus in sidebar restOAS, linking to the doc rest-api/query-metadata"
+  },
+  "sidebar.restOAS.doc.Create a user in the current customer account": {
+    "message": "Create a user in the current customer account",
+    "description": "The label for the doc item Create a user in the current customer account in sidebar restOAS, linking to the doc rest-api/create-user"
+  },
+  "sidebar.restOAS.doc.List users in the account": {
+    "message": "List users in the account",
+    "description": "The label for the doc item List users in the account in sidebar restOAS, linking to the doc rest-api/list-users"
+  },
+  "sidebar.restOAS.doc.Get a user": {
+    "message": "Get a user",
+    "description": "The label for the doc item Get a user in sidebar restOAS, linking to the doc rest-api/get-user"
+  },
+  "sidebar.restOAS.doc.Update a user": {
+    "message": "Update a user",
+    "description": "The label for the doc item Update a user in sidebar restOAS, linking to the doc rest-api/update-user"
+  },
+  "sidebar.restOAS.doc.Delete a user": {
+    "message": "Delete a user",
+    "description": "The label for the doc item Delete a user in sidebar restOAS, linking to the doc rest-api/delete-user"
+  },
+  "sidebar.restOAS.doc.Reset the password for a user": {
+    "message": "Reset the password for a user",
+    "description": "The label for the doc item Reset the password for a user in sidebar restOAS, linking to the doc rest-api/reset-user-password"
+  },
+  "sidebar.restOAS.doc.Request an access token": {
+    "message": "Request an access token",
+    "description": "The label for the doc item Request an access token in sidebar restOAS, linking to the doc rest-api/get-o-auth-token"
+  },
+  "sidebar.restOAS.doc.Create an API key": {
+    "message": "Create an API key",
+    "description": "The label for the doc item Create an API key in sidebar restOAS, linking to the doc rest-api/create-api-key"
+  },
+  "sidebar.restOAS.doc.List API keys": {
+    "message": "List API keys",
+    "description": "The label for the doc item List API keys in sidebar restOAS, linking to the doc rest-api/list-api-keys"
+  },
+  "sidebar.restOAS.doc.Get an API key": {
+    "message": "Get an API key",
+    "description": "The label for the doc item Get an API key in sidebar restOAS, linking to the doc rest-api/get-api-key"
+  },
+  "sidebar.restOAS.doc.Update an API key": {
+    "message": "Update an API key",
+    "description": "The label for the doc item Update an API key in sidebar restOAS, linking to the doc rest-api/update-api-key"
+  },
+  "sidebar.restOAS.doc.Delete an API key": {
+    "message": "Delete an API key",
+    "description": "The label for the doc item Delete an API key in sidebar restOAS, linking to the doc rest-api/delete-api-key"
+  },
+  "sidebar.restOAS.doc.Create an App Client": {
+    "message": "Create an App Client",
+    "description": "The label for the doc item Create an App Client in sidebar restOAS, linking to the doc rest-api/create-app-client"
+  },
+  "sidebar.restOAS.doc.List App Clients": {
+    "message": "List App Clients",
+    "description": "The label for the doc item List App Clients in sidebar restOAS, linking to the doc rest-api/list-app-client"
+  },
+  "sidebar.restOAS.doc.Get an App Client": {
+    "message": "Get an App Client",
+    "description": "The label for the doc item Get an App Client in sidebar restOAS, linking to the doc rest-api/get-app-client"
+  },
+  "sidebar.restOAS.doc.Update an App Client": {
+    "message": "Update an App Client",
+    "description": "The label for the doc item Update an App Client in sidebar restOAS, linking to the doc rest-api/update-app-client"
+  },
+  "sidebar.restOAS.doc.Delete an App Client": {
+    "message": "Delete an App Client",
+    "description": "The label for the doc item Delete an App Client in sidebar restOAS, linking to the doc rest-api/delete-app-client"
+  },
+  "sidebar.restOAS.doc.Compute the current size of a corpus": {
+    "message": "Compute the current size of a corpus",
+    "description": "The label for the doc item Compute the current size of a corpus in sidebar restOAS, linking to the doc rest-api/compute-corpus-size"
+  },
+  "sidebar.restOAS.doc.Get a query history": {
+    "message": "Get a query history",
+    "description": "The label for the doc item Get a query history in sidebar restOAS, linking to the doc rest-api/get-query-history"
+  },
+  "sidebar.restOAS.doc.List the history of previous queries": {
+    "message": "List the history of previous queries",
+    "description": "The label for the doc item List the history of previous queries in sidebar restOAS, linking to the doc rest-api/get-query-histories"
+  },
+  "sidebar.restOAS.doc.List jobs": {
+    "message": "List jobs",
+    "description": "The label for the doc item List jobs in sidebar restOAS, linking to the doc rest-api/list-jobs"
+  },
+  "sidebar.restOAS.doc.Get a job by ID": {
+    "message": "Get a job by ID",
+    "description": "The label for the doc item Get a job by ID in sidebar restOAS, linking to the doc rest-api/get-job"
+  },
+  "sidebar.restOAS.doc.Create an LLM": {
+    "message": "Create an LLM",
+    "description": "The label for the doc item Create an LLM in sidebar restOAS, linking to the doc rest-api/create-llm"
+  },
+  "sidebar.restOAS.doc.List LLMs": {
+    "message": "List LLMs",
+    "description": "The label for the doc item List LLMs in sidebar restOAS, linking to the doc rest-api/list-ll-ms"
+  },
+  "sidebar.restOAS.doc.Get an LLM": {
+    "message": "Get an LLM",
+    "description": "The label for the doc item Get an LLM in sidebar restOAS, linking to the doc rest-api/get-llm"
+  },
+  "sidebar.restOAS.doc.Update an LLM": {
+    "message": "Update an LLM",
+    "description": "The label for the doc item Update an LLM in sidebar restOAS, linking to the doc rest-api/update-llm"
+  },
+  "sidebar.restOAS.doc.Delete an LLM": {
+    "message": "Delete an LLM",
+    "description": "The label for the doc item Delete an LLM in sidebar restOAS, linking to the doc rest-api/delete-llm"
+  },
+  "sidebar.restOAS.doc.Create an encoder": {
+    "message": "Create an encoder",
+    "description": "The label for the doc item Create an encoder in sidebar restOAS, linking to the doc rest-api/create-encoder"
+  },
+  "sidebar.restOAS.doc.List encoders": {
+    "message": "List encoders",
+    "description": "The label for the doc item List encoders in sidebar restOAS, linking to the doc rest-api/list-encoders"
+  },
+  "sidebar.restOAS.doc.List generation presets": {
+    "message": "List generation presets",
+    "description": "The label for the doc item List generation presets in sidebar restOAS, linking to the doc rest-api/list-generation-presets"
+  },
+  "sidebar.restOAS.doc.List rerankers": {
+    "message": "List rerankers",
+    "description": "The label for the doc item List rerankers in sidebar restOAS, linking to the doc rest-api/list-rerankers"
+  },
+  "sidebar.restOAS.doc.List supported table extractors": {
+    "message": "List supported table extractors",
+    "description": "The label for the doc item List supported table extractors in sidebar restOAS, linking to the doc rest-api/list-table-extractors"
+  },
+  "sidebar.restOAS.doc.Evaluate factual consistency": {
+    "message": "Evaluate factual consistency",
+    "description": "The label for the doc item Evaluate factual consistency in sidebar restOAS, linking to the doc rest-api/evaluate-factual-consistency"
+  },
+  "sidebar.restOAS.doc.List hallucination correctors": {
+    "message": "List hallucination correctors",
+    "description": "The label for the doc item List hallucination correctors in sidebar restOAS, linking to the doc rest-api/list-hallucination-correctors"
+  },
+  "sidebar.restOAS.doc.Corrects hallucinations in generated text based on source documents": {
+    "message": "Corrects hallucinations in generated text based on source documents",
+    "description": "The label for the doc item Corrects hallucinations in generated text based on source documents in sidebar restOAS, linking to the doc rest-api/correct-hallucinations"
+  },
+  "sidebar.restOAS.doc.Creates a model response for the given chat conversation": {
+    "message": "Creates a model response for the given chat conversation",
+    "description": "The label for the doc item Creates a model response for the given chat conversation in sidebar restOAS, linking to the doc rest-api/create-chat-completion"
+  },
+  "sidebar.pythonSDK.category.Python SDK": {
+    "message": "Python SDK",
+    "description": "The label for category Python SDK in sidebar pythonSDK"
+  },
+  "sidebar.releaseNotes.doc.Release Notes": {
+    "message": "Release Notes",
+    "description": "The label for the doc item Release Notes in sidebar releaseNotes, linking to the doc release-notes"
+  },
+  "sidebar.changeLog.doc.Changelog": {
+    "message": "Changelog",
+    "description": "The label for the doc item Changelog in sidebar changeLog, linking to the doc changelog"
+  }
+}

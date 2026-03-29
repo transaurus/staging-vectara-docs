@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-api-reference/agent-apis/agent-apis-overview" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Agents APIs | Vectara Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.vectara.com/zh-Hans/docs/api-reference/agent-apis/agent-apis-overview"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Agents APIs | Vectara Docs"><meta data-rh="true" name="description" content="The Vectara Agents APIs enable the development of intelligent agents"><meta data-rh="true" property="og:description" content="The Vectara Agents APIs enable the development of intelligent agents"><link data-rh="true" rel="icon" href="/zh-Hans/img/vectara_logo.svg"><link data-rh="true" rel="canonical" href="https://docs.vectara.com/zh-Hans/docs/api-reference/agent-apis/agent-apis-overview"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/api-reference/agent-apis/agent-apis-overview" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/zh-Hans/docs/api-reference/agent-apis/agent-apis-overview" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/api-reference/agent-apis/agent-apis-overview" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/zh-Hans/blog/rss.xml" title="Vectara Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/zh-Hans/blog/atom.xml" title="Vectara Docs Atom Feed">
+
+
+
+
+
+
+
+
+
+<script src="/analytics.js" async></script>
+<script src="/scripts/reodev.js" async></script><link rel="stylesheet" href="/zh-Hans/assets/css/styles.50104ce9.css">
+<script src="/zh-Hans/assets/js/runtime~main.60f2a345.js" defer="defer"></script>
+<script src="/zh-Hans/assets/js/main.4aab2d03.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/zh-Hans/"><div class="navbar__logo"><img src="/zh-Hans/img/vectara_wordmark.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/zh-Hans/img/vectara_wordmark_light.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/zh-Hans/docs/">Docs</a><a class="navbar__item navbar__link" href="/zh-Hans/docs/rest-api">API Reference</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">SDKs</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/zh-Hans/docs/sdk/vectara-python-sdk">Python</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Release Information</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/zh-Hans/docs/release-notes">Release Notes</a></li><li><a class="dropdown__link" href="/zh-Hans/docs/changelog">Changelog</a></li></ul></div></div><div class="navbar__items navbar__items--right"><div class="searchBar navbarSearchContainer_Bca1"></div><a href="https://console.vectara.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Console</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_xLCN"><div class="docItemContainer_jfFK"><article><span class="theme-doc-version-badge badge badge--secondary">Version: 2.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Agents APIs</h1></header><div class="row"><div class="col col--12 markdown"><p>The Vectara Agents APIs enable the development of intelligent agents
+that go beyond basic question answering. These agents are configurable,
+decision-making entities designed to interpret input, reason through context,
+leverage external tools, and maintain continuity across multi-turn
+interactions.</p>
+<p>Agents access corpora using <strong>tools</strong>. Each tool is configured with explicit
+permissions and input schemas. When creating or configuring an agent, you
+select which tools the agent can use. These tools determine the scope of
+knowledge and retrieval operations available to the agent. This enforces a
+clear, auditable separation between orchestration logic (agents) and data
+access (tools/corpora).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-agent-apis-enable">What Agent APIs Enable<a href="#what-agent-apis-enable" class="hash-link" aria-label="Direct link to What Agent APIs Enable" title="Direct link to What Agent APIs Enable">​</a></h2>
+<p>By using the agents APIs, you can build purpose-driven agents
+that do the following:</p>
+<ul>
+<li>Respond adaptively to complex user input</li>
+<li>Retrieve relevant data from corpora or APIs to enrich responses through tool
+integration</li>
+<li>Maintain session memory for stateful, multi-step conversations</li>
+<li>Execute complex reasoning workflows with chain-of-thought capabilities</li>
+</ul>
+<p>Agents are not limited to reactive question-answering; they are proactive,
+configurable digital workers, capable of executing multi-turn tasks and
+integrating with enterprise systems through standardized MCP protocols.</p>
+<p>This agent architecture shifts the design from reactive Q&amp;A systems to
+proactive, configurable digital workers. It enables developers to deliver
+outcomes across use cases like support automation, research assistants,
+internal tools, and customer service.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="agents">Agents<a href="#agents" class="hash-link" aria-label="Direct link to Agents" title="Direct link to Agents">​</a></h2>
+<p>An agent is the core orchestration unit in Vectara&#x27;s platform. It decides how
+to respond to user input, when to invoke tools, and how to manage conversation
+state. Each agent is configured with:</p>
+<ul>
+<li>A unique key following the pattern <code>[0-9a-zA-Z_-]+</code></li>
+<li>A human-readable name and description</li>
+<li>Tool configuration specifying available MCP tools and argument bindings</li>
+<li>Model configuration including parameters like temperature and max tokens</li>
+<li>A &quot;first_step&quot; definition that configures the agent&#x27;s conversational behavior</li>
+<li>Instructions that guide agent reasoning and behavior (referenced by ID or
+defined inline)</li>
+<li>Metadata for tracking (owner, department, version)</li>
+<li>Enabled status for availability control</li>
+<li>Created and updated timestamps</li>
+</ul>
+<p>Agents operate through a conversational step architecture, processing user
+input through reasoning, tool execution, and response generation phases.
+The step-based design enables complex multi-turn workflows and intelligent
+tool orchestration.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tools">Tools<a href="#tools" class="hash-link" aria-label="Direct link to Tools" title="Direct link to Tools">​</a></h2>
+<p>Tools are external or internal capabilities that agents can invoke dynamically
+through the Model Context Protocol (MCP). They are defined by:</p>
+<ul>
+<li>A unique ID following the pattern <code>^tol_.*</code></li>
+<li>A name identifying the tool within its MCP server</li>
+<li>A title (human-readable) and description of their function and capabilities</li>
+<li>An input schema describing accepted parameters (in JSON Schema format)</li>
+<li>MCP server association through server_id</li>
+<li>Optional annotations providing behavioral hints (read_only, destructive,
+idempotent, open_world)</li>
+<li>Runtime availability (enabled/disabled)</li>
+<li>Created and updated timestamps</li>
+</ul>
+<p>The <a href="/zh-Hans/docs/api-reference/agent-apis/tool-management">Tool Management APIs</a> handle individual tools available to agents, including both built-in tools and those discovered from MCP tool servers.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="available-tools">Available tools<a href="#available-tools" class="hash-link" aria-label="Direct link to Available tools" title="Direct link to Available tools">​</a></h3>
+<p>The following tools are available in the tech preview of the Agents APIs:</p>
+<ul>
+<li>Corpora Search</li>
+<li>Web Search</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="instructions">Instructions<a href="#instructions" class="hash-link" aria-label="Direct link to Instructions" title="Direct link to Instructions">​</a></h2>
+<p>Instructions serve as reusable blocks of behavioral guidance that shape how
+agents reason and respond. They use Velocity templating for dynamic content:</p>
+<ul>
+<li>A unique ID following the pattern <code>ins_[0-9a-zA-Z_-]+</code></li>
+<li>A human-readable name and description</li>
+<li>Template content with variable substitution support (using Velocity template
+engine)</li>
+<li>Version management for controlled updates (auto-incremented on updates)</li>
+<li>Metadata for categorization and governance</li>
+<li>Enabled status for availability control</li>
+<li>Created and updated timestamps</li>
+</ul>
+<p>The <a href="/zh-Hans/docs/api-reference/agent-apis/instruction-management">Instruction Management APIs</a> handle individual instructions available to agents.</p>
+<p>Instructions can be referenced by agents using their ID and optional version,
+or defined inline within agent configuration. They support enterprise
+governance through versioning and controlled rollout capabilities.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="agent-sessions">Agent Sessions<a href="#agent-sessions" class="hash-link" aria-label="Direct link to Agent Sessions" title="Direct link to Agent Sessions">​</a></h2>
+<p>A session is a contextual container for a conversation between a user (or
+application) and an agent. It provides continuity across multiple interactions:</p>
+<ul>
+<li>A session key following the pattern <code>[0-9a-zA-Z_-]+</code></li>
+<li>Associated agent_key</li>
+<li>A human-readable name and optional description</li>
+<li>Metadata such as customer_id, priority, or channel information</li>
+<li>Enabled flag for active/inactive status</li>
+<li>Creation timestamps</li>
+</ul>
+<p>Sessions support full lifecycle operations including creation, update,
+retrieval, listing, and deletion. They maintain conversation context and tool
+execution history for comprehensive interaction tracking.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="agent-events">Agent Events<a href="#agent-events" class="hash-link" aria-label="Direct link to Agent Events" title="Direct link to Agent Events">​</a></h2>
+<p>Each session contains one or more events, representing individual interactions
+and system activities within the conversation. Events follow the pattern
+<code>aev_[0-9a-zA-Z_-]+</code> for their IDs:</p>
+<ul>
+<li><strong>Input Message Events</strong>: User input with text content</li>
+<li><strong>Thinking Events</strong>: Agent reasoning and chain-of-thought processes</li>
+<li><strong>Tool Input Events</strong>: Tool execution parameters with <code>tool_call_id</code>,
+<code>tool_configuration</code>, <code>tool_name</code>, and input data</li>
+<li><strong>Tool Output Events</strong>: Tool execution results with matching tool_call_id and output data</li>
+<li><strong>Agent Output Events</strong>: Final agent responses to user input</li>
+<li><strong>Context Limit Exceeded Events</strong>: Notifications when token limits are reached</li>
+</ul>
+<p>Events support both synchronous and streaming delivery, enabling real-time
+conversation experiences with progressive response building.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="agents-api-structure">Agents API Structure<a href="#agents-api-structure" class="hash-link" aria-label="Direct link to Agents API Structure" title="Direct link to Agents API Structure">​</a></h2>
+<p>The Agents APIs follow RESTful patterns with clear resource hierarchies:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="agent-management">Agent Management<a href="#agent-management" class="hash-link" aria-label="Direct link to Agent Management" title="Direct link to Agent Management">​</a></h3>
+<ul>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/create-agent"><code>POST /v2/agents</code></a> - Create new agents</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/list-agents"><code>GET /v2/agents</code></a> - List agents with filtering and pagination</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/get-agent"><code>GET /v2/agents/{agent_key}</code></a> - Retrieve specific agent configuration</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/update-agent"><code>PATCH /v2/agents/{agent_key}</code></a> - Update agent configuration</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/delete-agent"><code>DELETE /v2/agents/{agent_key}</code></a> - Remove agents</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="session-management">Session Management<a href="#session-management" class="hash-link" aria-label="Direct link to Session Management" title="Direct link to Session Management">​</a></h3>
+<ul>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/session/create-agent-session"><code>POST /v2/agents/{agent_key}/sessions</code></a> - Create agent sessions</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/session/list-agent-sessions"><code>GET /v2/agents/{agent_key}/sessions</code></a> - List agent sessions</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/session/get-agent-session"><code>GET /v2/agents/{agent_key}/sessions/{session_key}</code></a> - Retrieve session details</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/session/update-agent-session"><code>PATCH /v2/agents/{agent_key}/sessions/{session_key}</code></a> - Update session metadata</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/session/delete-agent-session"><code>DELETE /v2/agents/{agent_key}/sessions/{session_key}</code></a> - Remove sessions</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="event-management">Event Management<a href="#event-management" class="hash-link" aria-label="Direct link to Event Management" title="Direct link to Event Management">​</a></h3>
+<ul>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/event/create-agent-event"><code>POST /v2/agents/{agent_key}/sessions/{session_key}/events</code></a> - Create conversation events (input only)</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/event/list-agent-events"><code>GET /v2/agents/{agent_key}/sessions/{session_key}/events</code></a> - List session events</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/event/get-agent-event"><code>GET /v2/agents/{agent_key}/sessions/{session_key}/events/{event_id}</code></a> - Retrieve specific events</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tool-server-management">Tool Server Management<a href="#tool-server-management" class="hash-link" aria-label="Direct link to Tool Server Management" title="Direct link to Tool Server Management">​</a></h3>
+<ul>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/tool-server/create-tool-server"><code>POST /v2/tool_servers</code></a> - Register MCP servers</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/tool-server/list-tool-servers"><code>GET /v2/tool_servers</code></a> - List registered servers</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/tool-server/get-tool-server"><code>GET /v2/tool_servers/{tool_server_id}</code></a> - Retrieve server details</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/tool-server/update-tool-server"><code>PATCH /v2/tool_servers/{tool_server_id}</code></a> - Update server configuration</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/tool-server/delete-tool-server"><code>DELETE /v2/tool_servers/{tool_server_id}</code></a> - Remove servers</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/tool-server/sync-tool-server"><code>POST /v2/tool_servers/{tool_server_id}/sync</code></a> - Synchronize server tools</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tool-management">Tool Management<a href="#tool-management" class="hash-link" aria-label="Direct link to Tool Management" title="Direct link to Tool Management">​</a></h3>
+<ul>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/tool/list-tools"><code>GET /v2/tools</code></a> - List available tools</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/tool/get-tool"><code>GET /v2/tools/{tool_id}</code></a> - Retrieve tool specifications</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/tool/update-tool"><code>PATCH /v2/tools/{tool_id}</code></a> - Update tool configuration</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/tool/delete-tool"><code>DELETE /v2/tools/{tool_id}</code></a> - Remove tools</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="instruction-management">Instruction Management<a href="#instruction-management" class="hash-link" aria-label="Direct link to Instruction Management" title="Direct link to Instruction Management">​</a></h3>
+<ul>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/instruction/create-instruction"><code>POST /v2/instructions</code></a> - Create behavioral instructions</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/instruction/list-instructions"><code>GET /v2/instructions</code></a> - List instructions with filtering</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/instruction/get-instruction"><code>GET /v2/instructions/{instruction_id}</code></a> - Retrieve instruction details</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/instruction/update-instruction"><code>PATCH /v2/instructions/{instruction_id}</code></a> - Update instruction templates</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/instruction/delete-instruction"><code>DELETE /v2/instructions/{instruction_id}</code></a> - Remove instructions</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/instruction/test-instruction"><code>POST /v2/instructions/{instruction_id}/test</code></a> - Test instruction compilation</li>
+<li><a href="/zh-Hans/docs/api-reference/agent-apis/instruction/delete-instruction-version"><code>DELETE /v2/instructions/{instruction_id}/versions/{version}</code></a> - Remove specific instruction versions</li>
+</ul></div></div></div><div class="row"><div class="col col--12"><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vectara/vectara-docs/tree/master/www/docs/api-reference/agent-apis/agent-apis-overview.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2026-03-29T15:15:08.000Z" itemprop="dateModified">2026年3月29日</time></b> by <b>t</b></span></div></div></footer></div></div></article><div class="row"><div class="col col--12"><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#what-agent-apis-enable" class="table-of-contents__link toc-highlight">What Agent APIs Enable</a></li><li><a href="#agents" class="table-of-contents__link toc-highlight">Agents</a></li><li><a href="#tools" class="table-of-contents__link toc-highlight">Tools</a><ul><li><a href="#available-tools" class="table-of-contents__link toc-highlight">Available tools</a></li></ul></li><li><a href="#instructions" class="table-of-contents__link toc-highlight">Instructions</a></li><li><a href="#agent-sessions" class="table-of-contents__link toc-highlight">Agent Sessions</a></li><li><a href="#agent-events" class="table-of-contents__link toc-highlight">Agent Events</a></li><li><a href="#agents-api-structure" class="table-of-contents__link toc-highlight">Agents API Structure</a><ul><li><a href="#agent-management" class="table-of-contents__link toc-highlight">Agent Management</a></li><li><a href="#session-management" class="table-of-contents__link toc-highlight">Session Management</a></li><li><a href="#event-management" class="table-of-contents__link toc-highlight">Event Management</a></li><li><a href="#tool-server-management" class="table-of-contents__link toc-highlight">Tool Server Management</a></li><li><a href="#tool-management" class="table-of-contents__link toc-highlight">Tool Management</a></li><li><a href="#instruction-management" class="table-of-contents__link toc-highlight">Instruction Management</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">APIs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/docs/api-reference/indexing-apis/indexing">Indexing</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/docs/api-reference/search-apis/search">Search</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/docs/api-reference/admin-apis/admin">Admin</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Vectara, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

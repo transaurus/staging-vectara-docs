@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-search-and-retrieval/improving-search-quality" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Configuring query parameters | Vectara Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.vectara.com/zh-Hans/docs/search-and-retrieval/improving-search-quality"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Configuring query parameters | Vectara Docs"><meta data-rh="true" name="description" content="Configuring your query parameters enables you to get the most relevant and"><meta data-rh="true" property="og:description" content="Configuring your query parameters enables you to get the most relevant and"><link data-rh="true" rel="icon" href="/zh-Hans/img/vectara_logo.svg"><link data-rh="true" rel="canonical" href="https://docs.vectara.com/zh-Hans/docs/search-and-retrieval/improving-search-quality"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/search-and-retrieval/improving-search-quality" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/zh-Hans/docs/search-and-retrieval/improving-search-quality" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/search-and-retrieval/improving-search-quality" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/zh-Hans/blog/rss.xml" title="Vectara Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/zh-Hans/blog/atom.xml" title="Vectara Docs Atom Feed">
+
+
+
+
+
+
+
+
+
+<script src="/analytics.js" async></script>
+<script src="/scripts/reodev.js" async></script><link rel="stylesheet" href="/zh-Hans/assets/css/styles.50104ce9.css">
+<script src="/zh-Hans/assets/js/runtime~main.60f2a345.js" defer="defer"></script>
+<script src="/zh-Hans/assets/js/main.4aab2d03.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/zh-Hans/"><div class="navbar__logo"><img src="/zh-Hans/img/vectara_wordmark.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/zh-Hans/img/vectara_wordmark_light.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/zh-Hans/docs/">Docs</a><a class="navbar__item navbar__link" href="/zh-Hans/docs/rest-api">API Reference</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">SDKs</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/zh-Hans/docs/sdk/vectara-python-sdk">Python</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Release Information</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/zh-Hans/docs/release-notes">Release Notes</a></li><li><a class="dropdown__link" href="/zh-Hans/docs/changelog">Changelog</a></li></ul></div></div><div class="navbar__items navbar__items--right"><div class="searchBar navbarSearchContainer_Bca1"></div><a href="https://console.vectara.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Console</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_xLCN"><div class="docItemContainer_jfFK"><article><span class="theme-doc-version-badge badge badge--secondary">Version: 2.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Configuring query parameters</h1></header><div class="row"><div class="col col--12 markdown"><p>Configuring your query parameters enables you to get the most relevant and
+accurate results. This section covers the key configuration parameters that
+control search behavior, result retrieval, reranking, context handling, and
+AI-generated responses.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="corpora-search-configuration">Corpora search configuration<a href="#corpora-search-configuration" class="hash-link" aria-label="Direct link to Corpora search configuration" title="Direct link to Corpora search configuration">​</a></h2>
+<p>The <code>search</code> object controls which corpora to search and how to filter and
+retrieve results:</p>
+<ul>
+<li><strong>corpus_key</strong> (required): Unique identifier for the corpus to search.</li>
+<li><strong>metadata_filter</strong>: SQL-like filter to narrow results (<code>doc.year = &#x27;2024&#x27;</code>).</li>
+<li><strong>lexical_interpolation</strong>: Balance between semantic (<code>0.0</code>) and keyword
+(<code>1.0</code>) search. <strong>Default:</strong> <code>0.025</code>.</li>
+<li><strong>limit</strong>: Maximum results to retrieve before reranking. <strong>Default:</strong> <code>10</code>.</li>
+<li><strong>offset</strong>: Number of results to skip for pagination.</li>
+<li><strong>semantics</strong>: Query interpretation mode (&quot;<code>query</code>&quot;, &quot;<code>response</code>&quot;, or
+&quot;<code>default</code>&quot;).</li>
+</ul>
+<div class="codePanel_roBT stackedLayout_Jnlf" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">SEARCH CONFIGURATION EXAMPLE</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->json syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="json" selected="">json</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy json code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="json code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="context-configuration">Context configuration<a href="#context-configuration" class="hash-link" aria-label="Direct link to Context configuration" title="Direct link to Context configuration">​</a></h2>
+<p>The <code>context_configuration</code> object controls how much surrounding text is
+included with each search result:</p>
+<ul>
+<li><strong>sentences_before/sentences_after</strong>: Number of sentences to include
+before/after matching text.</li>
+<li><strong>characters_before/characters_after</strong>: Alternative character-based
+boundaries for precise control.</li>
+<li><strong>start_tag/end_tag</strong>: HTML tags for highlighting matching text in
+results.</li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>You can only use <strong>sentences before/after</strong> or <strong>characters before/after</strong>, but not both.</p></div></div>
+<div class="codePanel_roBT stackedLayout_Jnlf" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">CONTEXT CONFIGURATION EXAMPLE</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->json syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="json" selected="">json</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy json code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="json code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="reranker-configuration">Reranker configuration<a href="#reranker-configuration" class="hash-link" aria-label="Direct link to Reranker configuration" title="Direct link to Reranker configuration">​</a></h2>
+<p>Rerankers improve result quality by reordering search results to place the
+most relevant content first:</p>
+<ul>
+<li><strong>type</strong>: Reranker type<!-- -->
+<ul>
+<li><code>customer_reranker</code>: Default multilingual reranker (recommended).</li>
+<li><code>mmr</code>: Maximal Marginal Relevance to reduce redundancy.</li>
+<li><code>none</code>: Disables reranking (not recommended).</li>
+</ul>
+</li>
+<li><strong>reranker_name</strong>: Specific reranker model (<code>Rerank_Multilingual_v1</code>).</li>
+<li><strong>limit</strong>: Maximum results after reranking.</li>
+<li><strong>cutoff</strong>: Minimum relevance score (<code>0.0-1.0</code>) for result inclusion.
+Typically <code>0.3-0.7</code>.</li>
+<li><strong>include_context</strong>: Use surrounding context text for more accurate
+scoring.</li>
+</ul>
+<div class="codePanel_roBT stackedLayout_Jnlf" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">RERANKER CONFIGURATION EXAMPLE</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->json syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="json" selected="">json</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy json code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="json code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generation-configuration">Generation configuration<a href="#generation-configuration" class="hash-link" aria-label="Direct link to Generation configuration" title="Direct link to Generation configuration">​</a></h2>
+<p>The <code>generation</code> object controls how the agent creates natural language
+responses. Excluding this <code>generation</code> field disables summarization.</p>
+<ul>
+<li><strong>enabled</strong>: Enable or disable generative summarization.</li>
+<li><strong>generation_preset_name</strong>: Pre-configured prompt and model bundle (<code>mockingbird-2.0</code>).</li>
+<li><strong>max_used_search_results</strong>: Number of top results to send to the LLM..
+<strong>Default:</strong> <code>5</code></li>
+<li><strong>max_response_characters</strong>: Soft limit for response length.</li>
+<li><strong>response_language</strong>: Response language code (<code>auto</code>, <code>eng</code>, <code>spa</code>, etc.).</li>
+<li><strong>citations</strong>: Citation formatting.<!-- -->
+<ul>
+<li><strong>style</strong>: Citation format (<code>numeric</code>, <code>html</code>, <code>markdown</code>, or <code>none</code>).</li>
+<li><strong>url_pattern</strong>: URL template using metadata variables
+(<code>https://docs.example.com/{doc.id}</code>).</li>
+<li><strong>text_pattern</strong>: Display text template (<code>[{doc.title}]</code>).</li>
+</ul>
+</li>
+<li><strong>prompt_template</strong>: Override default prompt using Apache Velocity syntax.</li>
+<li><strong>model_parameters</strong>: LLM settings (temperature, max_tokens, etc.).</li>
+<li><strong>enable_factual_consistency_score</strong>: Validate factual consistency of
+responses.</li>
+</ul>
+<div class="codePanel_roBT stackedLayout_Jnlf" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">GENERATION CONFIGURATION EXAMPLE</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->json syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="json" selected="">json</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy json code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="json code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>The <code>generation_preset_name</code> is specified in the <code>generation</code> object of a <a href="/zh-Hans/docs/rest-api/queries"><strong>query</strong></a>.
+Excluding this <code>generation</code> field disables summarization.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="currently-available-prompts">Currently available prompts<a href="#currently-available-prompts" class="hash-link" aria-label="Direct link to Currently available prompts" title="Direct link to Currently available prompts">​</a></h3>
+<p>Vectara provides several official prompts (generation presets) to our users
+that you specify in the <code>generation_preset_name</code> within the <code>generation</code> object.
+We recommend the following generation presets:</p>
+<ul>
+<li><code>mockingbird-2.0</code> (Vectara&#x27;s cutting-edge LLM for Retrieval Augmented Generation. See <a href="/zh-Hans/docs/learn/mockingbird-llm">Mockingbird LLM</a> for more details.)</li>
+<li><code>vectara-summary-ext-24-05-med-omni</code> (gpt-4o, for citations)</li>
+<li><code>vectara-summary-ext-24-05-large</code> (gpt-4.0-turbo, for citations)</li>
+<li><code>vectara-summary-ext-24-05-med</code> (gpt-4.0, for citations)</li>
+<li><code>vectara-summary-ext-24-05-sml</code> (gpt-3.5-turbo, for citations)</li>
+</ul>
+<p>Use the following prompt if you have tables:
+<code>vectara-summary-table-query-ext-dec-2024-gpt-4o</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="legacy-prompts">Legacy prompts<a href="#legacy-prompts" class="hash-link" aria-label="Direct link to Legacy prompts" title="Direct link to Legacy prompts">​</a></h4>
+<p>These prompts will soon be deprecated:</p>
+<ul>
+<li><code>vectara-summary-ext-v1.2.0</code></li>
+<li><code>vectara-summary-ext-v1.3.0</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="default-max_used_search_results-limit">Default max_used_search_results limit<a href="#default-max_used_search_results-limit" class="hash-link" aria-label="Direct link to Default max_used_search_results limit" title="Direct link to Default max_used_search_results limit">​</a></h3>
+<p>The default limit of <code>max_used_search_results</code> is 25 search results. Setting
+the values closer to the limit generates a more comprehensive summary, but
+using a lower value can balance the results with quality and response time.</p>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Note</div><div class="admonitionContent_BuS1"><p>Too many results will prevent the prompt from generating a response. If that
+happens, try reducing this number.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="max_used_search_results-example">max_used_search_results example<a href="#max_used_search_results-example" class="hash-link" aria-label="Direct link to max_used_search_results example" title="Direct link to max_used_search_results example">​</a></h3>
+<p>This generation preset example attempts to balance creating a good quality
+summary with a reasonably fast response by setting <code>max_used_search_results</code> to
+<code>50</code>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-summarization-customization-options">Advanced Summarization Customization Options<a href="#advanced-summarization-customization-options" class="hash-link" aria-label="Direct link to Advanced Summarization Customization Options" title="Direct link to Advanced Summarization Customization Options">​</a></h2>
+<p>Our users also have access to more powerful summarization capabilities, which
+present a powerful toolkit for tailoring summarizations to specific
+application and user needs.</p>
+<p>Use <code>generation_preset_name</code> and <code>prompt_template</code> to override the default prompt with a
+<a href="/zh-Hans/docs/prompts/vectara-prompt-engine">custom prompt</a>. Your use case might
+require a chatbot to be more human like, so you decide to create a custom
+response format that behaves more playfully in a conversation or summary.</p>
+<p>In <code>generation</code>, <code>max_response_characters</code> lets you control the length of the summary, but
+note that it is <strong>not a hard limit</strong> like with the <code>max_tokens</code> parameter. The
+<code>model_parameters</code> object provides even more fine-grained controls for the summarizer
+model:</p>
+<ul>
+<li><code>llm_name</code> specifies the name of the LLM model to use for summarization, such as
+<code>gpt-4</code>. If specified, it overrides the model behind <code>generation_preset_name</code>.</li>
+<li><code>max_tokens</code> specifies a hard limit on the number of characters in a response.
+This value supercedes the <code>max_response_characters</code> parameter in the <code>summary</code>
+object.</li>
+<li><code>temperature</code> indicates whether you want the summarization to not be creative at all <code>0.0</code>,
+or for the summarization to take more creative liberties as you approach
+the maximium value of <code>1.0</code>.</li>
+<li><code>frequency_penalty</code> provides even more granular control to help ensure that the
+summarization decreases the likelihood of repeating words. The values range from <code>0.0</code> to <code>1.0</code></li>
+<li><code>presence_penalty</code> provides more control over whether you want the summary to
+include new topics. The values also range from <code>0.0</code> to <code>1.0</code>.</li>
+</ul>
+<p>By leveraging these advanced capabilities, application builders can fine-tune
+the behavior and output style of the generation preset to align with your unique
+application requirements.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="response-languages">Response languages<a href="#response-languages" class="hash-link" aria-label="Direct link to Response languages" title="Direct link to Response languages">​</a></h2>
+<p>The <code>response_language</code> field in <!-- --> allows control of the language
+for sumarization requests. You <em>can</em> ask <!-- --> to attempt
+to guess the language of the query and respond in that guessed language by
+setting <code>response_language</code> to <code>auto</code>.  However, this guessing is not perfect:
+many languages have many borrowed words and phrases which makes
+guessing the language difficult to impossible at times. For that reason, it&#x27;s
+recommended that you send the user&#x27;s preferred language when you know it.</p>
+<p>One possible way to do this is just to ask the user to configure their
+preferred language or to use the localization of your application to determine
+the best language to send to <!-- -->.  Alternatively, if
+your application is a web-based application, you can consider using the
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/language" target="_blank" rel="noopener noreferrer">Navigator.language</a>
+and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages" target="_blank" rel="noopener noreferrer">Navigator.languages</a>
+API.</p>
+<p>For the most up-to-date list of languages supported by <!-- -->&#x27;s
+models, see
+<a href="https://github.com/vectara/protos/blob/main/common.proto#L10" target="_blank" rel="noopener noreferrer">https://github.com/vectara/protos/blob/main/common.proto#L10</a>.</p>
+<p>Both <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" target="_blank" rel="noopener noreferrer">ISO 639-1</a> and
+<a href="https://en.wikipedia.org/wiki/ISO_639-3" target="_blank" rel="noopener noreferrer">ISO 639-3</a> language codes are supported
+in this API.</p>
+<p>Some features, such as <code>factual_consistency_score</code>, may not work on all
+languages. The <a href="/zh-Hans/docs/hallucination-and-evaluation/hallucination-evaluation">Factual Consistency Score</a> is supported in English, German, and French (<code>eng</code>,<code>deu</code>,<code>fra</code>).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="citations">Citations<a href="#citations" class="hash-link" aria-label="Direct link to Citations" title="Direct link to Citations">​</a></h2>
+<p>Citations provide important source attribution in query results, enabling
+users to verify information and trace content back to its original sources.
+This transparency is essential for building trust in AI-generated content and
+supporting fact-checking workflows.</p>
+<p>When Vectara generates summaries or retrieval results, it automatically
+includes citations that reference the specific sources used. These citations
+create a direct link between the generated content and the underlying
+documents, ensuring traceability and accountability.</p>
+<p>Citations appear in the format <code>[number]</code> within summary text, where:</p>
+<ul>
+<li>Numbers start from 1.</li>
+<li>Each number corresponds to a result in the <code>search_results</code> array.</li>
+<li>Numbers increment sequentially for each unique source referenced.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="citation-formatting-options">Citation formatting options<a href="#citation-formatting-options" class="hash-link" aria-label="Direct link to Citation formatting options" title="Direct link to Citation formatting options">​</a></h3>
+<p>Vectara supports multiple citation formats to suit different application
+needs. You can control how citations appear in summaries using the
+<code>citations_options</code> parameter in your query. We support the following formats:</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="numeric-default">Numeric (default)<a href="#numeric-default" class="hash-link" aria-label="Direct link to Numeric (default)" title="Direct link to Numeric (default)">​</a></h4>
+<div class="codePanel_roBT floatingLayout_JQFU" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">NUMERIC CITATION FORMAT</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->json syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="json" selected="">json</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy json code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="json code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>Citations appear as numbers in square brackets: <code>[1]</code>, <code>[2]</code>, <code>[3]</code></p>
+<p>This is the default citation format. If you don&#x27;t specify citations_options, Vectara will use numeric citations automatically.</p>
+<div class="spacer spacer--l"></div>
+<div class="spacer spacer--l"></div>
+<div class="spacer spacer--l"></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="none">None<a href="#none" class="hash-link" aria-label="Direct link to None" title="Direct link to None">​</a></h4>
+<p>Disables citations entirely, producing clean text without source references</p>
+<p>Use this option when you want clean summary text without any source attribution. This is useful for conversational interfaces where citations might disrupt the flow.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="html">HTML<a href="#html" class="hash-link" aria-label="Direct link to HTML" title="Direct link to HTML">​</a></h4>
+<p>Formats citations as HTML links for web applications</p>
+<p>Perfect for web applications where you want clickable citations. You can style these links with CSS and add JavaScript handlers to show source details on click.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="markdown">Markdown<a href="#markdown" class="hash-link" aria-label="Direct link to Markdown" title="Direct link to Markdown">​</a></h4>
+<p>Formats citations as Markdown links, useful for Markdown-based applications</p>
+<p>Ideal for documentation systems, chat applications, or any interface that renders Markdown. The links can be processed by your Markdown renderer.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="code-output-support">Code Output Support<a href="#code-output-support" class="hash-link" aria-label="Direct link to Code Output Support" title="Direct link to Code Output Support">​</a></h4>
+<p>Markdown citation style enables formatting of code blocks and technical content
+in responses, making it easier to display code snippets, YAML configurations,
+or structured technical output.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-citation-options">Advanced citation options<a href="#advanced-citation-options" class="hash-link" aria-label="Direct link to Advanced citation options" title="Direct link to Advanced citation options">​</a></h3>
+<div class="codePanel_roBT floatingLayout_JQFU" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">ADVANCED CITATION CUSTOMIZATION</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->json syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="json" selected="">json</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy json code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="json code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>You can further customize citation behavior with additional parameters:</p>
+<p>These advanced options allow you to customize how citations are formatted
+beyond the standard styles. Use <code>url_pattern</code> and <code>text_pattern</code> to create
+custom citation formats that match your application&#x27;s needs.</p>
+<div class="spacer spacer--l"></div>
+<div class="spacer spacer--l"></div>
+<div class="spacer spacer--l"></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="enable-citations-in-queries">Enable citations in queries<a href="#enable-citations-in-queries" class="hash-link" aria-label="Direct link to Enable citations in queries" title="Direct link to Enable citations in queries">​</a></h2>
+<p><strong>Query with custom citation format</strong></p>
+<div class="codePanel_roBT stackedLayout_Jnlf" role="group" aria-labelledby="code-panel-title" aria-describedby="code-panel-description"><div class="panelHeader_yGUG"><h3 id="code-panel-title" class="headerTitle_CK5Y">QUERY WITH CUSTOM CITATION FORMAT</h3><span id="code-panel-description" class="srOnly_P9yp">Code example<!-- --> with <!-- -->json syntax<!-- -->.</span><select class="languageSelect_svGV" aria-label="Select programming language"><option value="json" selected="">json</option></select><div class="buttonGroup_DwQZ" role="group" aria-label="Code actions"><button type="button" class="iconButton_VmGM" aria-label="Copy json code to clipboard" title="Copy code"><span aria-hidden="true">📋</span><span class="srOnly_P9yp">Copy</span></button></div></div><pre class="pre_ybKk" role="tabpanel" id="code-content" aria-label="json code example" tabindex="0"><div class="codeLine_cuPe"><span class="lineNumber_doFE">1</span><span class="codeHtml_zl2L"></span></div></pre><div aria-live="polite" aria-atomic="true" class="srOnly_P9yp" role="status"></div></div>
+<p>This example explicitly sets the citation style to Markdown.</p></div></div></div><div class="row"><div class="col col--12"><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vectara/vectara-docs/tree/master/www/docs/search-and-retrieval/improving-search-quality.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2026-03-29T15:15:08.000Z" itemprop="dateModified">2026年3月29日</time></b> by <b>t</b></span></div></div></footer></div></div></article><div class="row"><div class="col col--12"><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#corpora-search-configuration" class="table-of-contents__link toc-highlight">Corpora search configuration</a></li><li><a href="#context-configuration" class="table-of-contents__link toc-highlight">Context configuration</a></li><li><a href="#reranker-configuration" class="table-of-contents__link toc-highlight">Reranker configuration</a></li><li><a href="#generation-configuration" class="table-of-contents__link toc-highlight">Generation configuration</a><ul><li><a href="#currently-available-prompts" class="table-of-contents__link toc-highlight">Currently available prompts</a></li><li><a href="#default-max_used_search_results-limit" class="table-of-contents__link toc-highlight">Default max_used_search_results limit</a></li><li><a href="#max_used_search_results-example" class="table-of-contents__link toc-highlight">max_used_search_results example</a></li></ul></li><li><a href="#advanced-summarization-customization-options" class="table-of-contents__link toc-highlight">Advanced Summarization Customization Options</a></li><li><a href="#response-languages" class="table-of-contents__link toc-highlight">Response languages</a></li><li><a href="#citations" class="table-of-contents__link toc-highlight">Citations</a><ul><li><a href="#citation-formatting-options" class="table-of-contents__link toc-highlight">Citation formatting options</a></li><li><a href="#advanced-citation-options" class="table-of-contents__link toc-highlight">Advanced citation options</a></li></ul></li><li><a href="#enable-citations-in-queries" class="table-of-contents__link toc-highlight">Enable citations in queries</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">APIs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/docs/api-reference/indexing-apis/indexing">Indexing</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/docs/api-reference/search-apis/search">Search</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/docs/api-reference/admin-apis/admin">Admin</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Vectara, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-console-ui/configure-queries" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Configure Queries | Vectara Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.vectara.com/zh-Hans/docs/console-ui/configure-queries"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Configure Queries | Vectara Docs"><meta data-rh="true" name="description" content="When you add data to a corpus, the Query tab lets you experiment with"><meta data-rh="true" property="og:description" content="When you add data to a corpus, the Query tab lets you experiment with"><link data-rh="true" rel="icon" href="/zh-Hans/img/vectara_logo.svg"><link data-rh="true" rel="canonical" href="https://docs.vectara.com/zh-Hans/docs/console-ui/configure-queries"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/console-ui/configure-queries" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/zh-Hans/docs/console-ui/configure-queries" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://docs.vectara.com/docs/console-ui/configure-queries" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/zh-Hans/blog/rss.xml" title="Vectara Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/zh-Hans/blog/atom.xml" title="Vectara Docs Atom Feed">
+
+
+
+
+
+
+
+
+
+<script src="/analytics.js" async></script>
+<script src="/scripts/reodev.js" async></script><link rel="stylesheet" href="/zh-Hans/assets/css/styles.50104ce9.css">
+<script src="/zh-Hans/assets/js/runtime~main.60f2a345.js" defer="defer"></script>
+<script src="/zh-Hans/assets/js/main.4aab2d03.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/zh-Hans/"><div class="navbar__logo"><img src="/zh-Hans/img/vectara_wordmark.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/zh-Hans/img/vectara_wordmark_light.png" alt="Vectara Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/zh-Hans/docs/">Docs</a><a class="navbar__item navbar__link" href="/zh-Hans/docs/rest-api">API Reference</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">SDKs</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/zh-Hans/docs/sdk/vectara-python-sdk">Python</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Release Information</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/zh-Hans/docs/release-notes">Release Notes</a></li><li><a class="dropdown__link" href="/zh-Hans/docs/changelog">Changelog</a></li></ul></div></div><div class="navbar__items navbar__items--right"><div class="searchBar navbarSearchContainer_Bca1"></div><a href="https://console.vectara.com" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Console</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_xLCN"><div class="docItemContainer_jfFK"><article><span class="theme-doc-version-badge badge badge--secondary">Version: 2.0</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Configure Queries</h1></header><div class="row"><div class="col col--12 markdown"><p>When you add data to a corpus, the <strong>Query</strong> tab lets you experiment with
+different semantic search, summarization, and chat options. Whether you want
+to retrieve relevant information, generate summaries grounded in facts with
+Retrieval-Augmented Generation (RAG), or engage in conversational
+interactions, explore these options and configurations to find the optimal
+settings for your applications.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="search-your-data">Search your Data<a href="#search-your-data" class="hash-link" aria-label="Direct link to Search your Data" title="Direct link to Search your Data">​</a></h2>
+<p>The <strong>Query</strong> tab enables you to perform searches against your data while testing
+different query configuration settings for retrieval and generation.</p>
+<p><img decoding="async" loading="lazy" alt="Query tab" src="/zh-Hans/assets/images/query_tab-47d280cbf2b340649bd47ee86bd69725.png" width="1400" height="1066" class="img_ev3q"></p>
+<p>The <strong>Pretty Request</strong> and <strong>Request Code</strong> tabs allow you to view and copy the
+request code used for executing queries. This enables easy integration of
+query configurations into applications.</p>
+<p>A magnifying glass icon allows you to locate specific controls. Use this icon
+to search and instantly locate a retrieval or generation setting. This is
+useful for navigating complex query configurations quickly.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="configure-retrieval">Configure retrieval<a href="#configure-retrieval" class="hash-link" aria-label="Direct link to Configure retrieval" title="Direct link to Configure retrieval">​</a></h2>
+<p>The Retrieval section provides different configuration settings to tailor the
+query experience to your specific needs. For example, configuring filters,
+reranking results, and refining output context.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enter-your-query">Enter your query<a href="#enter-your-query" class="hash-link" aria-label="Direct link to Enter your query" title="Direct link to Enter your query">​</a></h3>
+<p>Enter a natural language search query in the <strong>Query</strong> field. You can either
+use the default retrieval and generation settings or experiment with different
+configurations.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-search-filters">Configure search filters<a href="#configure-search-filters" class="hash-link" aria-label="Direct link to Configure search filters" title="Direct link to Configure search filters">​</a></h3>
+<p>By default, no filter is applied to your query. Select <strong>Filter</strong> to</p>
+<ul>
+<li>Enter a custom filter expression</li>
+<li>Select predefined filter attributes to refine your search results.</li>
+<li>View <strong>Available filter attributes</strong> and <strong>Syntax examples</strong>.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Configure filters" src="/zh-Hans/assets/images/configure_filters-03da8f2e1a011ca7982e3c0fa2f6037b.png" width="700" height="1521" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-hybrid-search">Configure hybrid search<a href="#configure-hybrid-search" class="hash-link" aria-label="Direct link to Configure hybrid search" title="Direct link to Configure hybrid search">​</a></h3>
+<p>Hybrid search improves retrieval accuracy by balancing neural search with
+keyword-based search using the <strong>Lambda</strong> option.</p>
+<ul>
+<li><strong>Enable hybrid search</strong> to activate hybrid retrieval.</li>
+<li>Adjust the <strong>Lambda</strong> range from <code>0</code> (pure neural search) to <code>1</code> (pure
+keyword-based search).</li>
+<li>The recommended range is <code>0.005</code> to <code>0.0075</code>.</li>
+<li>By default, Lambda is set to <code>0.5</code>.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Configure hybrid search" src="/zh-Hans/assets/images/configure_hybrid_search-a789d8dff20bd810e367a68b58b01039.png" width="450" height="321" class="img_ev3q"></p>
+<p><strong>Reranking</strong> lets you rerank orders of search results also use our
+available rerankers:</p>
+<ul>
+<li><strong>Multilingual Ranker</strong> – Optimized for multiple languages.</li>
+<li><strong>User-Defined Function (UDF) Reranker</strong> – Customizable ranking function.</li>
+<li><strong>Maximum Marginal Relevance (MMR) Reranker</strong> – Reduces bias by applying a
+diversity factor.</li>
+</ul>
+<p>See <a href="/zh-Hans/docs/search-and-retrieval/reranking">Reranking</a> more advanced details about our reranking capabilities.</p>
+<p><img decoding="async" loading="lazy" alt="Configure reranking" src="/zh-Hans/assets/images/configure_reranking-d7ed2ecc39fc32ff85138a09a6304f33.png" width="450" height="416" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-relevance-tuning">Configure relevance tuning<a href="#configure-relevance-tuning" class="hash-link" aria-label="Direct link to Configure relevance tuning" title="Direct link to Configure relevance tuning">​</a></h3>
+<p>Fine-tune search relevance by adjusting custom dimension weights.</p>
+<p><strong>Enable relevance tuning</strong> to control how search results rank based on
+predefined relevance factors.</p>
+<p>See <a href="/zh-Hans/docs/learn/semantic-search/add-custom-dimensions">Custom Dimensions</a> for more details.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-result-context">Configure result context<a href="#configure-result-context" class="hash-link" aria-label="Direct link to Configure result context" title="Direct link to Configure result context">​</a></h3>
+<p>Control how much contextual information appears before and after matched
+search results:</p>
+<ul>
+<li><strong>Sentences Before:</strong> Default: 2</li>
+<li><strong>Sentences After:</strong> Default: 2</li>
+<li><strong>Characters Before:</strong> Default: 0</li>
+<li><strong>Characters After:</strong> Default: 0</li>
+</ul>
+<p>If you use character-based limits, Vectara ensures that full sentences display
+to preserve meaning.</p>
+<p><img decoding="async" loading="lazy" alt="Configure result context" src="/zh-Hans/assets/images/configure_result_context-f4ad0d019fdd82c1c4b293386faefe4d.png" width="450" height="382" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="configure-generation">Configure generation<a href="#configure-generation" class="hash-link" aria-label="Direct link to Configure generation" title="Direct link to Configure generation">​</a></h2>
+<p>The Generation section shows the following options:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-model">Configure model<a href="#configure-model" class="hash-link" aria-label="Direct link to Configure model" title="Direct link to Configure model">​</a></h3>
+<p>Select a generation preset, LLM, and prompt template to use for the query:</p>
+<p><img decoding="async" loading="lazy" alt="Configure generation options" src="/zh-Hans/assets/images/configuration_generation-f403c17ea2c8538faa0ed4f9608eeed3.png" width="328" height="494" class="img_ev3q"></p>
+<p>You can also copy the prompt template from the generation preset.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-summarization">Configure summarization<a href="#configure-summarization" class="hash-link" aria-label="Direct link to Configure summarization" title="Direct link to Configure summarization">​</a></h3>
+<p>Summarization uses Retrieval-Augmented Generation (RAG) to provide concise
+summaries in response to your queries. This can be particularly useful when
+you need an overview of the relevant information within your data.</p>
+<p><img decoding="async" loading="lazy" alt="Configure summarization" src="/zh-Hans/assets/images/configure_summarization-5b1a457a2716077ad462c12dc5c08157.png" width="400" height="374" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-evaluation">Configure evaluation<a href="#configure-evaluation" class="hash-link" aria-label="Direct link to Configure evaluation" title="Direct link to Configure evaluation">​</a></h3>
+<p>The Factual Consistency Score automatically evaluates and detects
+hallucinations in generated output.</p>
+<ul>
+<li><strong>Score range:</strong> <code>0.0</code> - <code>1.0</code></li>
+<li><strong>Higher score:</strong> More factually accurate responses</li>
+<li><strong>Lower score:</strong> Greater probability of hallucinations</li>
+<li><strong>Enable calculation of Factual Consistency Score:</strong> to monitor and improve
+response reliability.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Configure evaluation" src="/zh-Hans/assets/images/configure_evaluation-e205c2bd082fac4ffaffd0b89f58dde2.png" width="440" height="330" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-chat">Configure chat<a href="#configure-chat" class="hash-link" aria-label="Direct link to Configure chat" title="Direct link to Configure chat">​</a></h3>
+<p>Chat enables you to engage in conversational interactions with your data. This
+can be particularly useful when you need to ask follow-up questions, clarify
+information, or explore your data in a more interactive manner.</p>
+<p>Select <strong>Enable Chat</strong> to retain the conversational context across your queries.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="save-query-to-history">Save query to history<a href="#save-query-to-history" class="hash-link" aria-label="Direct link to Save query to history" title="Direct link to Save query to history">​</a></h3>
+<p>Set this toggle on to generate a query history from your query. Vectara enables you to generate query histories from your queries. These are
+analyses of your queries that give you visibility into how Vectara executed
+your query through specific steps such as retrieval, reranking, and
+generation. This is important for troubleshooting issues, inspecting past
+queries, and optimizing configurations.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="view-the-history-of-the-query">View the history of the query<a href="#view-the-history-of-the-query" class="hash-link" aria-label="Direct link to View the history of the query" title="Direct link to View the history of the query">​</a></h3>
+<ol>
+<li>Ask questions of your data with <strong>Send query</strong>.</li>
+<li>Select the <strong>Analysis</strong> or <strong>Usage</strong> tab to see a list of query histories.<br>
+<img decoding="async" loading="lazy" alt="Query history tab" src="/zh-Hans/assets/images/query_history_tab-3ca1462912e941e87545044d48f06de8.png" width="888" height="300" class="img_ev3q"></li>
+<li>Click Reload to refresh the list.</li>
+<li>Select an ID to reveal the query history for a specific query
+the most recently executed query.
+<img decoding="async" loading="lazy" alt="Query tab" src="/zh-Hans/assets/images/query_analysis-1c28dee80597639b01c01bdafbfafbac.png" width="1068" height="460" class="img_ev3q"></li>
+<li>View the complete breakdown of how the query was executed.</li>
+<li>Use this information to optimize your configuration and submit a new query.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="query-results">Query results<a href="#query-results" class="hash-link" aria-label="Direct link to Query results" title="Direct link to Query results">​</a></h2>
+<p>After executing a query, the results appear in the output panel, which
+includes the following tabs:</p>
+<ul>
+<li><strong>Pretty Response:</strong> Formatted view of the query response.</li>
+<li><strong>Response JSON:</strong> Raw JSON representation of the query output.</li>
+<li><strong>Analysis:</strong> Displays the query history analysis including the rephrased
+query (if IQR enabled), compiled prompt and query history.</li>
+<li><strong>Errors:</strong> Displays encountered errors (if any).</li>
+</ul></div></div></div><div class="row"><div class="col col--12"><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/vectara/vectara-docs/tree/master/www/docs/console-ui/configure_queries.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">Last updated<!-- --> on <b><time datetime="2026-03-29T15:15:08.000Z" itemprop="dateModified">2026年3月29日</time></b> by <b>t</b></span></div></div></footer></div></div></article><div class="row"><div class="col col--12"><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#search-your-data" class="table-of-contents__link toc-highlight">Search your Data</a></li><li><a href="#configure-retrieval" class="table-of-contents__link toc-highlight">Configure retrieval</a><ul><li><a href="#enter-your-query" class="table-of-contents__link toc-highlight">Enter your query</a></li><li><a href="#configure-search-filters" class="table-of-contents__link toc-highlight">Configure search filters</a></li><li><a href="#configure-hybrid-search" class="table-of-contents__link toc-highlight">Configure hybrid search</a></li><li><a href="#configure-relevance-tuning" class="table-of-contents__link toc-highlight">Configure relevance tuning</a></li><li><a href="#configure-result-context" class="table-of-contents__link toc-highlight">Configure result context</a></li></ul></li><li><a href="#configure-generation" class="table-of-contents__link toc-highlight">Configure generation</a><ul><li><a href="#configure-model" class="table-of-contents__link toc-highlight">Configure model</a></li><li><a href="#configure-summarization" class="table-of-contents__link toc-highlight">Configure summarization</a></li><li><a href="#configure-evaluation" class="table-of-contents__link toc-highlight">Configure evaluation</a></li><li><a href="#configure-chat" class="table-of-contents__link toc-highlight">Configure chat</a></li><li><a href="#save-query-to-history" class="table-of-contents__link toc-highlight">Save query to history</a></li><li><a href="#view-the-history-of-the-query" class="table-of-contents__link toc-highlight">View the history of the query</a></li></ul></li><li><a href="#query-results" class="table-of-contents__link toc-highlight">Query results</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">APIs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/docs/api-reference/indexing-apis/indexing">Indexing</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/docs/api-reference/search-apis/search">Search</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/docs/api-reference/admin-apis/admin">Admin</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Vectara, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
